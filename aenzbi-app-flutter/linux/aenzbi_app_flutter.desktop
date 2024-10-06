@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Aenzbi App Flutter
+Comment=A Flutter application for Aenzbi
+Exec=./aenzbi_app_flutter
+Icon=path/to/icon.png  # Change this to the actual path of your icon
+Terminal=false
+Categories=Development;
