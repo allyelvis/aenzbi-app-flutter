@@ -1,0 +1,627 @@
+_layer
+addToScenefindAnnotations_main_screenshotclipPath	clipRRectclipRectdrawArc	drawAtlas
+drawCircle	drawColor
+drawDRRect	drawImagedrawImageNinedrawImageRectdrawLinedrawOval	drawPaintdrawParagraphdrawPathdrawPicture
+drawPoints	drawRRectdrawRawAtlasdrawRawPointsdrawRect
+drawShadowdrawVerticesgetSaveCountrestorerotatesave	saveLayerscaleskew	transform	translatenoSuchMethodtargetcontainerLayerfoundTargetincludeInScreenshotincludeInRegularContextscreenshotOffset_data_screenshotCurrentLayer_screenshotRecorder_screenshotCanvas_multicastCanvascanvas_isScreenshotRecording_startRecordingScreenshotstopRecordingIfNeeded _stopRecordingScreenshotIfNeededappendLayercreateChildContext
+paintChildtoImagenodechildren
+childIndex_ref_valueidcountvalue_serializeRing_serializeRingIndexinstance	_instanceisSelectMode!_debugServiceExtensionsRegistered	selectionselectionChangedCallback_groups_idToReferenceData_objectToId_nextId_pubRootDirectories_isLocalCreationCache_trackRebuildDirtyWidgets_trackRepaintWidgetsregisterServiceExtension_registerSignalServiceExtension$_registerObjectGroupServiceExtension_registerBoolServiceExtension_postExtensionStateChangedEvent _registerServiceExtensionWithArg _registerServiceExtensionVarArgsforceRebuild_consoleObjectGroup_errorsSinceReload_reportStructuredError_resetErrorCountisStructuredErrorsEnabledinitServiceExtensions_clearStatsdisposeAllGroupsresetAllStatedisposeGroup_decrementReferenceCounttoIdisWidgetTreeReadytoObjecttoObjectForSourceLocation	disposeIdsetPubRootDirectoriesresetPubRootDirectoriesaddPubRootDirectoriesremovePubRootDirectoriespubRootDirectoriessetSelectionByIdsetSelection_sendInspectEvent_devToolsInspectorUriForElementdevToolsInspectorUrigetParentChain_getParentChain_pathNodeToJson_getRawElementParentChain_getElementParentChain_getRenderObjectParentChain_nodeToJson_isValueCreatedByLocalProject_isLocalCreationLocationImpl_isLocalCreationLocation_safeJsonEncode_truncateNodes_nodesToJsongetProperties_getPropertiesgetChildren_getChildrengetChildrenSummaryTree_idToDiagnosticsNodeobjectToDiagnosticsNode_getChildrenSummaryTreegetChildrenDetailsSubtree_getChildrenDetailsSubtree_shouldShowInSummaryTree_getChildrenFiltered_filterChildrengetRootWidget_getRootWidgetgetRootWidgetSummaryTree_getRootWidgetSummaryTree%_getRootWidgetSummaryTreeWithPreviewsgetDetailsSubtree_getDetailsSubtreegetSelectedWidget
+screenshot_getLayoutExplorerNode_setFlexFit_setFlexFactor_setFlexProperties_toEnumEntry_getSelectedWidget!_getSelectedWidgetDiagnosticsNodegetSelectedSummaryWidget!_getSelectedSummaryWidgetLocation"_getSelectedSummaryDiagnosticsNode_getSelectedSummaryWidgetisWidgetCreationTracked_widgetCreationTracked_frameStart_onFrameStart_onFrameEnd_postStatsEvent	postEventinspect_rebuildStats_repaintStats_onRebuildWidget_onPaintperformReassemblelocallocation_countreset	increment_statsactivenewLocationsaddresetCountsexportToJsoncreateElementchildselectButtonBuildercreateState_lastPointerLocation_ignorePointerKey_edgeHitMargin	initStatedispose_selectionInformationChanged_hitTestHelperhitTest
+_inspectAt_handlePanDown_handlePanUpdate_handlePanEnd
+_handleTap_handleEnableSelectbuild
+candidates_candidatesindex_indexclearcurrent_currentcurrentElement_currentElement_computeCurrentcreateRenderObjectupdateRenderObject
+_selectionsizedByParentalwaysNeedsCompositingcomputeDryLayoutpaintrect==hashCodeoverlayRectselectedtooltiptextDirectionrootRenderObject
+_lastState_picture_textPainter_textPainterMaxWidth_buildPicture_paintDescription_isInInspectorRenderObjectTree	_locationfilelinecolumnname	toJsonMaptoStringservice	groupNamesummaryTreemaxDescendantsTruncatableNodeincludePropertiessubtreeDepthexpandPropertyValuesaddAdditionalPropertiesCallback_nodesCreatedByLocalProject_interactiveadditionalNodePropertiesdelegateForNodefilterChildrenfilterPropertiestruncateNodesListcopyWith_objects_primitives_isPrimitive[][]=remove6InspectorSelectButtonBuilder RegisterServiceExtensionCallback_ProxyLayer_MulticastCanvas_calculateSubtreeBoundsHelper_calculateSubtreeBounds_ScreenshotContainerLayer_ScreenshotData_ScreenshotPaintingContext_DiagnosticsPathNode_followDiagnosticableChain!InspectorSelectionChangedCallbackInspectorReferenceData_WidgetInspectorServiceWidgetInspectorService_LocationCount_ElementLocationStatsTracker_WidgetForTypeTestsWidgetInspector_WidgetInspectorStateInspectorSelection_InspectorOverlay_RenderInspectorOverlay_TransformedRect_InspectorOverlayRenderState_kMaxTooltipLines_kTooltipBackgroundColor"_kHighlightedRenderObjectFillColor$_kHighlightedRenderObjectBorderColor_InspectorOverlayLayer_kScreenEdgeMargin_kTooltipPadding_kInspectButtonMargin_kOffScreenMargin_messageStyle_HasCreationLocation	_Location_isDebugCreatordebugTransformDebugCreator_parseDiagnosticsNode_describeRelevantUserCodeDevToolsDeepLinkPropertydebugIsLocalCreationLocationdebugIsWidgetLocalCreation_describeCreationLocation_getObjectCreationLocation_getCreationLocation_locationToId
+_locations_toLocationIdInspectorSerializationDelegate_WidgetFactorywidgetFactoryWeakMap‚QHashMapClipOpFlutterViewImageImageByteFormat	ParagraphPicturePictureRecorder	PointModeSceneBuilderVerticesselectButtonBuilderWidgetBuildContextVoidCallbackinitServiceExtensionsBindingBaseregisterServiceExtensionvoidStringServiceExtensionCallbackLayeroverride
+addToScene	protectedboolObjectAnnotationResultOffsetfindAnnotations	onlyFirstCanvasmain
+screenshotPathclipPathdoAntiAliasRRect	clipRRectRect	intersectclipRectclipOpdoublePaintdrawArcListRSTransformColor	BlendMode	drawAtlas
+drawCircle	drawColor
+drawDRRect	drawImagedrawImageNinedrawImageRectdrawLinedrawOval	drawPaintdrawParagraphdrawPathdrawPicture
+drawPoints	drawRRectFloat32List	Int32ListdrawRawAtlasdrawRawPointsdrawRect
+drawShadowdrawVerticesintgetSaveCountrestorerotatesave	saveLayerscalesyskewFloat64List	transform	translatedynamic
+InvocationnoSuchMethodRenderObjectMatrix4MatrixUtilstransformRectsemanticBoundsvisitChildrencloneapplyPaintTransformchilddescribeApproximatePaintClipisFiniteisEmptyexpandToIncludeidentityOffsetLayeraddChildrenToSceneoffsetPaintingContextRepaintBoundaryContainerLayerscreenshotDatacontainerLayerestimatedBoundsPictureLayerincludeInScreenshotincludeInRegularContextcanvasappendstopRecordingIfNeededpictureendRecordingappendLayerremovefoundTargetcreateChildContext	identicaltargetscreenshotOffset
+paintChild
+pixelRatiodebugNeedsPaintwindowdevicePixelRatio
+debugPaintdebugPaintSizeEnabledRenderRepaintBoundarytoImageFutureisRepaintBoundaryparent
+debugLayerpaintBounds%debugInstrumentRepaintCompositedChildcustomContext
+buildSceneDiagnosticsNodeDiagnosticableDiagnosticsTreeStylefirsttoDiagnosticsNodenamestyleilengthgetChildrenjvalueaddnodechildren
+childIndexselectionChangedCallbackvisibleForTestingnumWeakReference	selectionaddListenerFlutterfilled	_instanceValueNotifierMapSet_isLocalCreationLocationJsonEncoderregisterExtensioncallbackFutureOrdisposeGroup
+parametersAsyncValueGetterAsyncValueSettercontainsKeysetter_postExtensionStateChangedEventgetterregisterBoolServiceExtension	postEventWidgetsBindinginstancerootElement
+buildOwner
+reassemble
+endOfFrameFlutterErrorDetails_nodeToJson	groupName_consoleObjectGroupsubtreeDepthincludePropertiesmaxDescendantsTruncatableNodeservice_errorsSinceReloadTextTreeRendererwrapWidthPropertiesFlutterError	wrapWidthmaxDescendentsTruncatableNoderendererror	trimRightsummaryfromEnvironmentdefaultValuekIsWebFlutterExceptionHandlerpresentErrorisStructuredErrorsEnabled_reportStructuredError!_debugServiceExtensionsRegisteredSchedulerBindingaddPersistentFrameCallback_onFrameStart_registerBoolServiceExtension WidgetInspectorServiceExtensionsstructuredErrorsshow
+WidgetsApp debugShowWidgetInspectorOverrideforceRebuildisWidgetCreationTrackedtrackRebuildDirtyWidgets_trackRebuildDirtyWidgets_rebuildStatsresetCountsdebugOnRebuildDirtyWidget_onRebuildWidgettrackRepaintWidgets_trackRepaintWidgets_repaintStatsdebugOnProfilePaint_onPaintmarkNeedsPaintRendererBindingrenderViewsforEach_registerSignalServiceExtensiondisposeAllGroups$_registerObjectGroupServiceExtensionisWidgetTreeReady _registerServiceExtensionWithArg	disposeIdobjectIdobjectGroup _registerServiceExtensionVarArgssetPubRootDirectoriesargsaddPubRootDirectoriesremovePubRootDirectoriesgetPubRootDirectoriespubRootDirectoriessetSelectionByIdgetParentChain_getParentChaingetProperties_getProperties_getChildrengetChildrenSummaryTree_getChildrenSummaryTreegetChildrenDetailsSubtree_getChildrenDetailsSubtreegetRootWidget_getRootWidgetgetRootWidgetSummaryTree_getRootWidgetSummaryTree$getRootWidgetSummaryTreeWithPreviews%_getRootWidgetSummaryTreeWithPreviewsgetDetailsSubtree_getDetailsSubtreeparsegetSelectedWidget_getSelectedWidgetgetSelectedSummaryWidget_getSelectedSummaryWidgettoObjectwidthheightmarginmaxPixelRatioByteData
+toByteDataformatpngbase64encoderconvert	Uint8ListviewbuffergetLayoutExplorerNode_getLayoutExplorerNode
+setFlexFit_setFlexFitsetFlexFactor_setFlexFactorsetFlexProperties_setFlexProperties_groupsclear_idToReferenceData_objectToId_nextIdmustCallSuperresetPubRootDirectories_decrementReferenceCountcountidputIfAbsentdebugDidSendFirstFrameEvent	fromPartsErrorSummaryElementwidget
+Deprecated_pubRootDirectories_isLocalCreationCachemapUri	directorypathtoListfromaddAll	removeAllsetSelectioncurrentElement_sendInspectEventcurrentinspect!_getSelectedSummaryWidgetLocationfilelinecolumnstreamactiveDevToolsServerAddressconnectedVmServiceUritoIddevToolsInspectorUrireplacequeryParameterstoStringindexOf	substring_safeJsonEncode_getRenderObjectParentChain_getElementParentChainruntimeType_pathNodeToJson_nodesToJsondebugGetDiagnosticChainnumLocalParents_isValueCreatedByLocalProjecttakereversed_getRawElementParentChain	toJsonMapcontains
+startsWith_isLocalCreationLocationImpljsonencode_serializeRing_serializeRingIndexIterableeverywhere
+isNotEmpty
+toJsonList_idToDiagnosticsNode_getChildrenFilteredobjectToDiagnosticsNodesummaryTreelevelDiagnosticLevel_filterChildren_shouldShowInSummaryTreeaddAdditionalPropertiesCallbackrenderObjectRenderParagraphtexttoPlainText
+debugPrintattacheddebugNeedsLayoutPipelineOwnerownerdebugDoingLayoutflushLayoutflushCompositingBits
+flushPaintinflatemin DiagnosticsSerializationDelegatedelegatecopyWithexpandPropertyValuesdebugCreatorDebugCreatorelementConstraintsconstraintsBoxConstraintsminWidth	minHeightmaxWidth	maxHeight	RenderBoxsize
+ParentData
+parentDataFlexParentDataflexfitFlexFittightBoxParentDatadxdy
+RenderView_toEnumEntryvaluesmarkNeedsLayoutMainAxisAlignmentCrossAxisAlignment
+RenderFlexmainAxisAlignmentcrossAxisAlignmententry	Exception!_getSelectedWidgetDiagnosticsNode"_getSelectedSummaryDiagnosticsNode	candidate_widgetCreationTrackedDuration_frameStartaddPostFrameCallback_onFrameEnd_postStatsEventexportToJsonRenderObjectElementvisitAncestorElementsancestorreportError	exceptionstacklibrarycontextErrorDescriptionperformReassemblereassembleApplication_clearStats_resetErrorCount	_locationlocationlocal	incrementresetstatinMicrosecondsUnimplementedErrorStatefulWidgetStateWidgetsBindingObserver	GlobalKey	initStateisSelectModeremoveListenerdisposesetState	tryInverttransformPointdebugDescribeChildrenoffstagedeflatehitTestgetTransformToSizesorta	compareTobRenderIgnorePointercurrentContextfindRenderObject
+candidatesDragDownDetailsglobalPositionDragUpdateDetailsDragEndDetailsViewofzerophysicalSizeStackGestureDetectoronTap	onPanDownonPanEndonPanUpdatebehaviorHitTestBehavioropaqueexcludeFromSemanticsIgnorePointerignoringkey
+PositionedleftbottomChangeNotifier kFlutterMemoryAllocationsEnabledmaybeDispatchObjectCreationnotifyListenersdebugIsDefunctLeafRenderObjectWidget	constraininfiniteneedsCompositingaddLayeroverlayRectfromLTWHrootRenderObject	immutablerecthashTextDirectionselected
+listEqualstooltiphashAllfromARGBTextPainteractivetoStringShorttextDirectionltr
+addPicturetopPaintingStylefillcolorstrokestrokeWidthstoragetransformedRectcentermaxTextSpanmaxLinesellipsislayoutpositionDependentBox	childSizeverticalOffsetpreferBelow
+fromPoints
+addPolygonpaintRenderStack	lastChild	TextStylefontSizejoinDiagnosticsDebugCreatorpropertiesTransformersinitInstances
+kDebugModeDiagnosticsStackTracescheduleMicrotaskinformationCollectormessageErrorSpacer_devToolsInspectorUriForElementDiagnosticsBlockDiagnosticsPropertydescriptioninfo
+isFilteredfineallowTruncate_truncateNodesTarget
+TargetKindmethodPaddingExpandoLayerCanvasOffsetLayerPaintingContextWidgetInspectorServiceWidgetStatefulWidgetStateWidgetsBindingObserverChangeNotifierLeafRenderObjectWidget	RenderBoxDiagnosticsProperty DiagnosticsSerializationDelegate´"
+Vªé²%5Ğ‘2%Ji    €¦  
+dart:async€Ó€ßHashMap €»  dart:collection  €â  dart:convert  €ù  	developerdart:developer    1math4	dart:mathU‚
+ClipOpFlutterViewImageImageByteFormat	ParagraphPicturePictureRecorder	PointModeSceneBuilderVertices ;  KuiNdart:ui  ‚!  package:flutter/foundation.dart  ‚K  package:flutter/rendering.dart  ‚t  package:flutter/scheduler.dart  ‚  package:meta/meta_meta.dart  ‚Ä  app.dart  ‚×  
+basic.dart  ‚ì  binding.dart  ƒ  
+debug.dart  ƒ  framework.dart  ƒ1  gesture_detector.dart  ƒQ  service_extensions.dart  ƒs  	view.dart    	dart:coreÀ ×‰ À <€†€¤€¥€º€á€ø:QZj§ºËä÷‚‚‚ ‚J‚s‚œ‚Â‚Ã‚Ö‚ëƒƒƒ0ƒPƒrƒ†ƒ‡ƒ¶ƒá„G„H„˜„®„²„ş…D……—…Å…É…Ê†††O†m††«†¬†Â†Ã†Ï†ü‡‡ ‡!‡-‡:‡d‡„‡ ‡½‡Äˆˆˆˆˆbˆ³ˆÚ‰‰‰4‰T‰i‰Š‰‹‰¡‰½‰¾‰ÊŠŠ8ŠrŠvŠwŠƒŠÀŠö‹2‹6‹7‹C‹¥‹éŒ3Œ7Œ8ŒDŒ£Œæ/34@Û.‡‹Œ˜Òú(,-9n•ÂÆÇÓ9jno{µÛ‘‘‘‘‘c‘—‘Ñ‘Õ‘Ö‘â’*’[’’’–’—’£’Ø’û“$“(“)“5“_“€“§“«“¬“¸“Ø“ô””””'”e”‘”Ã”Ç”È”Ô”ş••F•J•K•W•€• •Æ•Ê•Ë•×–%–U–‹–––œ–É–ì————&—À˜˜x˜|˜}˜‰˜Ù™™E™I™J™V™€™¡™È™Ì™Í™Ùš1štš½šÁšÂšÎ››P›Š›››››²›şœKœ–œĞœñœõœö*EIJVv‘²¶·ÃÓåı<`Š›ÅŞıŸŸŸŸ2ŸJŸhŸlŸmŸyŸ¡Ÿ¿ŸãŸçŸèŸô  : ] a b n  Â Æ È É¡¡c¡d¡’¡È¡ÿ¢L¢”¢±¢ô£££#£d£j£k£££ö£ü¤¤¤¤¤¤\¤¤Ô¤Ö¤×¥'¥x¥®¥º¥ç¦¦¦¦¦]¦o¦‡¦›¦µ¦ê¦ë§§.§/§g§‹§Œ§Û§÷§ø¨8¨>¨¨œ¨À¨Á©©©\©¥©µ©»ª
+ªª@ªAª’ª³ªÓªì«««:«^«b«d«e«£«§«ö¬¬k¬»­­W­¤­·­ò®®=®`®®¬®Û®Ü®û®ü¯¯:¯e¯‚¯¨¯©¯µ¯Ë¯ğ°°<°D°m°Â°Ï°ü±±±!±"±F±†±–±·±è²²@²O²€²­²Ø²à²ó²ı³³!³"³G³n³“³Ğ´ ´6´q´š´Å´áµ	µµµ>µDµHµIµUµvµ™µÁµÅµÆµò¶¶#¶)¶z¶Æ¶ê·
+·'·E·I·J·V·x·¡·Á·è¸¸_¸‚¸»¸Ã¸Ğ¸ø¹¹H¹^¹ˆ¹–¹œ¹ ¹¡¹­¹üºº_ºŸºÚºç»»4»U»t»}»ƒ»‡»ˆ»”»Ë¼¼-¼W¼y¼™¼À¼è¼î½½1½[½„½Š½½½à½æ¾4¾…¾¾¾Ä¿¿C¿I¿—¿ĞÀ @ À @oÀ @ƒÀ @‰À @ØÀ AÀ AdÀ A´À AïÀ AõÀ BÀ BÀ BZÀ BªÀ BïÀ C?À CbÀ CÀ CšÀ C·À CÔÀ CÛÀ DÀ D=À DnÀ DtÀ D¼À EÀ E:À EnÀ EŠÀ E‘À E’À EÆÀ FÀ FeÀ FÀ FêÀ G	À G[À GÀ GšÀ GÒÀ H"À HnÀ H«À HÄÀ HäÀ HíÀ HóÀ HôÀ IBÀ IxÀ I¨À IÔÀ J%À JCÀ JjÀ JŠÀ J±À J²À JÖÀ JâÀ K#À K5À K\À K…À KÀ K“À K”À KŞÀ L+À LpÀ L¯À L°À LşÀ MÀ MÀ MÀ MTÀ MaÀ MeÀ M¶À MöÀ NÀ NZÀ N{À N”À N¬À NÈÀ NİÀ NãÀ NäÀ O3À OQÀ ORÀ O€À O†À OÔÀ P À PoÀ PÀ P¸À P¹À PîÀ PôÀ Q'À Q@À QBÀ QCÀ Q{À Q›À Q«À QÊÀ QÏÀ RÀ R*À R;À R?À R—À RÅÀ RñÀ SÀ SSÀ S†À S·À SÚÀ SõÀ TÀ T8À TVÀ ToÀ T{À T—À T¦À T®À T´À TÌÀ TĞÀ U(À U7À U9À U:À UrÀ U©À UæÀ UçÀ V3À VWÀ V[À V‘À V¤À VÃÀ VúÀ W-À WfÀ W¶À WõÀ XÀ XÀ X À X!À XKÀ XOÀ XPÀ XoÀ XpÀ X‚À XƒÀ X¿À XÒÀ XÓÀ YÀ YÀ YÀ Y0À YFÀ Y^À YyÀ YÀ Y’À Y–À Y˜À Y™À YÓÀ ZÀ Z-À ZLÀ ZzÀ ZŸÀ Z§À Z¯À Z³À ZµÀ Z¶À ZüÀ [ À [PÀ [¨À \À \^À \ßÀ ],À ]|À ]ÆÀ ]üÀ ^ À ^MÀ ^“À ^âÀ _0À _•À _ĞÀ _ÔÀ `	À `(À `lÀ `µÀ `üÀ aÀ aÀ aHÀ aƒÀ aÊÀ aËÀ aúÀ b À bOÀ b–À bİÀ bòÀ c8À c9À cFÀ cÀ c™À cÀ cÀ c×À cØÀ d'À duÀ d”À dÑÀ dÒÀ eÀ eHÀ eNÀ eÀ eìÀ f À f_À f`À f¬À f÷À gÀ ghÀ gÍÀ hÀ h)À h*À hÀ h¤À h¥À h×À i&À i'À iQÀ ivÀ iwÀ i¼À iæÀ iìÀ j8À jÀ jÊÀ kÀ kWÀ kdÀ k†À k À kĞÀ lÀ lÀ l/À lNÀ lhÀ loÀ lsÀ ltÀ l¹À lıÀ m&À m@À mtÀ mµÀ m¼À mÚÀ mìÀ n%À ncÀ nlÀ n˜À nŸÀ n£À n¤À néÀ o:À oƒÀ oÆÀ pÀ pAÀ poÀ p‰À pÏÀ qÀ qÀ q5À qGÀ q€À qØÀ qáÀ rÀ rÀ rÀ rÀ r^À r¦À rëÀ s/À svÀ sŠÀ sÀ sËÀ t
+À tÀ tNÀ t‰À t°À tÊÀ töÀ u"À ucÀ ujÀ uˆÀ ušÀ uÓÀ vÀ vBÀ vaÀ v™À v£À vóÀ vüÀ w(À w/À w3À w4À wvÀ w|À wÌÀ xÀ x=À xCÀ x…À x‹À xÙÀ xÿÀ yDÀ ySÀ yÀ yšÀ yÎÀ yæÀ yïÀ yöÀ yúÀ yûÀ z@À z‘À zŞÀ {.À {XÀ {rÀ {ÊÀ |À |À |0À |BÀ |{À |²À |ÔÀ }'À }2À };À }gÀ }nÀ }rÀ }sÀ }¸À }÷À ~"À ~LÀ ~fÀ ~«À ~ìÀ ~óÀ À #À \À ŠÀ ¡À ¸À ãÀ €À €:À €MÀ €`À €lÀ €À €‰À €ÖÀ À {À ½À ÆÀ òÀ ùÀ ıÀ şÀ ‚KÀ ‚›À ‚ÙÀ ‚ßÀ ƒ+À ƒ8À ƒXÀ ƒ”À ƒ»À ƒ÷À „À „À „?À „CÀ „DÀ „À „‚À „ À „¡À „ŞÀ …À …9À …_À …‡À … À …ÁÀ …ëÀ †À †À †À †À †MÀ †pÀ †©À †ŞÀ ‡À ‡bÀ ‡oÀ ‡ÊÀ ‡ĞÀ ‡ÑÀ ‡îÀ ˆÀ ˆÀ ˆÀ ˆZÀ ˆ`À ˆªÀ ˆøÀ ‰À ‰3À ‰OÀ ‰SÀ ‰TÀ ‰À ‰‡À ‰ÕÀ ŠÀ Š7À Š~À Š“À Š­À Š½À ‹ À ‹iÀ ‹|À ‹†À ‹šÀ ‹À ‹ŸÀ ‹ÌÀ ‹ÒÀ ‹âÀ ‹èÀ ŒXÀ Œ¢À ŒÃÀ À mÀ nÀ •À ÏÀ ÕÀ À À EÀ XÀ bÀ cÀ ¬À ­À ĞÀ À cÀ €À ŞÀ À À 8À ?À @À cÀ ›À âÀ ÿÀ ‘CÀ ‘jÀ ‘tÀ ‘±À ‘ĞÀ ‘ÙÀ ’À ’À ’À ’2À ’ƒÀ ’™À ’¾À “À “CÀ “hÀ “œÀ “°À “¼À “ãÀ ”À ”'À ”^À ”˜À ”âÀ •À •)À •=À •PÀ •~À •’À •À •©À •×À •àÀ •áÀ –À –OÀ –À –¦À –ÕÀ –éÀ –õÀ —À —DÀ —[À —ŒÀ —¸À ˜	À ˜'À ˜hÀ ˜•À ˜ÓÀ ˜áÀ ™/À ™BÀ ™jÀ ™vÀ ™À ™¯À ™¸À ™¾À ™¿À ™äÀ š(À šCÀ š_À štÀ š}À š©À š°À šÚÀ ›À ›@À ›\À ›qÀ ›zÀ ›¦À ›­À ›ÒÀ œÀ œ:À œfÀ œmÀ œ“À œĞÀ À 9À NÀ WÀ ƒÀ ŠÀ °À ùÀ %À JÀ _À hÀ ”À ›À ÁÀ Ÿ
+À Ÿ6À Ÿ[À ŸpÀ ŸyÀ Ÿ¥À Ÿ¬À ŸÒÀ  À  JÀ  rÀ  ‡À  À  ¼À  ÃÀ  áÀ ¡*À ¡NÀ ¡zÀ ¡À ¡§À ¡ëÀ ¢À ¢9À ¢@À ¢fÀ ¢¨À ¢ÉÀ ¢õÀ ¢üÀ £"À £cÀ £ƒÀ £¯À £¶À £ÜÀ ¤À ¤9À ¤eÀ ¤lÀ ¤mÀ ¤“À ¤İÀ ¥À ¥2À ¥9À ¥:À ¥`À ¥­À ¥ÙÀ ¦À ¦À ¦À ¦7À ¦xÀ ¦˜À ¦ÄÀ ¦ËÀ ¦õÀ §AÀ §lÀ §˜À §ŸÀ §½À ¨À ¨LÀ ¨xÀ ¨À ¨À ¨âÀ ©À ©RÀ ©“À ©µÀ ©İÀ ©üÀ ª#À ªcÀ ªpÀ ª{À ª„À ª°À ª·À ªİÀ «"À «FÀ «rÀ «yÀ «ŸÀ «ëÀ ¬À ¬BÀ ¬IÀ ¬JÀ ¬oÀ ¬ºÀ ¬ãÀ ­À ­À ­4À ­rÀ ­«À ­ÙÀ ®
+À ®<À ®=À ®oÀ ®•À ®ÊÀ ¯À ¯6À ¯oÀ ¯²À ¯òÀ °,À °7À °TÀ °ˆÀ °’À °ìÀ °íÀ ±À ±\À ±gÀ ±pÀ ±œÀ ±£À ±ÁÀ ²
+À ²2À ²^À ²eÀ ²ƒÀ ²ÁÀ ²ŞÀ ³
+À ³À ³/À ³pÀ ³À ³¼À ³ÃÀ ³áÀ ´&À ´JÀ ´vÀ ´}À ´À ´‚À ´™À ´ºÀ ´ÛÀ ´ßÀ ´àÀ µÀ µÀ µkÀ µ›À µ°À µ½À µÙÀ µîÀ ¶À ¶'À ¶8À ¶<À ¶=À ¶eÀ ¶kÀ ¶®À ¶ÌÀ ¶áÀ ¶îÀ ¶ÿÀ ·À ·0À ·GÀ ·fÀ ·jÀ ·kÀ ·œÀ ·¢À ·ëÀ ¸À ¸!À ¸DÀ ¸À ¸¬À ¸ºÀ ¸ÀÀ ¸òÀ ¸öÀ ¸÷À ¹;À ¹UÀ ¹wÀ ¹—À ¹ÄÀ ¹ßÀ ºÀ ºÀ º;À ºAÀ ºEÀ ºFÀ º’À ºÁÀ ºÎÀ »À »À ».À »4À »5À »±À »×À ¼À ¼À ¼zÀ ¼³À ¼ÔÀ ¼èÀ ½À ½BÀ ½pÀ ½À ½À ½ÌÀ ½òÀ ¾À ¾À ¾"À ¾1À ¾5À ¾6À ¾ƒÀ ¾ÂÀ ¾ÏÀ ¿À ¿AÀ ¿EÀ ¿FÀ ¿„À ¿ŠÀ ¿ØÀ À(À À6À ÀCÀ À{À À‘À À¤À ÀªÀ À«À ÀìÀ ÁÀ Á_À ÁeÀ Á|À Á€À ÁÀ ÁÏÀ ÁåÀ ÁëÀ Â<À ÂŠÀ ÂØÀ ÂŞÀ Ã,À ÃrÀ ÃÀ ÃÇÀ ÃğÀ ÄÀ Ä)À Ä/À ÄBÀ ÄFÀ ÄGÀ Ä‘À ÄÀ Ä¤À ÄóÀ ÅÀ ÅÀ ÅMÀ ÅcÀ ÅqÀ ÅwÀ ÅxÀ ÅÂÀ ÅãÀ Æ=À ÆCÀ Æ€À ÆÛÀ ÆáÀ ÇÀ ÇÀ ÇÀ ÇaÀ ÇpÀ ÇvÀ ÇÅÀ ÈÀ È%À È2À ÈAÀ ÈkÀ È¤À È¨À ÈèÀ ÉÀ ÉÀ ÉÀ ÉhÀ ÉªÀ É°À ÉÿÀ ÊFÀ Ê_À ÊtÀ ÊÀ Ê¤À ÊÊÀ ÊíÀ ÊñÀ ÊòÀ Ë>À ËMÀ ËSÀ Ë¢À ËéÀ ÌÀ ÌÀ ÌOÀ ÌÂÀ ÌÃÀ ÍÀ Í5À ÍfÀ ÍlÀ ÍmÀ ÍÀ ÍÁÀ ÍÅÀ ÍÆÀ ÎÀ Î.À Î4À ÎƒÀ ÎÊÀ ÎãÀ ÎğÀ Ï3À ÏZÀ ÏhÀ ÏnÀ ÏáÀ ÏâÀ Ğ/À Ğ_À Ğ`À Ğ‘À Ğ´À Ğ¸À Ğ¹À ÑÀ ÑÀ Ñ'À Ñ<À ÑoÀ Ñ“À Ñ™À ÑØÀ ÒÀ ÒÀ ÒÀ ÒÀ ÒgÀ Ò±À Ò·À ÒèÀ ÒîÀ Ó<À Ó‚À ÓÀ ÓÌÀ ÓşÀ ÔÀ ÔÀ ÔPÀ ÔˆÀ ÔÀ Ô¿À ÔÅÀ ÕÀ Õ\À ÕiÀ Õ¦À ÕİÀ ÕüÀ Ö.À ÖFÀ ÖPÀ Ö{À Ö°À Ö¿À ÖêÀ ×À ×À ×AÀ ×oÀ ×wÀ ×xÀ ×‹À ×‘À ×£À ×§À ×¨À ×ğÀ ØÀ Ø/À Ø0À ØyÀ Ø•À Ø¦À ØºÀ ØÔÀ ÙÀ ÙSÀ Ù’À Ù»À ÙÆÀ ÙãÀ ÙìÀ ÙòÀ ÙöÀ Ù÷À ÚIÀ Ú†À ÚÖÀ ÛÀ Û?À ÛrÀ ÛzÀ Û€À Û‘À Û•À Û–À ÛçÀ ÜÀ ÜÀ ÜLÀ Ü}À Ü¨À Ü©À ÜîÀ İÀ İ>À İdÀ İmÀ İtÀ İuÀ İ®À İûÀ ŞFÀ Ş„À ŞÅÀ ŞıÀ ßEÀ ß”À ß¹À ßáÀ à)À à@À àƒÀ à‡À àˆÀ àÖÀ áÀ á%À árÀ á­À áºÀ áñÀ â-À â1À â2À ârÀ âšÀ â¿À âàÀ ãÀ ã@À ãwÀ ã„À ä
+À äÀ äÀ ä^À äjÀ äµÀ äÆÀ äÊÀ äËÀ å>À åZÀ åmÀ åsÀ å‘À åÅÀ æÀ æBÀ æIÀ æMÀ æNÀ æ®À æîÀ çÀ çFÀ ç€À ç²À çØÀ èÀ è!À è-À è7À è?À èEÀ èlÀ èpÀ èqÀ èäÀ éÀ éWÀ é€À é„À é…À éïÀ ê&À êIÀ êhÀ ê’À ê˜À êØÀ êÜÀ êİÀ ëÀ ëÀ ëJÀ ëPÀ ëvÀ ëzÀ ë{À ë±À ëöÀ ìÀ ì.À ì4À ìpÀ ìtÀ ìuÀ ì¯À ìäÀ ìåÀ í7À í^À íÀ íÓÀ îÀ îÀ îFÀ înÀ îƒÀ î‹À î‘À î£À î§À î¨À îâÀ ïÀ ïZÀ ïyÀ ï“À ï™À ïÜÀ ğÀ ğ À ğ$À ğ%À ğuÀ ğ»À ñÀ ñQÀ ñaÀ ñfÀ ñ¢À ñßÀ ò
+À ò=À òsÀ òÁÀ òØÀ òÜÀ òİÀ óJÀ ó¯À óäÀ ô8À ôKÀ ônÀ ô‰À ô‘À ô—À ôÖÀ ôÚÀ ôÛÀ õÀ õ'À õVÀ õ|À õƒÀ õÃÀ õÇÀ õÈÀ öÀ öIÀ öVÀ ö›À öåÀ öéÀ öêÀ ÷7À ÷À ÷™À ÷¸À ÷¾À ø@À øDÀ øEÀ ø’À øÄÀ ùÀ ùOÀ ùSÀ ùTÀ ùŸÀ ùòÀ úkÀ úíÀ úñÀ úòÀ û?À ûÀ û·À û½À üÀ ü[À ü¬À üúÀ ıÀ ıÀ ı%À ı+À ıyÀ ıˆÀ ıÖÀ ş)À ş-À ş.À şrÀ ş©À şÕÀ şÙÀ şÚÀ ÿÀ ÿ,À ÿpÀ ÿ”À ÿ½À ÿÃÀ ÿÔÀ ÿØÀ ÿÙÀ .À xÀ À ©À ¯À °À<À“À—À˜ÀåÀ2ÀVÀ\À¨ÀàÀ0À…À‰ÀŠÀâÀ,À‚ÀÀ–ÀšÀ›ÀÓÀÀÀÀAÀeÀxÀ~À¹ÀÀÀ-À3ÀdÀhÀiÀ—À±ÀŞÀäÀÀ"À#ÀLÀmÀšÀ ÀŞÀ	À	UÀ	eÀ	rÀ	¦À	­À	ÂÀ	ÆÀ	ÇÀ
+À
+"À
+MÀ
+„À
+ˆÀ
+‰À
+ÄÀ[À_À`ÀªÀøÀ.ÀpÀtÀuÀ¨ÀÀÀ5À<ÀTÀ”ÀºÀØÀ÷ÀÀ)ÀsÀ|ÀƒÀ‡ÀˆÀ‰ÀÏÀóÀùÀ0ÀtÀ…ÀïÀ6À`À€ÀÁÀòÀ?ÀKÀUÀtÀ}À„ÀÅÀİÀåÀéÀêÀ+ÀxÀ¯ÀµÀÀRÀgÀmÀ}ÀƒÀÌÀíÀ	À&À>ÀXÀ_ÀºÀ¾À¿ÀëÀ	À À6À<À†ÀÀ±À·ÀÏÀÛÀÀÀCÀdÀ{À„À‹ÀÀÀáÀîÀ:ÀaÀŸÀ¥ÀæÀêÀëÀ1ÀTÀZÀ«ÀúÀ=ÀwÀÇÀÀcÀ³À×ÀäÀÀÀ5ÀQÀjÀŠÀ§À´ÀíÀ ÀÀrÀ¬À¿ÀÅÀÆÀïÀ&ÀMÀYÀqÀ’ÀªÀ«ÀûÀIÀ™À²ÀİÀòÀúÀ ÀÀ@ÀYÀŒÀ’À²ÀÅÀËÀÌÀôÀ 	À À =À cÀ lÀ sÀ tÀ £À ·À ËÀ éÀ!À!À!À!À!JÀ!nÀ!tÀ!«À!ğÀ"'À"_À"©À"ÁÀ#À#À#(À#.À#HÀ#TÀ#zÀ#˜À#³À#×À#îÀ$À$eÀ$‘À$¾À$úÀ% À%MÀ%YÀ%ZÀ%‹À%ĞÀ%íÀ&À&;À&HÀ&À&ıÀ'gÀ'®À'÷À("À(IÀ(ŠÀ(—À(˜À(ÚÀ) À)+À)ZÀ)ŸÀ)ĞÀ*À*MÀ*xÀ*£À*ÖÀ*ñÀ+
+À+TÀ+šÀ+âÀ, À,.À,:À,;À,KÀ,}À,¶À,şÀ-NÀ-ŠÀ-ÁÀ-ÒÀ.À.BÀ.À.ÂÀ/À/BÀ/VÀ/fÀ/©À/·À/ÏÀ0À0:À0FÀ0GÀ0WÀ0„À0²À0ëÀ1(À1gÀ1xÀ1yÀ1¿À1ñÀ22À2^À2šÀ2ÒÀ3À3LÀ3À3²À3ÅÀ3ÕÀ4
+À4CÀ4€À4¿À4ĞÀ4ŞÀ4öÀ5À5#À5DÀ5OÀ5XÀ5_À5 À5¸À5ÀÀ5ÄÀ5ÅÀ6À6;À6pÀ6¾À6çÀ7À70À7hÀ7¡À7ËÀ7íÀ8À8(À80À86À8uÀ8À8–À8šÀ8›À8ëÀ9À9MÀ9šÀ9ÃÀ9İÀ:À:DÀ:}À:§À:ÉÀ:ìÀ;À;À;À;QÀ;iÀ;qÀ;uÀ;vÀ;©À;ÍÀ;ÓÀ;üÀ<MÀ<mÀ<•À<œÀ<ÎÀ<øÀ=À=BÀ=IÀ=rÀ=ŒÀ=»À=óÀ>À>KÀ>ƒÀ>¥À>ÆÀ>ŞÀ>æÀ>ìÀ?+À?CÀ?KÀ?OÀ?PÀ?ˆÀ?±À?×À?íÀ?õÀ?ûÀ@.À@2À@3À@À@§À@åÀA0ÀA7ÀA;ÀA<ÀAÀAòÀB)ÀBŒÀBÀB‘ÀBáÀC/ÀCÀC‹ÀCŞÀDÀDCÀDIÀD‘ÀD•ÀD–ÀDäÀEFÀEJÀEKÀE ÀEÆÀFÀFÀFsÀF¤ÀFêÀGÀGPÀGˆÀGªÀG»ÀGÅÀGÍÀGéÀGïÀHRÀHVÀHWÀHºÀIPÀITÀIUÀI–ÀIœÀIéÀJÀJ`ÀJ„ÀJˆÀJ‰ÀJ©ÀJªÀJÇÀJÈÀJóÀKÀKQÀKUÀKVÀKÀK¤ÀKäÀKêÀL
+ÀLJÀLPÀLTÀLUÀL¤ÀLßÀLãÀLäÀM.ÀMgÀMmÀM½ÀMéÀMöÀNÀNÀNDÀNeÀNlÀN«ÀN¯ÀN°ÀNúÀO(ÀO.ÀO~ÀOªÀO·ÀOØÀO÷ÀOûÀOüÀPQÀP¦ÀP§ÀPâÀQÀQÀQÀQ4ÀQ>ÀQ”ÀQÁÀRÀRZÀRªÀRÌÀRÜÀRäÀSÀSÀSTÀS‰ÀSÂÀSñÀT?ÀT^ÀTvÀT€ÀT¥ÀTºÀTÄÀTÊÀTéÀU	ÀU&ÀUFÀU^ÀUÀUÔÀUßÀUèÀUîÀUòÀUóÀVEÀVrÀVxÀV­ÀVØÀVõÀWÀW ÀW$ÀW&ÀW'ÀWoÀWsÀWÂÀX
+ÀX!ÀX4ÀXPÀXfÀXÀX…ÀX†ÀX™ÀX©ÀXªÀXæÀXúÀXûÀYÀYÀY3ÀYEÀYFÀY]ÀYnÀY~ÀY‚ÀYƒÀYÀY³ÀYÁÀYÅÀYÇÀYÈÀZÀZSÀZWÀZ¨ÀZøÀ[IÀ[•À[ÂÀ[ÆÀ\À\aÀ\|À\¡À\ËÀ\ĞÀ]À]bÀ]zÀ]À]ÄÀ]äÀ^ À^!À^HÀ^‚À^ƒÀ^ÃÀ^ÉÀ_À_-À_mÀ_nÀ_¿À_üÀ`À`DÀ`oÀ`}À`ƒÀ`ÃÀaÀa!Àa/Àa5ÀaaÀabÀa|Àa±ÀaüÀb2ÀbVÀbpÀbxÀb–Àb²ÀbÂÀcÀc#Àc<Àc]ÀceÀcÀcŒÀc§Àc­Àc®ÀcıÀdJÀd—ÀdŞÀdîÀeÀe#Àe>ÀeFÀe_ÀeeÀeiÀejÀe‘Àe¨ÀeõÀfEÀfŠÀfÔÀg!ÀgSÀg„Àg™ÀgŸÀg³Àg·Àg¸ÀhÀh%Àh_Àh¤Àh³ÀhãÀi Ài Ài&Ài'Ài`ÀiÀi¥Ài¬Ài­ÀiçÀj
+Àj@ÀjŠÀjÃÀjöÀk7ÀkPÀkiÀktÀkÂÀkÊÀköÀküÀkıÀlFÀliÀlØÀmÀmDÀm—ÀmÏÀmëÀn	Àn)ÀnKÀnXÀncÀndÀnÀn½ÀnñÀo!Ào)ÀoUÀo[Ào\ÀooÀo‰ÀošÀoÀo Ào¡ÀoÌÀoëÀoìÀoøÀp1Àp3Àp4ÀpwÀp{ÀpÆÀqÀq]Àq§Àq»Àq¿ÀqôÀqøÀrHÀr–ÀräÀs/ÀswÀs£Às§ÀsòÀt=ÀtÀtÛÀu#ÀuRÀuÀuªÀu¹ÀuÒÀuùÀuÿÀv Àv*Àv@ÀvAÀv}ÀvƒÀvÑÀvùÀw4Àw5ÀwAÀw„Àw†Àw‡ÀwÂÀwäÀwåÀx ÀxÀx!Àx"ÀxGÀxHÀxbÀxcÀx–Àx—ÀxãÀyÀy@ÀyAÀyMÀybÀyyÀyzÀy¨ÀyÜÀzÀzAÀz|ÀzÃÀzÇÀzÈÀzÔÀzçÀ{À{LÀ{}À{´À{ÉÀ{ÍÀ{ÎÀ|À|?À|†À|ŒÀ|À|¤À|ÁÀ|âÀ|÷À}À}'À}-À}CÀ}~À}™À}êÀ~À~!À~'À~wÀ~xÀ~ÃÀ~ûÀ2ÀrÀ¢À´À¼À€À€KÀ€À€¢À€ªÀ€«À€ãÀÀiÀ}À…À‹ÀŒÀ»ÀåÀ÷À‚AÀ‚‡À‚­À‚òÀƒÀƒÀƒÀƒ-ÀƒEÀƒKÀƒ[Àƒ_Àƒ`Àƒ¯ÀƒÂÀƒÈÀ„À„bÀ„®À„ÉÀ…À…IÀ…ƒÀ…„À…ÚÀ†À†3À†gÀ†À†”À†êÀ‡À‡0À‡FÀ‡MÀ‡gÀ‡kÀ‡lÀ‡‘À‡ªÀ‡¸À‡¾À‡¿Àˆ;ÀˆuÀˆ¼Àˆ½ÀˆâÀˆæÀˆçÀ‰À‰GÀ‰mÀ‰qÀ‰rÀ‰¥À‰ÖÀ‰üÀŠ ÀŠÀŠ0ÀŠ~ÀŠÎÀ‹À‹oÀ‹³À‹åÀŒUÀŒˆÀŒ¡ÀŒ§ÀŒ«ÀŒ¬ÀŒÂÀŒÛÀŒéÀŒïÀÀ@ÀŒÀ’À“ÀßÀÀOÀUÀYÀZÀyÀºÀ¾À¿ÀËÀòÀ;À€ÀÇÀìÀÀÀAÀbÀ‰À³À×ÀõÀ‘À‘9À‘XÀ‘cÀ‘lÀ‘«À‘¿À‘æÀ’À’[À’fÀ’•À’À’¡À’£À’¤À’ÒÀ“À“4À“MÀ“yÀ“±À“·À“»À“¼À“õÀ“ûÀ”;À”oÀ”¤À”ÑÀ”êÀ”úÀ•À•À•À•\À•wÀ•‰À•¢À•¶À•ÍÀ•ÑÀ•ÒÀ•ôÀ–À–)À–9À–PÀ–TÀ–UÀ–˜À–À–âÀ–èÀ—À—QÀ—RÀ—lÀ—‘À—®À—ÆÀ˜À˜(À˜.À˜2À˜3À˜ƒÀ˜‰À˜ÍÀ˜ÓÀ™À™#À™pÀ™tÀ™uÀ™‘À™ºÀ™æÀšÀšÀš4ÀšBÀšHÀšmÀšÀš¼ÀšÕÀšÛÀšßÀšàÀšûÀ›!À›EÀ›‘À›ªÀ›·À›ÎÀ›ìÀœÀœÀœÀœÀœ]ÀœqÀœ®Àœ°Àœ±ÀœêÀÀ#À)À*ÀPÀQÀ]À¢ÀÜÀàÀáÀíÀEÀmÀqÀsÀtÀ¦ÀëÀŸ	ÀŸ
+ÀŸ<ÀŸ]ÀŸ‰ÀŸ¨ÀŸÂÀŸÈÀŸŞÀŸâÀŸãÀŸïÀ À À À IÀ JÀ VÀ ŒÀ ½À ÁÀ ÂÀ ÎÀ¡À¡#À¡PÀ¡¡À¡½À¡şÀ¢À¢
+À¢À¢À¢À¢1À¢qÀ¢•À¢ÈÀ¢ÉÀ¢ÜÀ¢÷À¢øÀ£À£'À£SÀ£gÀ£mÀ£’À£°À£ÙÀ£İÀ£ŞÀ£êÀ¤À¤ À¤!À¤dÀ¤hÀ¤¸À¤ÏÀ¤ÚÀ¤ÿÀ¥&À¥EÀ¥aÀ¥À¥šÀ¥»À¥ÁÀ¥ÂÀ¥ÜÀ¥ÿÀ¦*À¦BÀ¦gÀ¦hÀ¦tÀ¦—À¦ÃÀ¦×À¦İÀ§À§:À§`À§¦À§ËÀ§ÏÀ§ĞÀ§ÜÀ¨;À¨=À¨>À¨_À¨§À¨üÀ©QÀ©RÀ©À©ÔÀ©ØÀª)ÀªvÀª£ÀªŞÀªùÀ«À«5À«YÀ«`À«~À«À«¨À«»À«ÅÀ«İÀ¬À¬)À¬wÀ¬¡À¬¬À¬¶À¬¼À¬ÀÀ¬ÁÀ¬áÀ¬âÀ­0À­>À­DÀ­“À­´À­ÎÀ­ÏÀ® À®VÀ®~À®À®«À®¬À®ÕÀ®ñÀ®òÀ¯À¯/À¯0À¯<À¯OÀ¯lÀ¯…À¯šÀ¯À¯ŸÀ¯«À¯ØÀ¯õÀ°À°	À°
+À°@À°AÀ°vÀ°„À°ŠÀ°‹À°ÏÀ±À±GÀ±‚À±”À±œÀ±áÀ±çÀ±èÀ²5À²UÀ²“À²ÍÀ²õÀ³À³À³À³:À³TÀ³{À³À³°À³´À³µÀ³öÀ´4À´sÀ´¡À´ëÀµÀµPÀµQÀµuÀµ˜ÀµÌÀµÍÀµóÀ¶À¶2À¶hÀ¶iÀ¶•À¶ÚÀ¶åÀ¶ôÀ·(À·WÀ·ˆÀ·›À·œÀ·íÀ¸7À¸tÀ¸»À¸ÈÀ¸ÙÀ¹À¹SÀ¹hÀ¹nÀ¹oÀ¹¦À¹ÛÀ¹âÀº+ÀºTÀº¢Àº£À»À»À»]À»uÀ»™À»À»À»¸À»ËÀ»ßÀ¼ À¼À¼.À¼=À¼RÀ¼XÀ¼kÀ¼‘À¼ÑÀ¼ÚÀ¼áÀ½!À½‚À½©À½ÈÀ½ëÀ¾À¾-À¾lÀ¾”À¾ºÀ¾ÀÀ¾ÁÀ¿-À¿`À¿rÀ¿À¿¦À¿ÌÀ¿æÀ¿íÀ¿îÀÀÀÀ=ÀÀgÀÀ|ÀÀ“ÀÀ¦ÀÀêÀÀóÀÁÀÁÀÁÀÁ6ÀÁnÀÁ‡ÀÁ«ÀÁ±ÀÁ²ÀÁåÀÂ,ÀÂ}ÀÂ¦ÀÂĞÀÂúÀÃBÀÃIÀÃ’ÀÃñÀÄÀÄÀÄÀÄÀÄ%ÀÄOÀÄoÀÄ‹ÀÄ ÀÄ§ÀÄ¹ÀÄ½ÀÄ¾ÀÅÀÅÀÅcÀÅ°ÀÅáÀÆÀÆGÀÆeÀÆ›ÀÆ¼ÀÆùÀÇ%ÀÇ-ÀÇMÀÇSÀÇeÀÇiÀÇkÀÇlÀÇ”ÀÇ¹ÀÇäÀÇåÀÈ/ÀÈUÀÈ{ÀÈ|ÀÈ§ÀÈÃÀÈÕÀÈäÀÈçÀÈèÀÉ0ÀÉQÀÉUÀÉ ÀÉºÀÉàÀÉüÀÉşÀÉÿÀÊMÀÊaÀÊsÀÊ‡ÀÊŸÀÊ·ÀÊÑÀË	ÀËÀËÀËÀË@ÀËUÀËVÀËqÀËƒÀË„ÀË¡ÀËµÀË¶ÀËùÀÌÀÌÀÌ5ÀÌnÀÌ‚ÀÌ–ÀÌ®ÀÌµÀÌÍÀÌèÀÌîÀÌÿÀÍÀÍÀÍÀÍ&ÀÍQÀÍiÀÍÀÍ‡ÀÍœÀÍÅÀÍáÀÍåÀÍçÀÍèÀÎ7ÀÎ8ÀÎ‰ÀÎÀÎâÀÏ	ÀÏÀÏiÀÏÆÀÏÛÀÏûÀÏÿÀĞ<ÀĞZÀĞÀĞ­ÀĞÈÀĞÕÀĞÛÀĞßÀĞÿÀÑ;ÀÑnÀÑ«ÀÑÉÀÑÏÀÑğÀÒ0ÀÒ=ÀÒZÀÒuÀÒ„ÀÒÀÒ¦ÀÒ¬ÀÒ°ÀÒÊÀÒÛÀÒİÀÒŞÀÓ	ÀÓÀÓKÀÓ|ÀÓ”ÀÓ²ÀÓ¶ÀÓ×ÀÓßÀÔ"ÀÔTÀÔ‘ÀÔ¬ÀÔÇÀÔûÀÕÀÕ+ÀÕPÀÕ‡ÀÖ	ÀÖÀÖÀÖ&ÀÖFÀÖJÀÖLÀÖMÀÖ‚ÀÖ•ÀÖ³ÀÖ·ÀÖûÀ×À×1À×uÀ×ÁÀØ
+ÀØÀØ(ÀØ/ÀØ3ÀØ4ÀØOÀØÀØÇÀÙÀÙ/ÀÙ7ÀÙ=ÀÙOÀÙSÀÙTÀÙÀÙ·ÀÚÀÚ"ÀÚRÀÚ}ÀÚ~ÀÚÎÀÛÀÛdÀÛƒÀÛ°ÀÜÀÜ/ÀÜhÀÜÀÀÜâÀÜïÀÜùÀİÀİÀİ(ÀİBÀİ{Àİ¢ÀŞ	ÀŞÀŞ!ÀŞ8ÀŞ™ÀŞ£ÀŞ·ÀŞ½ÀŞÎÀŞÒÀŞóÀß&Àß*Àß:Àß<Àß=ÀßlÀßpÀß¼ÀßÎÀàÀàgÀàmÀàºÀáÀá]Àá˜ÀáåÀáçÀáèÀâÀâÀâWÀâ[Àâ¦ÀâªÀâëÀãÀã:ÀãRÀã`ÀãÀãºÀäÀäÀä*Àä2ÀäDÀäFÀäGÀäwÀä{ÀäÌÀå	Àå:Àå|Àå™ÀåèÀåêÀåëÀæ@ÀæDÀælÀæpÀæ»Àæ¿ÀçÀçBÀç~ÀçÀçŸÀç Àç×ÀèÀèÀèÀèaÀèeÀè°Àè´ÀéÀé6Àé˜ÀéãÀéåÀéæÀê3ÀêpÀêÀêËÀêıÀêşÀë&ÀëKÀë_ÀënÀërÀëŒÀë¨ÀëÈÀëÕÀë×ÀëØÀì!ÀìJÀì]Àì°ÀíÀí(ÀíKÀí_Àí}ÀíªÀíĞÀíëÀîÀî*ÀîTÀîZÀî[Àî£ÀîËÀîÌÀïÀï5Àï;Àï‰ÀïÑÀïìÀïíÀğ<ÀğVÀğWÀğ™ÀğÄÀğÅÀğÑÀğñÀğòÀğşÀñÀñÀñ%ÀñHÀñIÀñ‘Àñ—ÀñéÀò5ÀòqÀòêÀòëÀó<Àó=ÀókÀólÀóxÀóÀÀóıÀô#Àô;ÀôvÀô|Àô“Àô·Àô½ÀõÀõ&ÀõdÀõ¥ÀõêÀöÀöIÀöQÀöWÀöŠÀöãÀöéÀöüÀ÷ À÷À÷À÷XÀ÷À÷æÀø/Àø{ÀøÂÀùÀùJÀùZÀù^Àù_ÀùkÀùÈÀùùÀùıÀùşÀú
+ÀúiÀú½ÀúíÀûQÀûbÀûfÀûgÀûsÀûÔÀüÀü"ÀüZÀü¦Àü¬Àü¾ÀüÂÀüÃÀüÏÀıGÀırÀıÀı®ÀıòÀşAÀşxÀş¾ÀşÖÀÿÀÿ%Àÿ)Àÿ+Àÿ,ÀÿUÀÿlÀÿ†ÀÿˆÀÿ‰ÀÿÖÀÿôÀÿøÀ FÀ À ØÀ$ÀqÀ{ÀÀÌÀÀbÀ°ÀÅÀÉÀÀeÀÀ“ÀàÀğÀôÀ:À>ÀRÀVÀ¢ÀÌÀĞÀÜÀÀÀNÀ…ÀÀ“À›ÀŸÀçÀ1ÀoÀsÀÀªÀÉÀôÀüÀ ÀÀÀ"À&À°À ÀHÀeÀ”ÀËÀÌÀüÀ	À	%À	UÀ	VÀ	xÀ	¢À	£À	ÆÀ
+À
+À
+À
+`À
+|À
+‚À
+±À
+ÊÀ
+çÀÀÀ6À<À@ÀAÀtÀ™À¶ÀÖÀãÀÀÀÀÀFÀ[ÀxÀÀ«ÀÚÀöÀÀÀÀÀ<ÀMÀoÀˆÀŒÀ    €¥  €º €Ó€ß€á  €ø 5 :OU‚‚   ‚J  ‚s  ‚œ  ‚Ã  ‚Ö  ‚ë  ƒ  ƒ  ƒ0  ƒP  ƒr    …Ê‚O†s€¢/// A layer that mimics the behavior of another layer.
+///
+/// A proxy layer is used for cases where a layer needs to be placed into
+/// multiple trees of layers. †‘ †‘†œ ††£   †®†º   †ÅZ†Ö  †á†ò  †Å†Æ‡#€ô‡A ‡Q‡Q‡h‡}  ‡ˆ‡  ‡¤‡³  ‡#‡$‡/‡0 ˆ˜¬ˆà€¾/// A [Canvas] that multicasts all method calls to a main canvas and a
+/// secondary screenshot canvas so that a screenshot can be recorded at the same
+/// time as performing a normal paint. ‰€‚ ‰‰ ‰‰/  ‰8‰I  ‰a‰[‰c‰|‰p‰~‰‰š  ‰£‰°   "‰À€µ‰Ñ  ‰Ú	‰à  ‰ç‰í  ‰À‰Á‰úŠy€¼ŠŠ  Š”Š›  Š£Š©  ŠyŠzŠ¶‹9€ı‹J  ‹S	‹Y  ‹`&‹k  ‹ˆ‹  ‹9‹:‹s‹u‹v‹|‹}‹›Œ:€øŒK  ŒS	ŒY  Œ^Œf  ŒqŒy  Œ„ŒŠ  Œ”Œ›  Œ:Œ;6TG  Q[  at  ‹  ‘Ÿ  ¦²  ¼Ã  ÌÓ  67€Ÿ  ª²  ´¼  ÃÊ  /€–@  JQ  Wb  /0É€¤Ú  åì  òù  ÿ  ÉÊq€™‚  Œ–  œ¤  ¦­  qr‘€Æ‘  ‘-‘7  ‘=‘C  ‘J‘P  ‘T‘[  ‘‘‘Ø€½‘é  ‘÷’  ’’  ’’  ’’"  ‘Ø‘Ù’™€’ª  ’³	’»  ’¾	’Æ  ’É’Ğ  ’™’š“+“<  “E	“K  “P“W  “+“,“®k“¿  “É“Ğ  “®“¯”€©”.  ”<”J  ”T”\  ”””Ê”Û  ”ä	”ê  ”ï”ö  ”Ê”Ë•M|•^  •j•v  •M•N•Í€Á•Ş  •é•÷  ––  ––  •Í•Î–’€†–£  –­–´  –º–Á  –’–“—_—-  —:—D  —J—W  —e—r  —x—„  —‹——  —¡—¨  —±—¸  ——˜€É˜  ˜˜¬  ˜¶˜Ã  ˜Ê˜Ñ  ˜˜€™L™]  ™f	™l  ™q™x  ™L™M™Ï€ñ™à  ™ë	™ñ  ™ö™ı  šš  šš  ™Ï™ĞšÄ€ÉšÕ  šâšï  šø›  ››  šÄšÅ›‘c›¡   ›‘›’œøP	   œøœùLi]  dl  LM¹GÊ   ¹º€‰  &  -4  ‘o¢  ¨	°  µ
+¾  ‘’ŸgŸ  Ÿ	Ÿ"  Ÿ%	Ÿ-  ŸŸŸowŸ€  ŸŠŸ—  ŸoŸpŸêvŸû   	    	   ŸêŸë da x   … ‘   d e ¤×6¥~€ /// A layer that omits its own offset when adding children to the scene so that
+/// screenshots render to the scene in the local coordinate system of the layer.    ¥°[¥Á  ¥Ì¥İ  ¥°¥± ¦…T¦u_/// Data shared between nested [_ScreenshotPaintingContext] objects recording
+/// a screenshot. ¦‰` ¦‰¦˜ ¦Ÿ¦®  ¦Ë¦¼¦Í¦æ¦ç¦í?§&#/// Target to take a screenshot of. §1X§{5/// Root of the layer tree containing the screenshot. §g§âL/// Whether the screenshot target has already been found in the render tree.§ğ§ú€Ä¨£€›/// Whether paint operations should record to the screenshot.
+///
+/// At least one of [includeInScreenshot] and [includeInRegularContext] must
+/// be true.¨¹¨Ã{ª G/// Whether paint operations should record to the regular context.
+///
+/// This should only be set to false before paint operations that should only
+/// apply to the screenshot such rendering debug information about the
+/// [target].
+///
+/// At least one of [includeInScreenshot] and [includeInRegularContext] must
+/// be true.ª:ªC€ÎªÀm/// Offset of the screenshot corresponding to the offset [target] was given as
+/// part of the regular paint.   «M«  «)«1     «e¡­½‚Q/// A place to paint to build screenshots of [RenderObject]s.
+///
+/// Requires that the render objects have already painted successfully as part
+/// of the regular rendering pipeline.
+/// This painting context behaves the same as standard [PaintingContext] with
+/// instrumentation added to compute a screenshot of a specified [RenderObject]
+/// added. To correctly mimic the behavior of the regular rendering pipeline, the
+/// full subtree of the first [RepaintBoundary] ancestor of the specified
+/// [RenderObject] will also be rendered rather than just the subtree of the
+/// render object. ­ô€æ ­ô® ®&®.  ®A®P  ®d'®~  ®š®”®œ®³®¸®Ø®¹®É®Ş®ô  ¯%¯!  ¯<'¯P  ¯g¯o  ¯„"¯–  ¯«u¯Â   ¯«¯¬±$ü±-    ³$‚#³)    µKyµ\   µKµLµÈ€µÍ    ·L‚S·]  ·i·p  ·L·M¹£ã¹¿  ¹Ò¹â  ¹í¹ó  ¹£¹¤»Š‚»›  »¦»´  »º»Â  »Š»‹½‘pÀ CY…y/// Captures an image of the current state of [renderObject] and its children.
+///
+/// The returned [ui.Image] has uncompressed raw RGBA bytes, will be offset
+/// by the top-left corner of [renderBounds], and have dimensions equal to the
+/// size of [renderBounds] multiplied by [pixelRatio].
+///
+/// To use [toImage], the render object must have gone through the paint phase
+/// (i.e. [debugNeedsPaint] must be false).
+///
+/// The [pixelRatio] describes the scale between the logical pixels and the
+/// size of the output image. It is independent of the
+/// [window.devicePixelRatio] for the device, so specifying 1.0 (the default)
+/// will give you a 1:1 mapping between logical pixels and the output pixels
+/// in the image.
+///
+/// The [debugPaint] argument specifies whether the image should include the
+/// output of [RenderObject.debugPaint] for [renderObject] with
+/// [debugPaintSizeEnabled] set to true. Debug paint information is not
+/// included for the children of [renderObject] so that it is clear precisely
+/// which object the debug paint information references.
+///
+/// See also:
+///
+///  * [RenderRepaintBoundary.toImage] for a similar API for [RenderObject]s
+///    that are repaint boundaries that can be used outside of the inspector.
+///  * [OffsetLayer.toImage] for a similar API at the layer level.
+///  * [dart:ui.Scene.toImage] for more information about the image returned. À CfÀ Ct  À C…À C‹  À CÀ C¦  À C»À CÁ  À C²À CÍ À M„<À Mü€ğ/// A class describing a step along a path through a tree of [DiagnosticsNode]
+/// objects.
+///
+/// This class is used to bundle all data required to display the tree with just
+/// the nodes along a path expanded into a single JSON payload. À N€Í À N}À N‘c/// Creates a full description of a step in a path through a tree of
+/// [DiagnosticsNode] objects.À N˜À N§  À N°À N¿  À NÌÀ NÒ   À NæiÀ OKL/// Node at the point in the path this [_DiagnosticsPathNode] is describing. À OTbÀ P®1/// Children of the [node] being described.
+///
+/// This value is cached instead of relying on `node.getChildren()` as that
+/// method call might create new [DiagnosticsNode] objects for each child
+/// and we would prefer to use the identical [DiagnosticsNode] for each time
+/// a node exists in the path. À P»€ƒÀ Q4g/// Index of the child that the path continues on.
+///
+/// Equal to null if the path does not continue.    À Uçƒ°À Vª€©/// Structure to help reference count Dart objects referenced by a GUI tool
+/// using [WidgetInspectorService].
+///
+/// Does not hold the object from garbage collection. À VÅ‰ À VüÀ W4/// Creates an instance of [InspectorReferenceData].À WÀ W  À W"À W(   À XRÀ Xi  À XrÀ Xz  À X…KÀ XÎ9/// The id of the object in the widget inspector records. À XÕGÀ Y7/// The number of times the object has been referenced.À YÀ Y!tÀ Y>/// The value.    À V‘À V’À YÓ€áÀ YÙ  À Z€¡ À ZÀ Z(       ÀW'‚ŸÀX€â/// Accumulator for a count associated with a specific source location.
+///
+/// The accumulator stores whether the source location is [local] and what its
+/// [id] for efficiency encoding terse JSON payloads describing counts. ÀX#a ÀX#ÀX1 ÀX8ÀXG  ÀXTÀXc  ÀXjÀXy   ÀXˆÀX¥/// Location id. ÀX¬LÀXó9/// Whether the location is local to the current project. ÀXıÀY  ÀY5ÀY9 ÀYBÀYÀY"    ÀYH9ÀYd/// Reset the count.   ÀY…?ÀY¥/// Increment the count.    ÀYÈ•×À\‚‚³/// A stat tracker that aggregates a performance metric for [Element] objects at
+/// the granularity of creation locations in source code.
+///
+/// This class is optimized to minimize the size of the JSON payloads describing
+/// the aggregate statistics, for stable memory usage, and low CPU usage at the
+/// expense of somewhat higher overall memory usage. Stable memory usage is more
+/// important than peak memory usage to avoid the false impression that the
+/// user's app is leaking memory each frame.
+///
+/// The number of unique widget creation locations tends to be at most in the
+/// low thousands for regular flutter apps so the peak memory usage for this
+/// class is not an issue.  À]æ8À^ À^À^À^À^À^À^À^#]À^e$/// Locations with a non-zero count.À^~À^À^nÀ^}À^oÀ^…€æÀ_J€¡/// Locations that were added since stats were last exported.
+///
+/// Only locations local to the current project are included as a performance
+/// optimization.À_iÀ_jÀ_YÀ_hÀ_Z À_p…øÀ`€‰/// Increments the count associated with the creation location of [element] if
+/// the creation location is local to the current project. À`À`   Àel‚JÀe˜$/// Clear all aggregated statistics.   Àgº‡ãÀh<h/// Exports the current counts and then resets the stats to prepare to track
+/// the next frame of data. ÀhIÀhS    Ào¡€‘Ào§  ÀoÎ ÀoÔÀoç     ÀoîBÀp   ÀoîÀoï Àp4‡QÀu)„î/// A widget that enables inspecting the child widget's structure.
+///
+/// Select a location on your device or emulator and view what widgets and
+/// render object that best matches the location. An outline of the selected
+/// widget and terse summary information is shown on device with detailed
+/// information is shown in the observatory or in IntelliJ when using the
+/// Flutter Plugin.
+///
+/// The inspector has a select mode and a view mode.
+///
+/// In the select mode, tapping the device selects the widget that best matches
+/// the location of the touch and switches to view mode. Dragging a finger on
+/// the device selects the widget under the drag location but does not switch
+/// modes. Touching the very edge of the bounding box of a widget triggers
+/// selecting the widget even if another widget that also overlaps that
+/// location would otherwise have priority.
+///
+/// In the view mode, the previously selected widget is outlined, however,
+/// touching the device has the same effect it would have if the inspector
+/// wasn't present. This allows interacting with the application and viewing how
+/// the selected widget changes position. Clicking on the select icon in the
+/// bottom left corner of the application switches back to select mode. ÀuT€ª Àu˜Àu§;/// Creates a widget that enables inspection for the child.Àu®	Àuµ  Àu½ÀuÌ  ÀuÖ!Àuå   Àv<Àv9'/// The widget that is being inspected. ÀvC€ïÀw€¯/// A builder that is called to create the select button.
+///
+/// The `onPressed` callback passed as an argument to the builder should be
+/// hooked up to the returned widget.  Àw7LÀwZ   Àw7Àw8 Àw‡›Àw  Àwç ÀwçÀwü   ÀxÀx  Àx$!Àx<  ÀxJÀxT  Àxe/Àxu Àx‰Àx’Àx“Àx™€¥Ày*x/// Distance from the edge of the bounding box for an element to consider
+/// as selecting the edge of the bounding box.Ày; ÀyCƒÀyT   ÀyCÀyDÀzÊÀzÛ   ÀzÊÀzËÀ{Ğ€»À{Õ    À|†ÏÀ|”  À|¨À|¼  À|ÅÀ|Ù  À|æÀ|î  À|ûÀ}	  À}À}   Àƒb„À„ŞZ/// Returns the list of render objects located at the given position ordered
+/// by priority.
+///
+/// All render objects that are not offstage that match the location are
+/// included in the list of matches. Priority is given to matches that occur
+/// on the edge of a render object's bounding box and to matches found by
+/// [RenderBox.hitTest]. À„æÀ„î  À„÷À…   À‡nwÀ‡s  À‡~À‡†   Àˆé€‡Àˆî  ÀˆıÀ‰   À‰t€‹À‰y  À‰ŠÀ‰   ÀŠ‚§ÀŠ  ÀŠÀŠ&   ÀŒ®ªÀŒ³    À\aÀa    ÀÁƒßÀÔ  ÀÚÀè  ÀÁÀÂ À’¤ŠÀ’Ø-/// Mutable selection state of the inspector. À“€· À“6À“H0/// Creates an instance of [InspectorSelection].  À”q1À”„ À” À”¡À”’À”ŸÀ”“À•yÀ•} À•†À—TÀ—b  À™wÀ™€  	À“¾€°À”Tx/// Render objects that are candidates to be selected.
+///
+/// Tools may wish to iterate through the list of candidates.   À”¦nÀ”ª  À”µÀ”É   À•^À•fC/// Index within the list of candidates that is currently selected.   À•‹EÀ•  À••	À•š   À–W€ùÀ—,€¸/// Selected render object typically from the [candidates] list.
+///
+/// Setting [candidates] or calling [clear] resets the selection.
+///
+/// Returns null if the selection is invalid.   À—n€ÃÀ—r  À—zÀ—‰   À˜5>À™€Å/// Selected [Element] consistent with the [current] selected [RenderObject].
+///
+/// Setting [candidates] or calling [clear] resets the selection.
+///
+/// Returns null if the selection is invalid.   À™“KÀ™—  À™¦À™°   Àœ€›Àœ|\/// Whether the selected render object is attached to the tree or has gone
+/// out of scope.   À•ÔÀ•û/// Set the selection to empty.   Àšâ,Àšç     Àœ±ÁÀœ·  Àœì< ÀœòÀ À
+À   À,"ÀE   ÀS€ŒÀw  ÀŠÀ˜  ÀSÀTÀã€Àô  ÀÀ  À$À6  ÀãÀä Àtƒ—Àz  À¨` À¨À¿ ÀÂ%Àß  ÀüÀñÀşÀŸ>ÀŸQ  ÀŸ/ÀŸ#    ÀŸ_€‚ÀŸc  ÀŸmÀŸ   ÀŸå+ÀŸú   ÀŸåÀŸæÀ 4À )   À À À LtÀ ]  À nÀ ~  À LÀ MÀ ÄEÀ Õ  À ÛÀ ì  À ôÀ ü  À ÄÀ Å À¢‚À¢  À¢3€” À¢3À¢C À¢DÀ¢R  À¢YÀ¢h  À¢|À¢wÀ¢~À¢„À¢…À¢¥À¢›À¢§À¢­À¢®À¢¼À¢ÅÀ¢½À¢ËÀ¢Ö  À¢ŞÀ¢ì  À£à=À£ô   À£àÀ£áÀ¢ú€âÀ£  À£À£  À¢úÀ¢ûÀ¢À¢À¤!„À¤à€­/// State describing how the inspector overlay should be rendered.
+///
+/// The equality operator can be used to determine whether the overlay needs to
+/// be rendered again. À¥€¿ À¥À¥# À¥*À¥9  À¥IÀ¥X  À¥eÀ¥t  À¥ƒÀ¥’  À¥À¥­   À¥ÄÀ¥Ï  À¥ŞÀ¥õ  À¦'À¦  À¦,À¦9  À¦D!À¦X  À§ÒhÀ§æ   À§ÒÀ§ÓÀ¦jdÀ¦„  À¦‡À¦  À¦jÀ¦kÀ¤ÏÀ¤ĞÀ©RÀª|#/// A layer that outlines the selected [RenderObject] and candidate render
+/// objects that also match the last pointer location.
+///
+/// This approach is horrific for performance and is only used here because this
+/// is limited to debug mode. Do not duplicate the logic in production code. Àª¥‚ ÀªàÀªö8/// Creates a layer that displays the inspector overlay.ÀªıÀ«  À«À«+  À«9À«H   À¬ÃÀ¬Ö  À¬ä€èÀ­Á€Ç/// The rectangle in this layer's coordinate system that the overlay should
+/// occupy.
+///
+/// The scene must be explicitly recomposited after this property is changed
+/// (as described at [Layer]). À­Ñ€«À®l€‚/// Widget inspector root render object. The selection overlay will be painted
+/// with transforms relative to this render object. À®(À®Ÿ  À®®AÀ®ç&/// Picture generated from _lastState. À®ôÀ¯  À¯À¯   À¯2kÀ¯C   À¯2À¯3À¯¡„À¯²  À¯½À¯Î  À¯¡À¯¢À³·‡åÀ³Â  À³Ğ"À³î   À» ˆjÀ»¥  À»¼À»Ä  À»ÏÀ»×  À»ãÀ»ò  À¼À¼  À¼À¼  À¼2	À¼8  À¼AÀ¼G   ÀÄ€®ÀÄ, ÀÄ<ÀÄ<ÀÄSÀÄh  ÀÄsÀÄ{  ÀÄÀÄ–  ÀÄÀÄÀÄÀÄÀÄÀ‚¨ÀÅè/// Return whether or not a render object belongs to this inspector widget
+/// tree.
+/// The inspector selection is static, so if there are multiple inspector
+/// overlays in the same app (i.e. an storyboard), a selected or candidate
+/// render object may not belong to this tree. ÀÆÀÆ    ÀÈèÀÉÉ€·/// Interface for classes that track the source code location the their
+/// constructor was called from.
+///
+/// {@macro flutter.widgets.WidgetInspectorService.getChildrenSummaryTree}   ÀÉâÀÉñ      ÀÉÿƒçÀÊga/// A tuple with file, line, and column number, for displaying human-readable
+/// file locations. ÀÊu€¨ ÀÊ{ÀÊ„ ÀÊ‹ÀÊš  ÀÊ£ÀÊ²  ÀÊ»ÀÊÊ  ÀË	ÀË   ÀË!2ÀËO/// File path of the location. ÀËX)ÀË}/// 1-based line number. ÀË†-ÀË­/// 1-based column number. ÀË¸UÀÌ	@/// Optional name of the parameter or function at this location.  ÀÌ€ğÀÌ'    ÀÍ€ŞÀÍ   ÀÍÀÍ Àß=‚©ÀßÔ€/// Debugging message for DevTools deep links.
+///
+/// The [value] for this property is a string representation of the Flutter
+/// DevTools url. ÀàÏ Àá_Àáw?/// Creates a diagnostics property that displays a deep link to Flutter DevTools.
+///
+/// The [value] of this property will return a map of data for the Flutter
+/// DevTools deep link, including the full `url`, the Flutter DevTools `screenId`,
+/// and the `objectId` in Flutter DevTools that this diagnostic references.ÀáxÀá€  ÀáŒ
+Àá”  ÀáÀá£ÀáâÀá¤Àá¨Àá¸Àá­ÀáºÀáÌÀáÇÀáÎÀáİÀáŞ    ÀëØ“RÀìcq/// A delegate that configures how a hierarchy of [DiagnosticsNode]s are
+/// serialized by the Flutter Inspector. Àì²§ Àí*ÀíHs/// Creates an [InspectorSerializationDelegate] that serialize [DiagnosticsNode]
+/// for Flutter Inspector service.ÀíOÀíU  ÀícÀíi  Àí'Àí‡  Àí® Àí´  ÀíÔÀíÚ  ÀíïÀíõ  ÀîÀî"  Àî.$Àî4  ÀívÀí¦Àí§ÀíÊÀíèÀî	Àî]lÀîÂE/// Service used by GUI tools to interact with the [WidgetInspector]. ÀîÎÀïá€ú/// Optional [groupName] parameter which indicates that the json should
+/// contain live object ids.
+///
+/// Object ids returned as part of the json will remain live at least until
+/// [WidgetInspectorService.disposeGroup()] is called on [groupName]. ÀïïeÀğIL/// Whether the tree should only include nodes created by the local project. ÀğYiÀğ¥?/// Maximum descendants of [DiagnosticsNode] before truncating. ÀğÇ(ÀğŞ ÀğÇÀğÈÀğô"Àñ
+ ÀğôÀğõÀñ+Àñ2 ÀñÀñÀñKÀòÉ/// Callback to add additional experimental serialization properties.
+///
+/// This callback can be used to customize the serialization of DiagnosticsNode
+/// objects for experimental features in widget inspector clients such as
+/// [Dart DevTools](https://github.com/flutter/devtools). ÀòíMÀó	 Àó8Àó9Àó'Àó7Àó(Àó?+ÀóH    Àónƒ‘Àó  Àó¨Àó¹  ÀónÀóoÀ÷‚ZÀ÷0  À÷@À÷Q  À÷À÷Àùa€›Àùƒ  Àù’Àù©  Àù¯ÀùÀ  ÀùaÀùbÀú eÀú"  Àú3ÀúJ  ÀúPÀúa  Àú ÀúÀûiXÀû‹  ÀûÀû´  ÀûºÀûÌ  ÀûiÀûjÀüÅ‚cÀüò  ÀüüÀı  ÀıÀı  Àı(Àı/  ÀüÅÀüÆÀìJÀìKÀÿ,[Àÿ[  Àÿn ÀÿtÀÿ‚      Àÿ,Àÿ-Àÿ3ÀÿSÀÿ@ÀÿRÀÿ4Àÿ?Àÿ5ÀÿAÀÿKÀÿLÀÌ„ÁÀ	//// Does not hold keys from garbage collection.À	À	À	 À	  À	',À	7 À	BÀ	IÀ	PÀ	JÀ	QÀ	RÀ	XHÀ	Š/// Strings, numbers, booleans.À	À	ŸÀ	˜À	À	™À	œ À	¥jÀ	ª  À	·À	À   À
+,À
+¿€—/// Returns the value for the given [key] or null if [key] is not in the map
+/// or garbage collected.
+///
+/// Does not support records to act as keys. À
+ÂÀ
+Å   ÀC€ÇÀ„0/// Associates the [key] with the given [value]. ÀˆÀ‹  ÀÀ’   ÀÀK7/// Removes the value for the given [key] from the map. ÀRÀU   ÀsÀC#/// Removes all pairs from the map.   ÀüÀı      ÉƒL Î   ì ú  ¡¡
+   ¤€¾¤aD/// Calculate bounds for a render object and all of its descendants. ¤y¤‡   À QCƒõÀ Q_  À Q}À Q“  À QÀ Q¦  À Q­À QÄ   ÀÍèNÀÍí  ÀÍıÀÎ   ÀÎ8„¤ÀÏƒ0/// Transformer to parse and gather information about [DiagnosticsDebugCreator].
+///
+/// This function will be registered to [FlutterErrorDetails.propertiesTransformers]
+/// in [WidgetsBinding.initInstances].
+///
+/// This is meant to be called only in debug mode. In other modes, it yields an empty list. ÀÏ$ÀÏ¹   ÀÒŞƒmÀÓel/// Transform the input [DiagnosticsNode].
+///
+/// Return null if input [DiagnosticsNode] is not applicable. ÀÓ~ÀÓ  ÀÓ–ÀÓ¥   ÀÖMˆîÀÖg  ÀÖ„ÀÖ  ÀÖ—ÀÖ¦   Àáè‚]Àã/// Returns if an object is user created.
+///
+/// This always returns false if it is not called in debug mode.
+///
+/// {@macro flutter.widgets.WidgetInspectorService.getChildrenSummaryTree}
+///
+/// Currently is local creation locations are only available for
+/// [Widget] and [Element]. Àã)Àã1   ÀäG¢Àå€Á/// Returns true if a [Widget] is user created.
+///
+/// This is a faster variant of `debugIsLocalCreationLocation` that is available
+/// in debug and profile builds but only works for [Widget]. Àå)Àå1   Àåë³Àç#/// Returns the creation location of an object in String format if one is available.
+///
+/// ex: "file:///path/to/main.dart:4:3"
+///
+/// {@macro flutter.widgets.WidgetInspectorService.getChildrenSummaryTree}
+///
+/// Currently creation locations are only available for [Widget] and [Element]. Àç1Àç9   Àç {Àç«  ÀçÆÀçÎ   ÀèÇÀé€æ/// Returns the creation location of an object if one is available.
+///
+/// {@macro flutter.widgets.WidgetInspectorService.getChildrenSummaryTree}
+///
+/// Currently creation locations are only available for [Widget] and [Element]. Àé$Àé-   Àêş€ØÀë  ÀëÀë    ƒ‡€¿ƒéY/// Signature for the builder callback used by
+/// [WidgetInspector.selectButtonBuilder].  „„&  „.„<   „H€…L€û/// Signature for a method that registers the service extension `callback` with
+/// the given `name`.
+///
+/// Used as argument to [WidgetInspectorService.initServiceExtensions]. The
+/// [BindingBase.registerServiceExtension] implements this signature.  ……’  …™*…¼   À U:€«À U±n/// Signature for the selection change callback used by
+/// [WidgetInspectorService.selectionChangedCallback].    À Z¶À üoÀ `…R/// Service used by GUI tools to interact with the [WidgetInspector].
+///
+/// Calls to this object are typically made from GUI tools such as the [Flutter
+/// IntelliJ Plugin](https://github.com/flutter/flutter-intellij/blob/master/README.md)
+/// using the [Dart VM Service](https://github.com/dart-lang/sdk/blob/main/runtime/vm/service/service.md).
+/// This class uses its own object id and manages object lifecycles itself
+/// instead of depending on the [object ids](https://github.com/dart-lang/sdk/blob/main/runtime/vm/service/service.md#getobject)
+/// specified by the VM Service Protocol because the VM Service Protocol ids
+/// expire unpredictably. Object references are tracked in groups so that tools
+/// that clients can use dereference all objects in a group with a single
+/// operation making it easier to avoid memory leaks.
+///
+/// All methods in this class are appropriate to invoke from debugging tools
+/// using the VM service protocol to evaluate Dart expressions of the
+/// form `WidgetInspectorService.instance.methodName(arg1, arg2, ...)`. If you
+/// make changes to any instance method of this class you need to verify that
+/// the [Flutter IntelliJ Plugin](https://github.com/flutter/flutter-intellij/blob/master/README.md)
+/// widget inspector support still works with the changes.
+///
+/// All methods returning String values return JSON.  À `*€ĞÀ `Ë€ˆ/// Ring of cached JSON values to prevent JSON from being garbage
+/// collected before it can be requested over the VM service protocol.À `ÜÀ `àÀ `èÀ `áÀ `çÀ `éÀ `êÀ `ğÀ `ùÀ `ñÀ `õÀ `şÀ a À aÀ a…CÀ a£ À a¯À aÆÀ aÇÀ aÍiÀ c/// Whether the inspector is in select mode.
+///
+/// In select mode, pointer interactions trigger widget selection instead of
+/// normal interactions. Otherwise the previously selected widget is
+/// highlighted but the application can be interacted with normally.	À bßÀ bàÀ cÀ c*À c/À c+À c0À c5À c1À c 5À c¬ À cĞÀ cÚ€õÀ d¯€µ/// Ground truth tracking what object(s) are currently selected used by both
+/// GUI tools such as the Flutter IntelliJ Plugin and the [WidgetInspector]
+/// displayed on the device.À d»À dÍÀ dÎÀ dÔ‰À fEA/// Callback typically registered by the [WidgetInspector] to receive
+/// notifications when [selection] changes.
+///
+/// The Flutter IntelliJ Plugin does not need to listen for this event as it
+/// instead listens for `dart:developer` `inspect` events which also trigger
+/// when the inspection target changes on device. À fbÀ g5€/// The VM service protocol does not keep alive object references so this
+/// class needs to manually manage groups of objects that should be kept
+/// alive.	À gdÀ geÀ g?À gcÀ g@À gHÀ gKÀ gbÀ gLÀ gjaÀ g” À gÉÀ gÊÀ g©À gÈÀ gªÀ g²À gÏEÀ gí À gûÀ hÀ hÀ hÀ hÀ hÀ hÀ hÀ h À h&À h,vÀ hR/// The pubRootDirectories that are currently configured for the widget inspector. À h§}À hõ//// Memoization for [_isLocalCreationLocation].À iÀ iÀ i!À iÀ iÀ i"À i#À i)&À i. À iJÀ iS!À iX À ioÀ „F9À „Z À „pÀ „„À „ˆ À „ÀJ‹ÀJ‘  ÀJ¬ÀJº  ÀOşQÀP! ÀP1ÀPMÀPNÀPSQÀPv ÀP†ÀP¢ÀP£À adÀ al)/// The current [WidgetInspectorService].   À c;aÀ cS  À c\À ct  À c;À c<WÀ iy‚ùÀ kkÏ/// Registers a service extension method with the given name (full
+/// name "ext.flutter.inspector.name").
+///
+/// The given callback is called when the extension method is called. The
+/// callback must return a value that can be converted to JSON using
+/// `json.encode()` (see [JsonEncoder]). The return value is stored as a
+/// property named `result` in the JSON. In case of failure, the failure is
+/// reported to the remote caller and is dumped to the logs. À kŠÀ k›  À k¤*À kÇ  À kÔ;À kÿ  À kYÀ kZÀ lv‚,À m€„/// Registers a service extension method with the given name (full
+/// name "ext.flutter.inspector.name"), which takes no arguments. À m*À m;  À mD.À mk  À mx;À m£   À n¦ƒqÀ pH/// Registers a service extension method with the given name (full
+/// name "ext.flutter.inspector.name"), which takes a single optional argument
+/// "objectGroup" specifying what group is used to manage lifetimes of
+/// object references in the returned JSON (see [disposeGroup]).
+/// If "objectGroup" is omitted, the returned JSON will not include any object
+/// references to avoid leaking memory. À psÀ p„  À p@À pÆ  À pÓ;À pş   À r…À t‚W/// Registers a service extension method with the given name (full
+/// name "ext.flutter.inspector.name"), which takes a single argument
+/// "enabled" which can have the value "true" or the value "false"
+/// or can be omitted to read the current value. (Any value other
+/// than "true" is considered equivalent to "false". Other arguments
+/// are ignored.)
+///
+/// Calls the `getter` callback to obtain the value when
+/// responding to the service extension method being called.
+///
+/// Calls the `setter` callback with the new value when the
+/// service extension method is called with a new value. À t´À tÅ  À tÎ&À tï  À tú&À u  À u&;À uQ   À w6‚ÃÀ y¶/// Sends an event when a service extension's state is changed.
+///
+/// Clients should listen for this event to stay aware of the current service
+/// extension state. Any service extension that manages a state should call
+/// this method on state change.
+///
+/// `value` reflects the newly updated service extension value.
+///
+/// This will be called automatically for service extensions registered via
+/// [registerBoolServiceExtension]. À y&À y.  À y3À y<   À yıƒtÀ {5*/// Registers a service extension method with the given name (full
+/// name "ext.flutter.inspector.name") which takes an optional parameter named
+/// "arg" and a required parameter named "objectGroup" used to control the
+/// lifetimes of object references in the returned JSON (see [disposeGroup]). À {\À {m  À {vRÀ {Á  À {Î;À {ù   À }u„‡À ~)€¨/// Registers a service extension method with the given name (full
+/// name "ext.flutter.inspector.name"), that takes arguments
+/// "arg0", "arg1", "arg2", ..., "argn". À ~PÀ ~a  À ~j?À ~¢  À ~¯;À ~Ú   À ‚ ‚BÀ ƒG"/// Cause the entire tree to be rebuilt. This is used by development tools
+/// when the application code has changed and is being hot-reloaded, to cause
+/// the widget tree to pick up any changed implementations.
+///
+/// This is expensive and should not be called except during development.  À ƒ-À ƒ.À „£ƒyÀ „¨  À „¿À „Ô   À ˆ 2À ‰€î/// Resets the count of errors since the last hot reload.
+///
+/// This data is sent to clients as part of the 'Flutter.Error' service
+/// protocol event. Clients may choose to display errors received after the
+/// first error differently.   À ‰V‚GÀ Š€µ/// Whether structured errors are enabled.
+///
+/// Structured errors provide semantic information that can be used by IDEs
+/// to enhance the display of errors with rich formatting.   À ‹¡¨ßÀ ŒÊ/// Called to register service extensions.
+///
+/// See also:
+///
+///  * <https://github.com/dart-lang/sdk/blob/main/runtime/vm/service/service.md#rpcs-requests-and-responses>
+///  * [BindingBase.initServiceExtensions], which explains when service
+///    extensions can be used. À Œà2À    À ´„ZÀ ´‰    À ´âYÀ µÄ€²/// Clear all InspectorService object references.
+///
+/// Use this method only for testing to ensure that object references from one
+/// test case do not impact other test cases.  À µÀ µÀ µ²À µ³À ¶?*À ·€†/// Reset all InspectorService state.
+///
+/// Use this method only for testing to write hermetic tests for
+/// WidgetInspectorService.  À ¶ÎÀ ¶ÏÀ ¶ãÀ ¶äÀ ¶ğÀ ¶ñÀ ·mˆÀ ¸(€ /// Free all references to objects in a group.
+///
+/// Objects and their associated ids in the group may be kept alive by
+/// references from a different group. À ¸5À ¸=  À ¸À ¸À ¸ùKÀ ¸ş  À ¹ À ¹/   À ºHƒìÀ ºØv/// Returns a unique id for [object] that will remain live at least until
+/// [disposeGroup] is called on [groupName]. À ºİÀ ºæ  À ºíÀ ºõ  À ºÃÀ ºÄÀ ¾8À ¾Ö€‡/// Returns whether the application has rendered its first frame and it is
+/// appropriate to display the Widget tree in the inspector. À ¾êÀ ¾ó  À ¾ÄÀ ¾ÅÀ ¿H‚7À ÀM€å/// Returns the Dart object associated with a reference id.
+///
+/// The `groupName` parameter is not required by is added to regularize the
+/// API surface of the methods in this class called from the Flutter IntelliJ
+/// Plugin. À ÀV
+À À_  À ÀdÀ Àm  À À8À À9À Áƒ‚ÂÀ Ã‰Ş/// Returns the object to introspect to determine the source location of an
+/// object's class.
+///
+/// The Dart object for the id is returned for all cases but [Element] objects
+/// where the [Widget] configuring the [Element] is returned instead as the
+/// class of the [Widget] is more relevant than the class of the [Element].
+///
+/// The `groupName` parameter is not required by is added to regularize the
+/// API surface of methods called from the Flutter IntelliJ Plugin. À Ã£	À Ã«  À Ã°À Ã¹  À ÃtÀ ÃuÀ ÄI‚ÈÀ Å#€½/// Remove the object with the specified `id` from the specified object
+/// group.
+///
+/// If the object exists in other groups it will remain alive and the object
+/// id will remain valid. À Å-
+À Å6  À Å9À ÅA  À ÅÀ ÅÀ Ç‚À È¯/// Set the list of directories that should be considered part of the local
+/// project.
+///
+/// The local project directories are used to distinguish widgets created by
+/// the local project from widgets created from inside the framework
+/// or other packages. À ÈÅÀ ÈÓ  À È'À È(À È4À È5À È?À È¦À ÈEÀ ÈoÀ ÉÒÀ Êˆ6/// Resets the list of directories, that should be considered part of the
+/// local project, to the value passed in [pubRootDirectories].
+///
+/// The local project directories are used to distinguish widgets created by
+/// the local project from widgets created from inside the framework
+/// or other packages.  À ÊaÀ ÊbÀ ÊvÀ ÊwÀ Êô‚ĞÀ Ì/// Add a list of directories that should be considered part of the local
+/// project.
+///
+/// The local project directories are used to distinguish widgets created by
+/// the local project from widgets created from inside the framework
+/// or other packages. À Ì,À Ì:  À ÌÀ ÌÀ ÍÈ‚ïÀ Î÷/// Remove a list of directories that should no longer be considered part
+/// of the local project.
+///
+/// The local project directories are used to distinguish widgets created by
+/// the local project from widgets created from inside the framework
+/// or other packages. À ÏÀ Ï  À ÎåÀ ÎæÀ Ğ»[À Ñ[\/// Returns the list of directories that should be considered part of the
+/// local project. À ÑsÀ Ñˆ  À ÑÀ ÑÀ Ñ)À Ñ*À ÒçÀ Ó–[/// Set the [WidgetInspector] selection to the object matching the specified
+/// id if the object is valid object to set as the inspector selection.
+///
+/// Returns true if the selection was changed.
+///
+/// The `groupName` parameter is not required by is added to regularize the
+/// API surface of methods called from the Flutter IntelliJ Plugin. À Ó§
+À Ó°  À ÓµÀ Ó¾  À Ó„À Ó…À Ôƒ¡À ÕpJ/// Set the [WidgetInspector] selection to the specified `object` if it is
+/// a valid object to set as the inspector selection.
+///
+/// Returns true if the selection was changed.
+///
+/// The `groupName` parameter is not needed but is specified to regularize the
+/// API surface of methods called from the Flutter IntelliJ Plugin. À Õ}À Õ†  À ÕÀ Õ˜  À Õ^À Õ_À ×ª‚KÀ ×÷E/// Notify attached tools to navigate to an object's source location. À Ø	À Ø   À Ùù›À ÚSO/// Returns a DevTools uri linking to a specific element on the inspector page. À ÚsÀ Ú|   À Û˜„îÀ Ü g/// Returns the DevTools inspector uri for the given vm service connection and
+/// inspector reference. À Ü5À Ü=  À ÜÀ ÜÀ àŠ¦À áÃ/// Returns JSON representing the chain of [DiagnosticsNode] instances from
+/// root of the tree to the [Element] or [RenderObject] matching `id`.
+///
+/// The JSON contains all information required to display a tree view with
+/// all nodes other than nodes along the path collapsed. À áÒ	À áÚ  À áİÀ áå  À á¯À á°À â4‚•À âB  À âR
+À â[  À â^À âf   À äÍÀ äã  À äóÀ å
+  À å'À å3   À æP‚À æ^  À æxÀ æ  À æ‹À æš   À èsÀ è  À è¥À è®  À è¶À è¾  À èÊÀ èĞ   À é‡TÀ é£  À é¿À éÎ  À éÛÀ éã   À êß€šÀ êõ  À ëÀ ë  À ë!'À ëA   À ë}€öÀ ë‚  À ë À ë©   À ìw‚/À ì|  À ì™À ì¡   À îªyÀ îé7/// Memoized version of [_isLocalCreationLocationImpl]. À ïÀ ï
+   À ğ'‚´À ñè1/// Wrapper around `json.encode` that uses a ring of cached values to prevent
+/// the Dart garbage collector from collecting objects between when
+/// the value is returned over the VM service protocol and when the
+/// separate observatory protocol command has to be used to retrieve its full
+/// contents. À ñøÀ ò   À òßúÀ òõ  À óÀ ó  À ó%!À ó*   À ôİ€éÀ ôø  À õ
+À õ!  À õ+'À õK  À õZ À õu   À õÊÀ ö_|/// Returns a JSON representation of the properties of the [DiagnosticsNode]
+/// object that `diagnosticsNodeId` references. À ömÀ öu  À ö‡À ö  À öKÀ öLÀ öìWÀ öú  À ÷	À ÷  À ÷#À ÷+   À øGÀ øÍz/// Returns a JSON representation of the children of the [DiagnosticsNode]
+/// object that `diagnosticsNodeId` references. À øÙÀ øá  À øóÀ øû   À ùVšÀ ùc  À ùpÀ ùy  À ù‹À ù“   À úôƒ8À ı‘‚y/// Returns a JSON representation of the children of the [DiagnosticsNode]
+/// object that `diagnosticsNodeId` references only including children that
+/// were created directly by user code.
+///
+/// {@template flutter.widgets.WidgetInspectorService.getChildrenSummaryTree}
+/// Requires [Widget] creation locations which are only available for debug
+/// mode builds when the `--track-widget-creation` flag is enabled on the call
+/// to the `flutter` tool. This flag is enabled by default in debug builds.
+/// {@endtemplate}
+///
+/// See also:
+///
+///  * [isWidgetCreationTracked] which indicates whether this method can be
+///    used. À ı¨À ı°  À ıÂÀ ıÊ   À ş0€¨À şA  À şVÀ ş_   À şÜ€ûÀ ÿF:/// If possible, returns [DiagnosticsNode] for the object. À ÿ^À ÿg  À ÿÀ ÿÀ ÿÛ»À ÿè  À  À 	  À À "   ÀšîÀé;/// Returns a JSON representation of the children of the [DiagnosticsNode]
+/// object that [diagnosticableId] references providing information needed
+/// for the details subtree view.
+///
+/// The details subtree shows properties inline and includes all children
+/// rather than a filtered set of important children. ÀÀ  ÀÀ$   ÀŒ‚À™  À´À½  ÀÎÀÖ   ÀÊÀ¢  À»ÀÌ   Àk€¶À  À›À¬  Àµ'ÀÕ   À% À;  ÀPÀg  Àq'À‘   À	É€¾À
++V/// Returns a JSON representation of the [DiagnosticsNode] for the root
+/// [Element]. À
+9À
+A   À
+‹€ÓÀ
+¡  À
+°À
+¸   ÀbÀ€“/// Returns a JSON representation of the [DiagnosticsNode] for the root
+/// [Element] showing only nodes that should be included in a summary tree. ÀÀ"   Àw‚À  À¬À´  ÀÄoÀ   À‹ƒ]À¨  ÀÓÀè   Àì‚ÑÀöê/// Returns a JSON representation of the subtree rooted at the
+/// [DiagnosticsNode] object that `diagnosticsNodeId` references providing
+/// information needed for the details subtree view.
+///
+/// The number of levels of the subtree that should be returned is specified
+/// by the [subtreeDepth] parameter. This value defaults to 2 for backwards
+/// compatibility.
+///
+/// See also:
+///
+///  * [getChildrenDetailsSubtree], a method to get children of a node
+///    in the details subtree. ÀÀ  À*À2  ÀBÀG  ÀUÀÁÍÀ×  ÀïÀø  ÀÀ  À$À)   À’WÀ÷N/// Returns a [DiagnosticsNode] representing the currently selected [Element]. À	À  À&À.  ÀãÀäÀí‰$Àø‚Ó/// Captures an image of the current state of an [object] that is a
+/// [RenderObject] or [Element].
+///
+/// The returned [ui.Image] has uncompressed raw RGBA bytes and will be scaled
+/// to be at most [width] pixels wide and [height] pixels tall. The returned
+/// image will never have a scale between logical pixels and the
+/// size of the output image larger than maxPixelRatio.
+/// [margin] indicates the number of pixels relative to the un-scaled size of
+/// the [object] to include as a margin to include around the bounds of the
+/// [object] in the screenshot. Including a margin can be useful to capture
+/// areas that are slightly outside of the normal bounds of an object such as
+/// some debug paint information. ÀÀ  ÀÀ/  À9ÀJ  ÀUÀ]  ÀnÀv  ÀÀ”  ÀÙÀÚÀeÀ…À À!”®À!2  À!NÀ!c   À5Ç‚ÒÀ5ä  À5ğÀ6   À8‚×À8º  À8ÉÀ8Ş   À;xƒÖÀ;•  À;­À;Â   À?R€ßÀ?T À?aÀ?aÀ?dÀ?m  À?yÀ?   À@5À@K  À@^À@g  À@{À@ƒ   ÀA>QÀAO  ÀAqÀAz   ÀB“‚ÀC”€ñ/// Returns a [DiagnosticsNode] representing the currently selected [Element]
+/// if the selected [Element] should be shown in the summary tree otherwise
+/// returns the first ancestor of the selected [Element] shown in the summary
+/// tree. ÀC­ÀC¶  ÀCÊÀCÒ   ÀD˜€±ÀD£  ÀDÅÀDÎ   ÀEMƒÀE^  ÀEÀEŠ   ÀHY€úÀHo  ÀH‰ÀH’  ÀH¦ÀH®   ÀIW0ÀIğ€/// Returns whether [Widget] creation locations are available.
+///
+/// {@macro flutter.widgets.WidgetInspectorService.getChildrenSummaryTree}   ÀJÊ€ŠÀJÏ  ÀJİÀJç   ÀKX€ûÀK]  ÀKiÀKs   ÀLW€‹ÀL\  ÀLlÀLt  ÀL~"ÀLœ   ÀLæÈÀMı€ú/// All events dispatched by a [WidgetInspectorService] use this method
+/// instead of calling [developer.postEvent] directly.
+///
+/// This allows tests for [WidgetInspectorService] to track which events were
+/// dispatched by overriding this method. ÀNÀN  ÀN"ÀN8  ÀNHÀNP  ÀMëÀMìÀNXÀN²HÀO¾€ï/// All events dispatched by a [WidgetInspectorService] use this method
+/// instead of calling [developer.inspect].
+///
+/// This allows tests for [WidgetInspectorService] to track which events were
+/// dispatched by overriding this method. ÀOÆÀOÏ  ÀO¬ÀO­ÀP©\ÀP®  ÀP¿ÀPÈ  ÀPĞÀPÖ   ÀQ	„èÀQ  ÀQÀQ%   ÀUõ.ÀVß€Ú/// This method is called by [WidgetsBinding.performReassemble] to flush caches
+/// of obsolete values after a hot reload.
+///
+/// Do not call this method directly. Instead, use
+/// [BindingBase.reassembleApplication].    À¨>À¨H À¨\À¨_FÀ¨k 	À¨†À¨‹À¨ŒÀ¨”À¨¤À¨•À¨šÀ¨À¨¢À¨§SÀ¨³ 	À¨ØÀ¨İÀ¨ŞÀ¨æÀ¨ùÀ¨çÀ¨ìÀ¨ñÀ¨öÀ¨üSÀ© 	À©/À©4À©5À©=À©NÀ©>À©CÀ©GÀ©KÀÇl&ÀÇy ÀÇÀÇ”#ÀÇ¡ ÀÇ´ÀÇ¹)ÀÇÆ ÀÇŞÀÇå€”ÀÈbo/// Interpret pointer up events within with this margin as indicating the
+/// pointer is moving off the device.ÀÈvÀÈ|iÀÈŒ ÀÈœÀÈ¥ÀÈäÀÈ®ÀÈ©ÀÈ°ÀÈµÀÈÀÀÈ¶ÀÈÍÀÈÅÀÈÏÀÈİÀÈ×ÀÈßÀê<Àê§ ÀêÇÀêÈÀê·ÀêÆÀê¸ÀêÃÀêË0Àêá ÀêùÀêúÀêîÀêøÀêïÀÿ‰‰@À©ˆ&/// Annotation which marks a function as a widget factory for the purpose of
+/// widget creation tracking.
+///
+/// When widget creation tracking is enabled, the framework tracks the source
+/// code location of the constructor call for each widget instance. This
+/// information is used by the DevTools to provide an improved developer
+/// experience. For example, it allows the Flutter inspector to present the
+/// widget tree in a manner similar to how the UI was defined in your source
+/// code.
+///
+/// [Widget] constructors are automatically instrumented to track the source
+/// code location of constructor calls. However, there are cases where
+/// a function acts as a sort of a constructor for a widget and a call to such
+/// a function should be considered as the creation location for the returned
+/// widget instance.
+///
+/// Annotating a function with this annotation marks the function as a widget
+/// factory. The framework will then instrument that function in the same way
+/// as it does for [Widget] constructors.
+///
+/// Tracking will not work correctly if the function has optional positional
+/// parameters.
+///
+/// Currently this annotation is only supported on extension methods.
+///
+/// {@tool snippet}
+///
+/// This example shows how to use the [widgetFactory] annotation to mark an
+/// extension method as a widget factory:
+///
+/// ```dart
+/// extension PaddingModifier on Widget {
+///   @widgetFactory
+///   Widget padding(EdgeInsetsGeometry padding) {
+///     return Padding(padding: padding, child: this);
+///   }
+/// }
+/// ```
+///
+/// When using the above extension method, the framework will track the
+/// creation location of the [Padding] widget instance as the source code
+/// location where the `padding` extension method was called:
+///
+/// ```dart
+/// // continuing from previous example...
+/// const Text('Hello World!')
+///     .padding(const EdgeInsets.all(8));
+/// ```
+///
+/// {@end-tool}
+///
+/// See also:
+///
+/// * the documentation for [Track widget creation](https://docs.flutter.dev/development/tools/devtools/inspector#track-widget-creation).À¹ÀÇÀÈ   <€†€¤€¥€º€á€ø:QZj§ºËä÷‚‚‚ ‚J‚s‚œ‚Â‚Ã‚Ö‚ëƒƒƒ0ƒPƒrƒ†ƒ‡ƒ¶ƒá„G„H„˜„®„²„ş…D……—…Å…É…Ê†††O†m††«†¬†Â†Ã†Ï†ü‡‡ ‡!‡-‡:‡d‡„‡ ‡½‡Äˆˆˆˆˆbˆ³ˆÚ‰‰‰4‰T‰i‰Š‰‹‰¡‰½‰¾‰ÊŠŠ8ŠrŠvŠwŠƒŠÀŠö‹2‹6‹7‹C‹¥‹éŒ3Œ7Œ8ŒDŒ£Œæ/34@Û.‡‹Œ˜Òú(,-9n•ÂÆÇÓ9jno{µÛ‘‘‘‘‘c‘—‘Ñ‘Õ‘Ö‘â’*’[’’’–’—’£’Ø’û“$“(“)“5“_“€“§“«“¬“¸“Ø“ô””””'”e”‘”Ã”Ç”È”Ô”ş••F•J•K•W•€• •Æ•Ê•Ë•×–%–U–‹–––œ–É–ì————&—À˜˜x˜|˜}˜‰˜Ù™™E™I™J™V™€™¡™È™Ì™Í™Ùš1štš½šÁšÂšÎ››P›Š›››››²›şœKœ–œĞœñœõœö*EIJVv‘²¶·ÃÓåı<`Š›ÅŞıŸŸŸŸ2ŸJŸhŸlŸmŸyŸ¡Ÿ¿ŸãŸçŸèŸô  : ] a b n  Â Æ È É¡¡c¡d¡’¡È¡ÿ¢L¢”¢±¢ô£££#£d£j£k£££ö£ü¤¤¤¤¤¤\¤¤Ô¤Ö¤×¥'¥x¥®¥º¥ç¦¦¦¦¦]¦o¦‡¦›¦µ¦ê¦ë§§.§/§g§‹§Œ§Û§÷§ø¨8¨>¨¨œ¨À¨Á©©©\©¥©µ©»ª
+ªª@ªAª’ª³ªÓªì«««:«^«b«d«e«£«§«ö¬¬k¬»­­W­¤­·­ò®®=®`®®¬®Û®Ü®û®ü¯¯:¯e¯‚¯¨¯©¯µ¯Ë¯ğ°°<°D°m°Â°Ï°ü±±±!±"±F±†±–±·±è²²@²O²€²­²Ø²à²ó²ı³³!³"³G³n³“³Ğ´ ´6´q´š´Å´áµ	µµµ>µDµHµIµUµvµ™µÁµÅµÆµò¶¶#¶)¶z¶Æ¶ê·
+·'·E·I·J·V·x·¡·Á·è¸¸_¸‚¸»¸Ã¸Ğ¸ø¹¹H¹^¹ˆ¹–¹œ¹ ¹¡¹­¹üºº_ºŸºÚºç»»4»U»t»}»ƒ»‡»ˆ»”»Ë¼¼-¼W¼y¼™¼À¼è¼î½½1½[½„½Š½½½à½æ¾4¾…¾¾¾Ä¿¿C¿I¿—¿ĞÀ @ À @oÀ @ƒÀ @‰À @ØÀ AÀ AdÀ A´À AïÀ AõÀ BÀ BÀ BZÀ BªÀ BïÀ C?À CbÀ CÀ CšÀ C·À CÔÀ CÛÀ DÀ D=À DnÀ DtÀ D¼À EÀ E:À EnÀ EŠÀ E‘À E’À EÆÀ FÀ FeÀ FÀ FêÀ G	À G[À GÀ GšÀ GÒÀ H"À HnÀ H«À HÄÀ HäÀ HíÀ HóÀ HôÀ IBÀ IxÀ I¨À IÔÀ J%À JCÀ JjÀ JŠÀ J±À J²À JÖÀ JâÀ K#À K5À K\À K…À KÀ K“À K”À KŞÀ L+À LpÀ L¯À L°À LşÀ MÀ MÀ MÀ MTÀ MaÀ MeÀ M¶À MöÀ NÀ NZÀ N{À N”À N¬À NÈÀ NİÀ NãÀ NäÀ O3À OQÀ ORÀ O€À O†À OÔÀ P À PoÀ PÀ P¸À P¹À PîÀ PôÀ Q'À Q@À QBÀ QCÀ Q{À Q›À Q«À QÊÀ QÏÀ RÀ R*À R;À R?À R—À RÅÀ RñÀ SÀ SSÀ S†À S·À SÚÀ SõÀ TÀ T8À TVÀ ToÀ T{À T—À T¦À T®À T´À TÌÀ TĞÀ U(À U7À U9À U:À UrÀ U©À UæÀ UçÀ V3À VWÀ V[À V‘À V¤À VÃÀ VúÀ W-À WfÀ W¶À WõÀ XÀ XÀ X À X!À XKÀ XOÀ XPÀ XoÀ XpÀ X‚À XƒÀ X¿À XÒÀ XÓÀ YÀ YÀ YÀ Y0À YFÀ Y^À YyÀ YÀ Y’À Y–À Y˜À Y™À YÓÀ ZÀ Z-À ZLÀ ZzÀ ZŸÀ Z§À Z¯À Z³À ZµÀ Z¶À ZüÀ [ À [PÀ [¨À \À \^À \ßÀ ],À ]|À ]ÆÀ ]üÀ ^ À ^MÀ ^“À ^âÀ _0À _•À _ĞÀ _ÔÀ `	À `(À `lÀ `µÀ `üÀ aÀ aÀ aHÀ aƒÀ aÊÀ aËÀ aúÀ b À bOÀ b–À bİÀ bòÀ c8À c9À cFÀ cÀ c™À cÀ cÀ c×À cØÀ d'À duÀ d”À dÑÀ dÒÀ eÀ eHÀ eNÀ eÀ eìÀ f À f_À f`À f¬À f÷À gÀ ghÀ gÍÀ hÀ h)À h*À hÀ h¤À h¥À h×À i&À i'À iQÀ ivÀ iwÀ i¼À iæÀ iìÀ j8À jÀ jÊÀ kÀ kWÀ kdÀ k†À k À kĞÀ lÀ lÀ l/À lNÀ lhÀ loÀ lsÀ ltÀ l¹À lıÀ m&À m@À mtÀ mµÀ m¼À mÚÀ mìÀ n%À ncÀ nlÀ n˜À nŸÀ n£À n¤À néÀ o:À oƒÀ oÆÀ pÀ pAÀ poÀ p‰À pÏÀ qÀ qÀ q5À qGÀ q€À qØÀ qáÀ rÀ rÀ rÀ rÀ r^À r¦À rëÀ s/À svÀ sŠÀ sÀ sËÀ t
+À tÀ tNÀ t‰À t°À tÊÀ töÀ u"À ucÀ ujÀ uˆÀ ušÀ uÓÀ vÀ vBÀ vaÀ v™À v£À vóÀ vüÀ w(À w/À w3À w4À wvÀ w|À wÌÀ xÀ x=À xCÀ x…À x‹À xÙÀ xÿÀ yDÀ ySÀ yÀ yšÀ yÎÀ yæÀ yïÀ yöÀ yúÀ yûÀ z@À z‘À zŞÀ {.À {XÀ {rÀ {ÊÀ |À |À |0À |BÀ |{À |²À |ÔÀ }'À }2À };À }gÀ }nÀ }rÀ }sÀ }¸À }÷À ~"À ~LÀ ~fÀ ~«À ~ìÀ ~óÀ À #À \À ŠÀ ¡À ¸À ãÀ €À €:À €MÀ €`À €lÀ €À €‰À €ÖÀ À {À ½À ÆÀ òÀ ùÀ ıÀ şÀ ‚KÀ ‚›À ‚ÙÀ ‚ßÀ ƒ+À ƒ8À ƒXÀ ƒ”À ƒ»À ƒ÷À „À „À „?À „CÀ „DÀ „À „‚À „ À „¡À „ŞÀ …À …9À …_À …‡À … À …ÁÀ …ëÀ †À †À †À †À †MÀ †pÀ †©À †ŞÀ ‡À ‡bÀ ‡oÀ ‡ÊÀ ‡ĞÀ ‡ÑÀ ‡îÀ ˆÀ ˆÀ ˆÀ ˆZÀ ˆ`À ˆªÀ ˆøÀ ‰À ‰3À ‰OÀ ‰SÀ ‰TÀ ‰À ‰‡À ‰ÕÀ ŠÀ Š7À Š~À Š“À Š­À Š½À ‹ À ‹iÀ ‹|À ‹†À ‹šÀ ‹À ‹ŸÀ ‹ÌÀ ‹ÒÀ ‹âÀ ‹èÀ ŒXÀ Œ¢À ŒÃÀ À mÀ nÀ •À ÏÀ ÕÀ À À EÀ XÀ bÀ cÀ ¬À ­À ĞÀ À cÀ €À ŞÀ À À 8À ?À @À cÀ ›À âÀ ÿÀ ‘CÀ ‘jÀ ‘tÀ ‘±À ‘ĞÀ ‘ÙÀ ’À ’À ’À ’2À ’ƒÀ ’™À ’¾À “À “CÀ “hÀ “œÀ “°À “¼À “ãÀ ”À ”'À ”^À ”˜À ”âÀ •À •)À •=À •PÀ •~À •’À •À •©À •×À •àÀ •áÀ –À –OÀ –À –¦À –ÕÀ –éÀ –õÀ —À —DÀ —[À —ŒÀ —¸À ˜	À ˜'À ˜hÀ ˜•À ˜ÓÀ ˜áÀ ™/À ™BÀ ™jÀ ™vÀ ™À ™¯À ™¸À ™¾À ™¿À ™äÀ š(À šCÀ š_À štÀ š}À š©À š°À šÚÀ ›À ›@À ›\À ›qÀ ›zÀ ›¦À ›­À ›ÒÀ œÀ œ:À œfÀ œmÀ œ“À œĞÀ À 9À NÀ WÀ ƒÀ ŠÀ °À ùÀ %À JÀ _À hÀ ”À ›À ÁÀ Ÿ
+À Ÿ6À Ÿ[À ŸpÀ ŸyÀ Ÿ¥À Ÿ¬À ŸÒÀ  À  JÀ  rÀ  ‡À  À  ¼À  ÃÀ  áÀ ¡*À ¡NÀ ¡zÀ ¡À ¡§À ¡ëÀ ¢À ¢9À ¢@À ¢fÀ ¢¨À ¢ÉÀ ¢õÀ ¢üÀ £"À £cÀ £ƒÀ £¯À £¶À £ÜÀ ¤À ¤9À ¤eÀ ¤lÀ ¤mÀ ¤“À ¤İÀ ¥À ¥2À ¥9À ¥:À ¥`À ¥­À ¥ÙÀ ¦À ¦À ¦À ¦7À ¦xÀ ¦˜À ¦ÄÀ ¦ËÀ ¦õÀ §AÀ §lÀ §˜À §ŸÀ §½À ¨À ¨LÀ ¨xÀ ¨À ¨À ¨âÀ ©À ©RÀ ©“À ©µÀ ©İÀ ©üÀ ª#À ªcÀ ªpÀ ª{À ª„À ª°À ª·À ªİÀ «"À «FÀ «rÀ «yÀ «ŸÀ «ëÀ ¬À ¬BÀ ¬IÀ ¬JÀ ¬oÀ ¬ºÀ ¬ãÀ ­À ­À ­4À ­rÀ ­«À ­ÙÀ ®
+À ®<À ®=À ®oÀ ®•À ®ÊÀ ¯À ¯6À ¯oÀ ¯²À ¯òÀ °,À °7À °TÀ °ˆÀ °’À °ìÀ °íÀ ±À ±\À ±gÀ ±pÀ ±œÀ ±£À ±ÁÀ ²
+À ²2À ²^À ²eÀ ²ƒÀ ²ÁÀ ²ŞÀ ³
+À ³À ³/À ³pÀ ³À ³¼À ³ÃÀ ³áÀ ´&À ´JÀ ´vÀ ´}À ´À ´‚À ´™À ´ºÀ ´ÛÀ ´ßÀ ´àÀ µÀ µÀ µkÀ µ›À µ°À µ½À µÙÀ µîÀ ¶À ¶'À ¶8À ¶<À ¶=À ¶eÀ ¶kÀ ¶®À ¶ÌÀ ¶áÀ ¶îÀ ¶ÿÀ ·À ·0À ·GÀ ·fÀ ·jÀ ·kÀ ·œÀ ·¢À ·ëÀ ¸À ¸!À ¸DÀ ¸À ¸¬À ¸ºÀ ¸ÀÀ ¸òÀ ¸öÀ ¸÷À ¹;À ¹UÀ ¹wÀ ¹—À ¹ÄÀ ¹ßÀ ºÀ ºÀ º;À ºAÀ ºEÀ ºFÀ º’À ºÁÀ ºÎÀ »À »À ».À »4À »5À »±À »×À ¼À ¼À ¼zÀ ¼³À ¼ÔÀ ¼èÀ ½À ½BÀ ½pÀ ½À ½À ½ÌÀ ½òÀ ¾À ¾À ¾"À ¾1À ¾5À ¾6À ¾ƒÀ ¾ÂÀ ¾ÏÀ ¿À ¿AÀ ¿EÀ ¿FÀ ¿„À ¿ŠÀ ¿ØÀ À(À À6À ÀCÀ À{À À‘À À¤À ÀªÀ À«À ÀìÀ ÁÀ Á_À ÁeÀ Á|À Á€À ÁÀ ÁÏÀ ÁåÀ ÁëÀ Â<À ÂŠÀ ÂØÀ ÂŞÀ Ã,À ÃrÀ ÃÀ ÃÇÀ ÃğÀ ÄÀ Ä)À Ä/À ÄBÀ ÄFÀ ÄGÀ Ä‘À ÄÀ Ä¤À ÄóÀ ÅÀ ÅÀ ÅMÀ ÅcÀ ÅqÀ ÅwÀ ÅxÀ ÅÂÀ ÅãÀ Æ=À ÆCÀ Æ€À ÆÛÀ ÆáÀ ÇÀ ÇÀ ÇÀ ÇaÀ ÇpÀ ÇvÀ ÇÅÀ ÈÀ È%À È2À ÈAÀ ÈkÀ È¤À È¨À ÈèÀ ÉÀ ÉÀ ÉÀ ÉhÀ ÉªÀ É°À ÉÿÀ ÊFÀ Ê_À ÊtÀ ÊÀ Ê¤À ÊÊÀ ÊíÀ ÊñÀ ÊòÀ Ë>À ËMÀ ËSÀ Ë¢À ËéÀ ÌÀ ÌÀ ÌOÀ ÌÂÀ ÌÃÀ ÍÀ Í5À ÍfÀ ÍlÀ ÍmÀ ÍÀ ÍÁÀ ÍÅÀ ÍÆÀ ÎÀ Î.À Î4À ÎƒÀ ÎÊÀ ÎãÀ ÎğÀ Ï3À ÏZÀ ÏhÀ ÏnÀ ÏáÀ ÏâÀ Ğ/À Ğ_À Ğ`À Ğ‘À Ğ´À Ğ¸À Ğ¹À ÑÀ ÑÀ Ñ'À Ñ<À ÑoÀ Ñ“À Ñ™À ÑØÀ ÒÀ ÒÀ ÒÀ ÒÀ ÒgÀ Ò±À Ò·À ÒèÀ ÒîÀ Ó<À Ó‚À ÓÀ ÓÌÀ ÓşÀ ÔÀ ÔÀ ÔPÀ ÔˆÀ ÔÀ Ô¿À ÔÅÀ ÕÀ Õ\À ÕiÀ Õ¦À ÕİÀ ÕüÀ Ö.À ÖFÀ ÖPÀ Ö{À Ö°À Ö¿À ÖêÀ ×À ×À ×AÀ ×oÀ ×wÀ ×xÀ ×‹À ×‘À ×£À ×§À ×¨À ×ğÀ ØÀ Ø/À Ø0À ØyÀ Ø•À Ø¦À ØºÀ ØÔÀ ÙÀ ÙSÀ Ù’À Ù»À ÙÆÀ ÙãÀ ÙìÀ ÙòÀ ÙöÀ Ù÷À ÚIÀ Ú†À ÚÖÀ ÛÀ Û?À ÛrÀ ÛzÀ Û€À Û‘À Û•À Û–À ÛçÀ ÜÀ ÜÀ ÜLÀ Ü}À Ü¨À Ü©À ÜîÀ İÀ İ>À İdÀ İmÀ İtÀ İuÀ İ®À İûÀ ŞFÀ Ş„À ŞÅÀ ŞıÀ ßEÀ ß”À ß¹À ßáÀ à)À à@À àƒÀ à‡À àˆÀ àÖÀ áÀ á%À árÀ á­À áºÀ áñÀ â-À â1À â2À ârÀ âšÀ â¿À âàÀ ãÀ ã@À ãwÀ ã„À ä
+À äÀ äÀ ä^À äjÀ äµÀ äÆÀ äÊÀ äËÀ å>À åZÀ åmÀ åsÀ å‘À åÅÀ æÀ æBÀ æIÀ æMÀ æNÀ æ®À æîÀ çÀ çFÀ ç€À ç²À çØÀ èÀ è!À è-À è7À è?À èEÀ èlÀ èpÀ èqÀ èäÀ éÀ éWÀ é€À é„À é…À éïÀ ê&À êIÀ êhÀ ê’À ê˜À êØÀ êÜÀ êİÀ ëÀ ëÀ ëJÀ ëPÀ ëvÀ ëzÀ ë{À ë±À ëöÀ ìÀ ì.À ì4À ìpÀ ìtÀ ìuÀ ì¯À ìäÀ ìåÀ í7À í^À íÀ íÓÀ îÀ îÀ îFÀ înÀ îƒÀ î‹À î‘À î£À î§À î¨À îâÀ ïÀ ïZÀ ïyÀ ï“À ï™À ïÜÀ ğÀ ğ À ğ$À ğ%À ğuÀ ğ»À ñÀ ñQÀ ñaÀ ñfÀ ñ¢À ñßÀ ò
+À ò=À òsÀ òÁÀ òØÀ òÜÀ òİÀ óJÀ ó¯À óäÀ ô8À ôKÀ ônÀ ô‰À ô‘À ô—À ôÖÀ ôÚÀ ôÛÀ õÀ õ'À õVÀ õ|À õƒÀ õÃÀ õÇÀ õÈÀ öÀ öIÀ öVÀ ö›À öåÀ öéÀ öêÀ ÷7À ÷À ÷™À ÷¸À ÷¾À ø@À øDÀ øEÀ ø’À øÄÀ ùÀ ùOÀ ùSÀ ùTÀ ùŸÀ ùòÀ úkÀ úíÀ úñÀ úòÀ û?À ûÀ û·À û½À üÀ ü[À ü¬À üúÀ ıÀ ıÀ ı%À ı+À ıyÀ ıˆÀ ıÖÀ ş)À ş-À ş.À şrÀ ş©À şÕÀ şÙÀ şÚÀ ÿÀ ÿ,À ÿpÀ ÿ”À ÿ½À ÿÃÀ ÿÔÀ ÿØÀ ÿÙÀ .À xÀ À ©À ¯À °À<À“À—À˜ÀåÀ2ÀVÀ\À¨ÀàÀ0À…À‰ÀŠÀâÀ,À‚ÀÀ–ÀšÀ›ÀÓÀÀÀÀAÀeÀxÀ~À¹ÀÀÀ-À3ÀdÀhÀiÀ—À±ÀŞÀäÀÀ"À#ÀLÀmÀšÀ ÀŞÀ	À	UÀ	eÀ	rÀ	¦À	­À	ÂÀ	ÆÀ	ÇÀ
+À
+"À
+MÀ
+„À
+ˆÀ
+‰À
+ÄÀ[À_À`ÀªÀøÀ.ÀpÀtÀuÀ¨ÀÀÀ5À<ÀTÀ”ÀºÀØÀ÷ÀÀ)ÀsÀ|ÀƒÀ‡ÀˆÀ‰ÀÏÀóÀùÀ0ÀtÀ…ÀïÀ6À`À€ÀÁÀòÀ?ÀKÀUÀtÀ}À„ÀÅÀİÀåÀéÀêÀ+ÀxÀ¯ÀµÀÀRÀgÀmÀ}ÀƒÀÌÀíÀ	À&À>ÀXÀ_ÀºÀ¾À¿ÀëÀ	À À6À<À†ÀÀ±À·ÀÏÀÛÀÀÀCÀdÀ{À„À‹ÀÀÀáÀîÀ:ÀaÀŸÀ¥ÀæÀêÀëÀ1ÀTÀZÀ«ÀúÀ=ÀwÀÇÀÀcÀ³À×ÀäÀÀÀ5ÀQÀjÀŠÀ§À´ÀíÀ ÀÀrÀ¬À¿ÀÅÀÆÀïÀ&ÀMÀYÀqÀ’ÀªÀ«ÀûÀIÀ™À²ÀİÀòÀúÀ ÀÀ@ÀYÀŒÀ’À²ÀÅÀËÀÌÀôÀ 	À À =À cÀ lÀ sÀ tÀ £À ·À ËÀ éÀ!À!À!À!À!JÀ!nÀ!tÀ!«À!ğÀ"'À"_À"©À"ÁÀ#À#À#(À#.À#HÀ#TÀ#zÀ#˜À#³À#×À#îÀ$À$eÀ$‘À$¾À$úÀ% À%MÀ%YÀ%ZÀ%‹À%ĞÀ%íÀ&À&;À&HÀ&À&ıÀ'gÀ'®À'÷À("À(IÀ(ŠÀ(—À(˜À(ÚÀ) À)+À)ZÀ)ŸÀ)ĞÀ*À*MÀ*xÀ*£À*ÖÀ*ñÀ+
+À+TÀ+šÀ+âÀ, À,.À,:À,;À,KÀ,}À,¶À,şÀ-NÀ-ŠÀ-ÁÀ-ÒÀ.À.BÀ.À.ÂÀ/À/BÀ/VÀ/fÀ/©À/·À/ÏÀ0À0:À0FÀ0GÀ0WÀ0„À0²À0ëÀ1(À1gÀ1xÀ1yÀ1¿À1ñÀ22À2^À2šÀ2ÒÀ3À3LÀ3À3²À3ÅÀ3ÕÀ4
+À4CÀ4€À4¿À4ĞÀ4ŞÀ4öÀ5À5#À5DÀ5OÀ5XÀ5_À5 À5¸À5ÀÀ5ÄÀ5ÅÀ6À6;À6pÀ6¾À6çÀ7À70À7hÀ7¡À7ËÀ7íÀ8À8(À80À86À8uÀ8À8–À8šÀ8›À8ëÀ9À9MÀ9šÀ9ÃÀ9İÀ:À:DÀ:}À:§À:ÉÀ:ìÀ;À;À;À;QÀ;iÀ;qÀ;uÀ;vÀ;©À;ÍÀ;ÓÀ;üÀ<MÀ<mÀ<•À<œÀ<ÎÀ<øÀ=À=BÀ=IÀ=rÀ=ŒÀ=»À=óÀ>À>KÀ>ƒÀ>¥À>ÆÀ>ŞÀ>æÀ>ìÀ?+À?CÀ?KÀ?OÀ?PÀ?ˆÀ?±À?×À?íÀ?õÀ?ûÀ@.À@2À@3À@À@§À@åÀA0ÀA7ÀA;ÀA<ÀAÀAòÀB)ÀBŒÀBÀB‘ÀBáÀC/ÀCÀC‹ÀCŞÀDÀDCÀDIÀD‘ÀD•ÀD–ÀDäÀEFÀEJÀEKÀE ÀEÆÀFÀFÀFsÀF¤ÀFêÀGÀGPÀGˆÀGªÀG»ÀGÅÀGÍÀGéÀGïÀHRÀHVÀHWÀHºÀIPÀITÀIUÀI–ÀIœÀIéÀJÀJ`ÀJ„ÀJˆÀJ‰ÀJ©ÀJªÀJÇÀJÈÀJóÀKÀKQÀKUÀKVÀKÀK¤ÀKäÀKêÀL
+ÀLJÀLPÀLTÀLUÀL¤ÀLßÀLãÀLäÀM.ÀMgÀMmÀM½ÀMéÀMöÀNÀNÀNDÀNeÀNlÀN«ÀN¯ÀN°ÀNúÀO(ÀO.ÀO~ÀOªÀO·ÀOØÀO÷ÀOûÀOüÀPQÀP¦ÀP§ÀPâÀQÀQÀQÀQ4ÀQ>ÀQ”ÀQÁÀRÀRZÀRªÀRÌÀRÜÀRäÀSÀSÀSTÀS‰ÀSÂÀSñÀT?ÀT^ÀTvÀT€ÀT¥ÀTºÀTÄÀTÊÀTéÀU	ÀU&ÀUFÀU^ÀUÀUÔÀUßÀUèÀUîÀUòÀUóÀVEÀVrÀVxÀV­ÀVØÀVõÀWÀW ÀW$ÀW&ÀW'ÀWoÀWsÀWÂÀX
+ÀX!ÀX4ÀXPÀXfÀXÀX…ÀX†ÀX™ÀX©ÀXªÀXæÀXúÀXûÀYÀYÀY3ÀYEÀYFÀY]ÀYnÀY~ÀY‚ÀYƒÀYÀY³ÀYÁÀYÅÀYÇÀYÈÀZÀZSÀZWÀZ¨ÀZøÀ[IÀ[•À[ÂÀ[ÆÀ\À\aÀ\|À\¡À\ËÀ\ĞÀ]À]bÀ]zÀ]À]ÄÀ]äÀ^ À^!À^HÀ^‚À^ƒÀ^ÃÀ^ÉÀ_À_-À_mÀ_nÀ_¿À_üÀ`À`DÀ`oÀ`}À`ƒÀ`ÃÀaÀa!Àa/Àa5ÀaaÀabÀa|Àa±ÀaüÀb2ÀbVÀbpÀbxÀb–Àb²ÀbÂÀcÀc#Àc<Àc]ÀceÀcÀcŒÀc§Àc­Àc®ÀcıÀdJÀd—ÀdŞÀdîÀeÀe#Àe>ÀeFÀe_ÀeeÀeiÀejÀe‘Àe¨ÀeõÀfEÀfŠÀfÔÀg!ÀgSÀg„Àg™ÀgŸÀg³Àg·Àg¸ÀhÀh%Àh_Àh¤Àh³ÀhãÀi Ài Ài&Ài'Ài`ÀiÀi¥Ài¬Ài­ÀiçÀj
+Àj@ÀjŠÀjÃÀjöÀk7ÀkPÀkiÀktÀkÂÀkÊÀköÀküÀkıÀlFÀliÀlØÀmÀmDÀm—ÀmÏÀmëÀn	Àn)ÀnKÀnXÀncÀndÀnÀn½ÀnñÀo!Ào)ÀoUÀo[Ào\ÀooÀo‰ÀošÀoÀo Ào¡ÀoÌÀoëÀoìÀoøÀp1Àp3Àp4ÀpwÀp{ÀpÆÀqÀq]Àq§Àq»Àq¿ÀqôÀqøÀrHÀr–ÀräÀs/ÀswÀs£Às§ÀsòÀt=ÀtÀtÛÀu#ÀuRÀuÀuªÀu¹ÀuÒÀuùÀuÿÀv Àv*Àv@ÀvAÀv}ÀvƒÀvÑÀvùÀw4Àw5ÀwAÀw„Àw†Àw‡ÀwÂÀwäÀwåÀx ÀxÀx!Àx"ÀxGÀxHÀxbÀxcÀx–Àx—ÀxãÀyÀy@ÀyAÀyMÀybÀyyÀyzÀy¨ÀyÜÀzÀzAÀz|ÀzÃÀzÇÀzÈÀzÔÀzçÀ{À{LÀ{}À{´À{ÉÀ{ÍÀ{ÎÀ|À|?À|†À|ŒÀ|À|¤À|ÁÀ|âÀ|÷À}À}'À}-À}CÀ}~À}™À}êÀ~À~!À~'À~wÀ~xÀ~ÃÀ~ûÀ2ÀrÀ¢À´À¼À€À€KÀ€À€¢À€ªÀ€«À€ãÀÀiÀ}À…À‹ÀŒÀ»ÀåÀ÷À‚AÀ‚‡À‚­À‚òÀƒÀƒÀƒÀƒ-ÀƒEÀƒKÀƒ[Àƒ_Àƒ`Àƒ¯ÀƒÂÀƒÈÀ„À„bÀ„®À„ÉÀ…À…IÀ…ƒÀ…„À…ÚÀ†À†3À†gÀ†À†”À†êÀ‡À‡0À‡FÀ‡MÀ‡gÀ‡kÀ‡lÀ‡‘À‡ªÀ‡¸À‡¾À‡¿Àˆ;ÀˆuÀˆ¼Àˆ½ÀˆâÀˆæÀˆçÀ‰À‰GÀ‰mÀ‰qÀ‰rÀ‰¥À‰ÖÀ‰üÀŠ ÀŠÀŠ0ÀŠ~ÀŠÎÀ‹À‹oÀ‹³À‹åÀŒUÀŒˆÀŒ¡ÀŒ§ÀŒ«ÀŒ¬ÀŒÂÀŒÛÀŒéÀŒïÀÀ@ÀŒÀ’À“ÀßÀÀOÀUÀYÀZÀyÀºÀ¾À¿ÀËÀòÀ;À€ÀÇÀìÀÀÀAÀbÀ‰À³À×ÀõÀ‘À‘9À‘XÀ‘cÀ‘lÀ‘«À‘¿À‘æÀ’À’[À’fÀ’•À’À’¡À’£À’¤À’ÒÀ“À“4À“MÀ“yÀ“±À“·À“»À“¼À“õÀ“ûÀ”;À”oÀ”¤À”ÑÀ”êÀ”úÀ•À•À•À•\À•wÀ•‰À•¢À•¶À•ÍÀ•ÑÀ•ÒÀ•ôÀ–À–)À–9À–PÀ–TÀ–UÀ–˜À–À–âÀ–èÀ—À—QÀ—RÀ—lÀ—‘À—®À—ÆÀ˜À˜(À˜.À˜2À˜3À˜ƒÀ˜‰À˜ÍÀ˜ÓÀ™À™#À™pÀ™tÀ™uÀ™‘À™ºÀ™æÀšÀšÀš4ÀšBÀšHÀšmÀšÀš¼ÀšÕÀšÛÀšßÀšàÀšûÀ›!À›EÀ›‘À›ªÀ›·À›ÎÀ›ìÀœÀœÀœÀœÀœ]ÀœqÀœ®Àœ°Àœ±ÀœêÀÀ#À)À*ÀPÀQÀ]À¢ÀÜÀàÀáÀíÀEÀmÀqÀsÀtÀ¦ÀëÀŸ	ÀŸ
+ÀŸ<ÀŸ]ÀŸ‰ÀŸ¨ÀŸÂÀŸÈÀŸŞÀŸâÀŸãÀŸïÀ À À À IÀ JÀ VÀ ŒÀ ½À ÁÀ ÂÀ ÎÀ¡À¡#À¡PÀ¡¡À¡½À¡şÀ¢À¢
+À¢À¢À¢À¢1À¢qÀ¢•À¢ÈÀ¢ÉÀ¢ÜÀ¢÷À¢øÀ£À£'À£SÀ£gÀ£mÀ£’À£°À£ÙÀ£İÀ£ŞÀ£êÀ¤À¤ À¤!À¤dÀ¤hÀ¤¸À¤ÏÀ¤ÚÀ¤ÿÀ¥&À¥EÀ¥aÀ¥À¥šÀ¥»À¥ÁÀ¥ÂÀ¥ÜÀ¥ÿÀ¦*À¦BÀ¦gÀ¦hÀ¦tÀ¦—À¦ÃÀ¦×À¦İÀ§À§:À§`À§¦À§ËÀ§ÏÀ§ĞÀ§ÜÀ¨;À¨=À¨>À¨_À¨§À¨üÀ©QÀ©RÀ©À©ÔÀ©ØÀª)ÀªvÀª£ÀªŞÀªùÀ«À«5À«YÀ«`À«~À«À«¨À«»À«ÅÀ«İÀ¬À¬)À¬wÀ¬¡À¬¬À¬¶À¬¼À¬ÀÀ¬ÁÀ¬áÀ¬âÀ­0À­>À­DÀ­“À­´À­ÎÀ­ÏÀ® À®VÀ®~À®À®«À®¬À®ÕÀ®ñÀ®òÀ¯À¯/À¯0À¯<À¯OÀ¯lÀ¯…À¯šÀ¯À¯ŸÀ¯«À¯ØÀ¯õÀ°À°	À°
+À°@À°AÀ°vÀ°„À°ŠÀ°‹À°ÏÀ±À±GÀ±‚À±”À±œÀ±áÀ±çÀ±èÀ²5À²UÀ²“À²ÍÀ²õÀ³À³À³À³:À³TÀ³{À³À³°À³´À³µÀ³öÀ´4À´sÀ´¡À´ëÀµÀµPÀµQÀµuÀµ˜ÀµÌÀµÍÀµóÀ¶À¶2À¶hÀ¶iÀ¶•À¶ÚÀ¶åÀ¶ôÀ·(À·WÀ·ˆÀ·›À·œÀ·íÀ¸7À¸tÀ¸»À¸ÈÀ¸ÙÀ¹À¹SÀ¹hÀ¹nÀ¹oÀ¹¦À¹ÛÀ¹âÀº+ÀºTÀº¢Àº£À»À»À»]À»uÀ»™À»À»À»¸À»ËÀ»ßÀ¼ À¼À¼.À¼=À¼RÀ¼XÀ¼kÀ¼‘À¼ÑÀ¼ÚÀ¼áÀ½!À½‚À½©À½ÈÀ½ëÀ¾À¾-À¾lÀ¾”À¾ºÀ¾ÀÀ¾ÁÀ¿-À¿`À¿rÀ¿À¿¦À¿ÌÀ¿æÀ¿íÀ¿îÀÀÀÀ=ÀÀgÀÀ|ÀÀ“ÀÀ¦ÀÀêÀÀóÀÁÀÁÀÁÀÁ6ÀÁnÀÁ‡ÀÁ«ÀÁ±ÀÁ²ÀÁåÀÂ,ÀÂ}ÀÂ¦ÀÂĞÀÂúÀÃBÀÃIÀÃ’ÀÃñÀÄÀÄÀÄÀÄÀÄ%ÀÄOÀÄoÀÄ‹ÀÄ ÀÄ§ÀÄ¹ÀÄ½ÀÄ¾ÀÅÀÅÀÅcÀÅ°ÀÅáÀÆÀÆGÀÆeÀÆ›ÀÆ¼ÀÆùÀÇ%ÀÇ-ÀÇMÀÇSÀÇeÀÇiÀÇkÀÇlÀÇ”ÀÇ¹ÀÇäÀÇåÀÈ/ÀÈUÀÈ{ÀÈ|ÀÈ§ÀÈÃÀÈÕÀÈäÀÈçÀÈèÀÉ0ÀÉQÀÉUÀÉ ÀÉºÀÉàÀÉüÀÉşÀÉÿÀÊMÀÊaÀÊsÀÊ‡ÀÊŸÀÊ·ÀÊÑÀË	ÀËÀËÀËÀË@ÀËUÀËVÀËqÀËƒÀË„ÀË¡ÀËµÀË¶ÀËùÀÌÀÌÀÌ5ÀÌnÀÌ‚ÀÌ–ÀÌ®ÀÌµÀÌÍÀÌèÀÌîÀÌÿÀÍÀÍÀÍÀÍ&ÀÍQÀÍiÀÍÀÍ‡ÀÍœÀÍÅÀÍáÀÍåÀÍçÀÍèÀÎ7ÀÎ8ÀÎ‰ÀÎÀÎâÀÏ	ÀÏÀÏiÀÏÆÀÏÛÀÏûÀÏÿÀĞ<ÀĞZÀĞÀĞ­ÀĞÈÀĞÕÀĞÛÀĞßÀĞÿÀÑ;ÀÑnÀÑ«ÀÑÉÀÑÏÀÑğÀÒ0ÀÒ=ÀÒZÀÒuÀÒ„ÀÒÀÒ¦ÀÒ¬ÀÒ°ÀÒÊÀÒÛÀÒİÀÒŞÀÓ	ÀÓÀÓKÀÓ|ÀÓ”ÀÓ²ÀÓ¶ÀÓ×ÀÓßÀÔ"ÀÔTÀÔ‘ÀÔ¬ÀÔÇÀÔûÀÕÀÕ+ÀÕPÀÕ‡ÀÖ	ÀÖÀÖÀÖ&ÀÖFÀÖJÀÖLÀÖMÀÖ‚ÀÖ•ÀÖ³ÀÖ·ÀÖûÀ×À×1À×uÀ×ÁÀØ
+ÀØÀØ(ÀØ/ÀØ3ÀØ4ÀØOÀØÀØÇÀÙÀÙ/ÀÙ7ÀÙ=ÀÙOÀÙSÀÙTÀÙÀÙ·ÀÚÀÚ"ÀÚRÀÚ}ÀÚ~ÀÚÎÀÛÀÛdÀÛƒÀÛ°ÀÜÀÜ/ÀÜhÀÜÀÀÜâÀÜïÀÜùÀİÀİÀİ(ÀİBÀİ{Àİ¢ÀŞ	ÀŞÀŞ!ÀŞ8ÀŞ™ÀŞ£ÀŞ·ÀŞ½ÀŞÎÀŞÒÀŞóÀß&Àß*Àß:Àß<Àß=ÀßlÀßpÀß¼ÀßÎÀàÀàgÀàmÀàºÀáÀá]Àá˜ÀáåÀáçÀáèÀâÀâÀâWÀâ[Àâ¦ÀâªÀâëÀãÀã:ÀãRÀã`ÀãÀãºÀäÀäÀä*Àä2ÀäDÀäFÀäGÀäwÀä{ÀäÌÀå	Àå:Àå|Àå™ÀåèÀåêÀåëÀæ@ÀæDÀælÀæpÀæ»Àæ¿ÀçÀçBÀç~ÀçÀçŸÀç Àç×ÀèÀèÀèÀèaÀèeÀè°Àè´ÀéÀé6Àé˜ÀéãÀéåÀéæÀê3ÀêpÀêÀêËÀêıÀêşÀë&ÀëKÀë_ÀënÀërÀëŒÀë¨ÀëÈÀëÕÀë×ÀëØÀì!ÀìJÀì]Àì°ÀíÀí(ÀíKÀí_Àí}ÀíªÀíĞÀíëÀîÀî*ÀîTÀîZÀî[Àî£ÀîËÀîÌÀïÀï5Àï;Àï‰ÀïÑÀïìÀïíÀğ<ÀğVÀğWÀğ™ÀğÄÀğÅÀğÑÀğñÀğòÀğşÀñÀñÀñ%ÀñHÀñIÀñ‘Àñ—ÀñéÀò5ÀòqÀòêÀòëÀó<Àó=ÀókÀólÀóxÀóÀÀóıÀô#Àô;ÀôvÀô|Àô“Àô·Àô½ÀõÀõ&ÀõdÀõ¥ÀõêÀöÀöIÀöQÀöWÀöŠÀöãÀöéÀöüÀ÷ À÷À÷À÷XÀ÷À÷æÀø/Àø{ÀøÂÀùÀùJÀùZÀù^Àù_ÀùkÀùÈÀùùÀùıÀùşÀú
+ÀúiÀú½ÀúíÀûQÀûbÀûfÀûgÀûsÀûÔÀüÀü"ÀüZÀü¦Àü¬Àü¾ÀüÂÀüÃÀüÏÀıGÀırÀıÀı®ÀıòÀşAÀşxÀş¾ÀşÖÀÿÀÿ%Àÿ)Àÿ+Àÿ,ÀÿUÀÿlÀÿ†ÀÿˆÀÿ‰ÀÿÖÀÿôÀÿøÀ FÀ À ØÀ$ÀqÀ{ÀÀÌÀÀbÀ°ÀÅÀÉÀÀeÀÀ“ÀàÀğÀôÀ:À>ÀRÀVÀ¢ÀÌÀĞÀÜÀÀÀNÀ…ÀÀ“À›ÀŸÀçÀ1ÀoÀsÀÀªÀÉÀôÀüÀ ÀÀÀ"À&À°À ÀHÀeÀ”ÀËÀÌÀüÀ	À	%À	UÀ	VÀ	xÀ	¢À	£À	ÆÀ
+À
+À
+À
+`À
+|À
+‚À
+±À
+ÊÀ
+çÀÀÀ6À<À@ÀAÀtÀ™À¶ÀÖÀãÀÀÀÀÀFÀ[ÀxÀÀ«ÀÚÀöÀÀÀÀÀ<ÀMÀoÀˆÀŒÀ    3_ProxyLayer_MulticastCanvas_calculateSubtreeBoundsHelper_calculateSubtreeBounds_ScreenshotContainerLayer_ScreenshotData_ScreenshotPaintingContext_DiagnosticsPathNode_followDiagnosticableChainInspectorReferenceData_WidgetInspectorServiceWidgetInspectorService_LocationCount_ElementLocationStatsTracker_WidgetForTypeTestsWidgetInspector_WidgetInspectorStateInspectorSelection_InspectorOverlay_RenderInspectorOverlay_TransformedRect_InspectorOverlayRenderState_kMaxTooltipLines_kTooltipBackgroundColor"_kHighlightedRenderObjectFillColor$_kHighlightedRenderObjectBorderColor_InspectorOverlayLayer_kScreenEdgeMargin_kTooltipPadding_kInspectButtonMargin_kOffScreenMargin_messageStyle_HasCreationLocation	_Location_isDebugCreatordebugTransformDebugCreator_parseDiagnosticsNode_describeRelevantUserCodeDevToolsDeepLinkPropertydebugIsLocalCreationLocationdebugIsWidgetLocalCreation_describeCreationLocation_getObjectCreationLocation_getCreationLocation_locationToId
+_locations_toLocationIdInspectorSerializationDelegate_WidgetFactorywidgetFactoryWeakMap ÷

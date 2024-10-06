@@ -1,0 +1,23 @@
+include: package:lints/recommended.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+
+linter:
+  rules:
+    # In addition to lints/recommended:
+    always_declare_return_types: true
+    omit_local_variable_types: true
+    prefer_single_quotes: true
+    unawaited_futures: true
+
+    # Remove from lints/recommended:
+    constant_identifier_names: false
+    implementation_imports: false
+    non_constant_identifier_names: false
+
+    # Existing violations (3)
+    library_private_types_in_public_api: false
+    # Existing violations (3)
+    prefer_initializing_formals: false

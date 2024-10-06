@@ -1,866 +1,3 @@
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16'
-
-    - name: Install Firebase CLI
-      run: npm install -g firebase-tools
-
-    - name: Install Dependencies
-      run: cd functions && npm ci
-
-    - name: Deploy to Firebase Hosting and Functions
-      env:
-        FIREBASE_TOKEN: \${{ secrets.FIREBASE_TOKEN }}
-      run: firebase deploy --only hosting,functions
-EOL
-     echo "GitHub Actions workflow setup complete."; }
-# Initialize a git repository and push to GitHub
-setup_git_repo() {     echo "Initializing Git repository and pushing to GitHub..."
-    git init;     git add .;     git commit -m "Initial commit - Setup Firebase and GitHub Actions"
-    GITHUB_REPO_URL="https://github.com/your-username/$PROJECT_NAME.git"    
-    git remote add origin $GITHUB_REPO_URL;     git push -u origin main     echo "GitHub repository setup complete."; }
-# Run the setup functions
-setup_firebase_project
-generate_firebase_functions
-setup_github_actions
-setup_git_repo
-gcloud config set project aenzbi-app-flutter
-#!/bin/bash
-# Check if Flutter is installed
-if ! command -v flutter &> /dev/null; then     echo "Flutter is not installed. Installing Flutter..."    
-    git clone https://github.com/flutter/flutter.git -b stable    
-    export PATH="$PATH:`pwd`/flutter/bin";     echo "Flutter installed."; else     echo "Flutter is already installed."; fi
-# Create Flutter project directory if not exists
-PROJECT_NAME="aenzbi-app-flutter"
-if [ ! -d "$PROJECT_NAME" ]; then     echo "Creating new Flutter project: $PROJECT_NAME";     flutter create $PROJECT_NAME; else     echo "Project $PROJECT_NAME already exists."; fi
-# Navigate into the project directory
-cd $PROJECT_NAME
-# Set up initial project structure
-echo "Setting up project structure..."
-mkdir -p lib/models lib/screens lib/widgets lib/services lib/utils assets/images
-# Create car model file
-cat <<EOL > lib/models/car.dart
-class Car {
-  final String id;
-  final String brand;
-  final String model;
-  final double price;
-  final String imageUrl;
-  final String description;
-  final bool isAvailable;
-
-  Car({
-    required this.id,
-    required this.brand,
-    required this.model,
-    required this.price,
-    required this.imageUrl,
-    required this.description,
-    this.isAvailable = true,
-  });
-}
-EOL
-
-# Create car inventory screen file
-cat <<EOL > lib/screens/car_inventory_screen.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-
-class CarInventoryScreen extends StatelessWidget {
-  final List<Car> cars = [
-    Car(
-      id: '1',
-      brand: 'Toyota',
-      model: 'Corolla',
-      price: 20000,
-      imageUrl: 'assets/images/toyota_corolla.png',
-      description: 'A reliable and efficient sedan.',
-    ),
-    // Add more cars here...
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Car Showroom Inventory'),
-      ),
-      body: ListView.builder(
-        itemCount: cars.length,
-        itemBuilder: (ctx, index) {
-          final car = cars[index];
-          return Card(
-            child: ListTile(
-              leading: Image.asset(car.imageUrl, width: 100, height: 100),
-              title: Text('\${car.brand} \${car.model}'),
-              subtitle: Text('Price: \$\${car.price}'),
-              onTap: () {
-                // Navigate to car detail screen
-              },
-            ),
-          );
-        },
-      ),
-    );
-  }
-}
-EOL
-
-# Create car detail screen file
-cat <<EOL > lib/screens/car_detail_screen.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-
-class CarDetailScreen extends StatelessWidget {
-  final Car car;
-
-  CarDetailScreen(this.car);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('\${car.brand} \${car.model}'),
-      ),
-      body: Column(
-        children: [
-          Image.asset(car.imageUrl),
-          SizedBox(height: 20),
-          Text(
-            '\${car.brand} \${car.model}',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ),
-          Text(
-            'Price: \$\${car.price}',
-            style: TextStyle(fontSize: 20),
-          ),
-          SizedBox(height: 20),
-          Text(car.description),
-          SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              // Implement booking or purchase action
-            },
-            child: Text('Book Now'),
-          ),
-        ],
-      ),
-    );
-  }
-}
-EOL
-
-# Set up main.dart file
-cat <<EOL > lib/main.dart
-import 'package:flutter/material.dart';
-import 'screens/car_inventory_screen.dart';
-import 'screens/car_detail_screen.dart';
-import 'models/car.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Car Showroom',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: CarInventoryScreen(),
-      routes: {
-        '/car-detail': (ctx) => CarDetailScreen(ModalRoute.of(ctx)!.settings.arguments as Car),
-      },
-    );
-  }
-}
-EOL
-
-# Update pubspec.yaml file with dependencies
-cat <<EOL >> pubspec.yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  provider: ^6.0.0
-  http: ^0.14.0
-  sqflite: ^2.0.0+4
-  path_provider: ^2.0.0
-  shared_preferences: ^2.0.6
-  intl: ^0.17.0
-EOL
-
-# Get Flutter packages
-flutter pub get
-# Run the Flutter app
-echo "Running the app..."
-flutter run
-#!/bin/bash
-# Navigate to the Flutter project directory
-cd aenzbi-app-flutter || { echo "Directory aenzbi-app-flutter not found!"; exit 1; }
-gcloud config set project aenzbi-app-flutter
-#!/bin/bash
-# Create necessary directories
-mkdir -p lib/models lib/screens lib/widgets lib/services lib/utils assets/images
-# Create the Car model
-cat <<EOL > lib/models/car.dart
-class Car {
-  final String id;
-  final String brand;
-  final String model;
-  final double price;
-  final String imageUrl;
-  final String description;
-  final bool isAvailable;
-
-  Car({
-    required this.id,
-    required this.brand,
-    required this.model,
-    required this.price,
-    required this.imageUrl,
-    required this.description,
-    this.isAvailable = true,
-  });
-}
-EOL
-
-# Create Car Inventory Screen
-cat <<EOL > lib/screens/car_inventory_screen.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-
-class CarInventoryScreen extends StatelessWidget {
-  final List<Car> cars = [
-    Car(
-      id: '1',
-      brand: 'Toyota',
-      model: 'Corolla',
-      price: 20000,
-      imageUrl: 'assets/images/toyota_corolla.png',
-      description: 'A reliable and efficient sedan.',
-    ),
-    Car(
-      id: '2',
-      brand: 'Honda',
-      model: 'Civic',
-      price: 22000,
-      imageUrl: 'assets/images/honda_civic.png',
-      description: 'A compact car with a sporty design.',
-    ),
-    Car(
-      id: '3',
-      brand: 'Ford',
-      model: 'Mustang',
-      price: 30000,
-      imageUrl: 'assets/images/ford_mustang.png',
-      description: 'A classic American muscle car.',
-    ),
-    // Add more cars here...
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Car Showroom Inventory'),
-      ),
-      body: ListView.builder(
-        itemCount: cars.length,
-        itemBuilder: (ctx, index) {
-          final car = cars[index];
-          return Card(
-            child: ListTile(
-              leading: Image.asset(car.imageUrl, width: 100, height: 100),
-              title: Text('\\${car.brand} \\${car.model}'),
-              subtitle: Text('Price: \$\\${car.price}'),
-              onTap: () {
-                Navigator.of(context).pushNamed(
-                  '/car-detail',
-                  arguments: car,
-                );
-              },
-            ),
-          );
-        },
-      ),
-    );
-  }
-}
-EOL
-
-cat <<EOL > lib/screens/car_inventory_screen.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-
-class CarInventoryScreen extends StatelessWidget {
-  final List<Car> cars = [
-    Car(
-      id: '1',
-      brand: 'Toyota',
-      model: 'Corolla',
-      price: 20000,
-      imageUrl: 'assets/images/toyota_corolla.png',
-      description: 'A reliable and efficient sedan.',
-    ),
-    Car(
-      id: '2',
-      brand: 'Honda',
-      model: 'Civic',
-      price: 22000,
-      imageUrl: 'assets/images/honda_civic.png',
-      description: 'A compact car with a sporty design.',
-    ),
-    Car(
-      id: '3',
-      brand: 'Ford',
-      model: 'Mustang',
-      price: 30000,
-      imageUrl: 'assets/images/ford_mustang.png',
-      description: 'A classic American muscle car.',
-    ),
-    // Add more cars here...
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Car Showroom Inventory'),
-      ),
-      body: ListView.builder(
-        itemCount: cars.length,
-        itemBuilder: (ctx, index) {
-          final car = cars[index];
-          return Card(
-            child: ListTile(
-              leading: Image.asset(car.imageUrl, width: 100, height: 100),
-              title: Text('\\${car.brand} \\${car.model}'),
-              subtitle: Text('Price: \$\\${car.price}'),
-              onTap: () {
-                Navigator.of(context).pushNamed(
-                  '/car-detail',
-                  arguments: car,
-                );
-              },
-            ),
-          );
-        },
-      ),
-    );
-  }
-}
-EOL
-
-# Create Car Detail Screen
-cat <<EOL > lib/screens/car_detail_screen.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-
-class CarDetailScreen extends StatelessWidget {
-  final Car car;
-
-  CarDetailScreen(this.car);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('\\${car.brand} \\${car.model}'),
-      ),
-      body: Column(
-        children: [
-          Image.asset(car.imageUrl),
-          SizedBox(height: 20),
-          Text(
-            '\\${car.brand} \\${car.model}',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ),
-          Text(
-            'Price: \$\\${car.price}',
-            style: TextStyle(fontSize: 20),
-          ),
-          SizedBox(height: 20),
-          Text(car.description),
-          SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              // Implement booking or purchase action
-            },
-            child: Text('Book Now'),
-          ),
-        ],
-      ),
-    );
-  }
-}
-EOL
-
-cat <<EOL > lib/screens/car_detail_screen.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-
-class CarDetailScreen extends StatelessWidget {
-  final Car car;
-
-  CarDetailScreen(this.car);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('\\${car.brand} \\${car.model}'),
-      ),
-      body: Column(
-        children: [
-          Image.asset(car.imageUrl),
-          SizedBox(height: 20),
-          Text(
-            '\\${car.brand} \\${car.model}',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ),
-          Text(
-            'Price: \$\\${car.price}',
-            style: TextStyle(fontSize: 20),
-          ),
-          SizedBox(height: 20),
-          Text(car.description),
-          SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              // Implement booking or purchase action
-            },
-            child: Text('Book Now'),
-          ),
-        ],
-      ),
-    );
-  }
-}
-EOL
-
-# Create main.dart
-cat <<EOL > lib/main.dart
-import 'package:flutter/material.dart';
-import 'screens/car_inventory_screen.dart';
-import 'screens/car_detail_screen.dart';
-import 'models/car.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Car Showroom',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: CarInventoryScreen(),
-      routes: {
-        '/car-detail': (ctx) => CarDetailScreen(ModalRoute.of(ctx)!.settings.arguments as Car),
-      },
-    );
-  }
-}
-EOL
-
-# Update pubspec.yaml
-cat <<EOL >> pubspec.yaml
-
-dependencies:
-  flutter:
-    sdk: flutter
-  provider: ^6.0.0
-  http: ^0.14.0
-  sqflite: ^2.0.0+4
-  path_provider: ^2.0.0
-  shared_preferences: ^2.0.6
-  intl: ^0.17.0
-
-flutter:
-  assets:
-    - assets/images/
-EOL
-
-# Create the assets/images directory if it doesn't exist
-mkdir -p assets/images
-# Print completion message
-echo "Car dealer showroom system module has been generated successfully!"
-#!/bin/bash
-# Navigate to the Flutter project directory
-cd aenzbi-app-flutter || { echo "Directory aenzbi-app-flutter not found!"; exit 1; }
-gcloud config set project aenzbi-app-flutter
-#!/bin/bash
-# Create necessary directories
-mkdir -p lib/models lib/screens lib/widgets lib/services lib/utils assets/images
-# Create the Car model
-cat <<EOL > lib/models/car.dart
-class Car {
-  final String id;
-  final String brand;
-  final String model;
-  final double price;
-  final String imageUrl;
-  final String description;
-  final bool isAvailable;
-
-  Car({
-    required this.id,
-    required this.brand,
-    required this.model,
-    required this.price,
-    required this.imageUrl,
-    required this.description,
-    this.isAvailable = true,
-  });
-}
-EOL
-
-# Create Car Service for fetching data
-cat <<EOL > lib/services/car_service.dart
-import '../models/car.dart';
-
-class CarService {
-  List<Car> getCars() {
-    return [
-      Car(
-        id: '1',
-        brand: 'Toyota',
-        model: 'Corolla',
-        price: 20000,
-        imageUrl: 'assets/images/toyota_corolla.png',
-        description: 'A reliable and efficient sedan.',
-      ),
-      Car(
-        id: '2',
-        brand: 'Honda',
-        model: 'Civic',
-        price: 22000,
-        imageUrl: 'assets/images/honda_civic.png',
-        description: 'A compact car with a sporty design.',
-      ),
-      Car(
-        id: '3',
-        brand: 'Ford',
-        model: 'Mustang',
-        price: 30000,
-        imageUrl: 'assets/images/ford_mustang.png',
-        description: 'A classic American muscle car.',
-      ),
-      // Add more cars here...
-    ];
-  }
-}
-EOL
-
-# Create Car Inventory Screen
-cat <<EOL > lib/screens/car_inventory_screen.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-import '../services/car_service.dart';
-import '../widgets/car_item.dart';
-
-class CarInventoryScreen extends StatelessWidget {
-  final CarService carService = CarService();
-
-  @override
-  Widget build(BuildContext context) {
-    final List<Car> cars = carService.getCars();
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Car Showroom Inventory'),
-      ),
-      body: ListView.builder(
-        itemCount: cars.length,
-        itemBuilder: (ctx, index) {
-          return CarItem(car: cars[index]);
-        },
-      ),
-    );
-  }
-}
-EOL
-
-# Create Car Detail Screen
-cat <<EOL > lib/screens/car_detail_screen.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-
-class CarDetailScreen extends StatelessWidget {
-  final Car car;
-
-  CarDetailScreen(this.car);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('\\${car.brand} \\${car.model}'),
-      ),
-      body: Column(
-        children: [
-          Image.asset(car.imageUrl),
-          SizedBox(height: 20),
-          Text(
-            '\\${car.brand} \\${car.model}',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ),
-          Text(
-            'Price: \$\\${car.price}',
-            style: TextStyle(fontSize: 20),
-          ),
-          SizedBox(height: 20),
-          Text(car.description),
-          SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              // Implement booking or purchase action
-            },
-            child: Text('Book Now'),
-          ),
-        ],
-      ),
-    );
-  }
-}
-EOL
-
-cat <<EOL > lib/screens/car_detail_screen.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-
-class CarDetailScreen extends StatelessWidget {
-  final Car car;
-
-  CarDetailScreen(this.car);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('\\${car.brand} \\${car.model}'),
-      ),
-      body: Column(
-        children: [
-          Image.asset(car.imageUrl),
-          SizedBox(height: 20),
-          Text(
-            '\\${car.brand} \\${car.model}',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ),
-          Text(
-            'Price: \$\\${car.price}',
-            style: TextStyle(fontSize: 20),
-          ),
-          SizedBox(height: 20),
-          Text(car.description),
-          SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              // Implement booking or purchase action
-            },
-            child: Text('Book Now'),
-          ),
-        ],
-      ),
-    );
-  }
-}
-EOL
-
-# Create Car Item Widget
-cat <<EOL > lib/widgets/car_item.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-import '../screens/car_detail_screen.dart';
-
-class CarItem extends StatelessWidget {
-  final Car car;
-
-  CarItem({required this.car});
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: ListTile(
-        leading: Image.asset(car.imageUrl, width: 100, height: 100),
-        title: Text('\\${car.brand} \\${car.model}'),
-        subtitle: Text('Price: \$\\${car.price}'),
-        onTap: () {
-          Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => CarDetailScreen(car),
-          ));
-        },
-      ),
-    );
-  }
-}
-EOL
-
-cat <<EOL > lib/widgets/car_item.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-import '../screens/car_detail_screen.dart';
-
-class CarItem extends StatelessWidget {
-  final Car car;
-
-  CarItem({required this.car});
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: ListTile(
-        leading: Image.asset(car.imageUrl, width: 100, height: 100),
-        title: Text('\\${car.brand} \\${car.model}'),
-        subtitle: Text('Price: \$\\${car.price}'),
-        onTap: () {
-          Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => CarDetailScreen(car),
-          ));
-        },
-      ),
-    );
-  }
-}
-EOL
-
-# Create main.dart
-cat <<EOL > lib/main.dart
-import 'package:flutter/material.dart';
-import 'screens/car_inventory_screen.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Car Showroom',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: CarInventoryScreen(),
-    );
-  }
-}
-EOL
-
-# Update pubspec.yaml
-cat <<EOL >> pubspec.yaml
-
-dependencies:
-  flutter:
-    sdk: flutter
-  provider: ^6.0.0
-  http: ^0.14.0
-  sqflite: ^2.0.0+4
-  path_provider: ^2.0.0
-  shared_preferences: ^2.0.6
-  intl: ^0.17.0
-
-flutter:
-  assets:
-    - assets/images/
-EOL
-
-# Create the assets/images directory if it doesn't exist
-mkdir -p assets/images
-# Print completion message
-echo "Car dealer showroom system module has been generated successfully!"
-ls -la
-cd lib
-ls -la
-cd modules
-ls -la
-cd
-gcloud config set project aenzbi-app-flutter
-#!/bin/bash
-# Navigate to the Flutter project directory
-cd aenzbi-app-flutter || { echo "Directory aenzbi-app-flutter not found!"; exit 1; }
-gcloud config set project aenzbi-app-flutter
-#!/bin/bash
-# Ensure Flutter is set up correctly
-flutter pub get
-# Create necessary directories if they don't exist
-mkdir -p lib/models lib/screens lib/widgets lib/services lib/utils assets/images
-# Create the Car model
-cat <<EOL > lib/models/car.dart
-class Car {
-  final String id;
-  final String brand;
-  final String model;
-  final double price;
-  final String imageUrl;
-  final String description;
-  final bool isAvailable;
-
-  Car({
-    required this.id,
-    required this.brand,
-    required this.model,
-    required this.price,
-    required this.imageUrl,
-    required this.description,
-    this.isAvailable = true,
-  });
-}
-EOL
-
-# Create Car Service for fetching data
-cat <<EOL > lib/services/car_service.dart
-import '../models/car.dart';
-
-class CarService {
-  List<Car> getCars() {
-    return [
-      Car(
-        id: '1',
-        brand: 'Toyota',
-        model: 'Corolla',
-        price: 20000,
-        imageUrl: 'assets/images/toyota_corolla.png',
-        description: 'A reliable and efficient sedan.',
-      ),
-      Car(
-        id: '2',
-        brand: 'Honda',
-        model: 'Civic',
-        price: 22000,
-        imageUrl: 'assets/images/honda_civic.png',
-        description: 'A compact car with a sporty design.',
-      ),
-      Car(
-        id: '3',
-        brand: 'Ford',
-        model: 'Mustang',
-        price: 30000,
-        imageUrl: 'assets/images/ford_mustang.png',
-        description: 'A classic American muscle car.',
-      ),
-      // Add more cars here...
-    ];
-  }
-}
-EOL
-
-# Create Car Inventory Screen
-cat <<EOL > lib/screens/car_inventory_screen.dart
-import 'package:flutter/material.dart';
-import '../models/car.dart';
-import '../services/car_service.dart';
-import '../widgets/car_item.dart';
-
-class CarInventoryScreen extends StatelessWidget {
   final CarService carService = CarService();
 
   @override
@@ -1440,3 +577,486 @@ firebase auth:import auth/users.json --project $FIREBASE_PROJECT_NAME
 GITHUB_REPO_NAME="aenzbi-app-flutter"
 echo "Creating GitHub repository..."
 git init
+git add .
+git commit -m "Initial commit for Car Dealer System and POS module"
+gh repo create $GITHUB_REPO_NAME --public --source=. --remote=origin
+# Create GitHub Actions workflow for CI/CD
+mkdir -p .github/workflows
+cat <<EOL > .github/workflows/firebase-deploy.yml
+name: Firebase Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Firebase Tools
+        run: npm install -g firebase-tools
+
+      - name: Deploy to Firebase
+        env:
+          FIREBASE_TOKEN: \${{ secrets.FIREBASE_TOKEN }}
+        run: |
+          cd web
+          firebase deploy --project $FIREBASE_PROJECT_NAME
+EOL
+
+# Notify user of completion
+echo "Setup complete! Your Flutter project is ready at '$FLUTTER_PATH'."
+echo "Firebase project '$FIREBASE_PROJECT_NAME' has been created."
+echo "GitHub repository '$GITHUB_REPO_NAME' has been set up."
+echo "A GitHub Actions workflow for Firebase deployment has been created in '.github/workflows/firebase-deploy.yml'."
+# Provide final instructions
+echo "Remember to configure Firebase and GitHub Secrets for automatic deployment."
+echo "You can now run the Flutter app using: flutter run."
+flutter build
+flutter build web
+flutter build apk
+gcloud config set project aenzbi-app-flutter
+#!/bin/bash
+# Define project directory
+PROJECT_DIR="aenzbi-app-flutter"
+# Create project directory if it doesn't exist
+if [ ! -d "$PROJECT_DIR" ]; then   echo "Creating project directory: $PROJECT_DIR";   mkdir "$PROJECT_DIR"; fi
+cd "$PROJECT_DIR"
+# Create pubspec.yaml
+cat <<EOF > pubspec.yaml
+name: aenzbi_app_flutter
+description: A Flutter application for Aenzbi Business including Car Dealer System, POS functionalities, and more.
+
+publish_to: 'none' # Remove this line if you want to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.11.0
+  firebase_auth: ^5.2.0
+  cloud_firestore: ^5.8.0
+  provider: ^6.1.5
+  http: ^0.15.0
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.1
+  cached_network_image: ^3.2.0
+  image_picker: ^0.8.7
+  dio: ^5.4.0
+  shared_preferences: ^2.1.0
+  carousel_slider: ^4.0.0
+  flutter_slidable: ^1.0.0
+  flutter_staggered_grid_view: ^0.4.0
+  flutter_svg: ^1.1.1
+  fluttertoast: ^8.2.0
+  qr_flutter: ^4.0.0
+  flutter_webview_plugin: ^0.14.0
+  google_fonts: ^2.3.2
+  firebase_messaging: ^14.5.0
+  url_launcher: ^6.0.17
+  flutter_bloc: ^8.1.0
+  location: ^4.4.0
+  geolocator: ^9.0.0
+  flutter_map: ^0.14.0
+  sqflite: ^2.0.0
+  get_it: ^7.2.0
+
+# Platform-specific dependencies
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.aenzbi.app
+        pluginClass: AenzbiAppPlugin
+      ios:
+        pluginClass: AenzbiAppPlugin
+      linux:
+        pluginClass: AenzbiAppPlugin
+      macos:
+        pluginClass: AenzbiAppPlugin
+      windows:
+        pluginClass: AenzbiAppPlugin
+      web:
+        pluginClass: AenzbiAppPlugin
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.3.0
+  build_web_compilers: ^3.2.0
+  lint: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+    - assets/data/ # Static data files if any
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+EOF
+
+echo "pubspec.yaml has been created."
+# Create necessary directories for assets and fonts
+mkdir -p assets/images
+mkdir -p assets/icons
+mkdir -p assets/fonts
+mkdir -p assets/data
+# Create platform-specific directories
+mkdir -p android
+mkdir -p ios
+mkdir -p linux
+mkdir -p macos
+mkdir -p windows
+mkdir -p web
+echo "Directories for assets, fonts, and platforms have been created."
+# Prompt to run flutter pub get
+echo "Run 'flutter pub get' in the $PROJECT_DIR directory to install dependencies."
+ls -la
+flutter run
+cd
+#!/bin/bash
+# Define project directory
+PROJECT_DIR="aenzbi-app-flutter"
+# Navigate to project directory
+cd "$PROJECT_DIR" || { echo "Project directory $PROJECT_DIR does not exist."; exit 1; }
+# Function to build for Android
+build_android() {   echo "Building for Android...";   flutter build apk --release;   if [ $? -eq 0 ]; then     echo "Android build completed successfully.";   else     echo "Android build failed.";   fi; }
+# Function to build for iOS
+build_ios() {   echo "Building for iOS...";   flutter build ios --release;   if [ $? -eq 0 ]; then     echo "iOS build completed successfully.";   else     echo "iOS build failed.";   fi; }
+# Function to build for Web
+build_web() {   echo "Building for Web...";   flutter build web --release;   if [ $? -eq 0 ]; then     echo "Web build completed successfully.";   else     echo "Web build failed.";   fi; }
+# Function to build for Linux
+build_linux() {   echo "Building for Linux...";   flutter build linux --release;   if [ $? -eq 0 ]; then     echo "Linux build completed successfully.";   else     echo "Linux build failed.";   fi; }
+# Function to build for macOS
+build_macos() {   echo "Building for macOS...";   flutter build macos --release;   if [ $? -eq 0 ]; then     echo "macOS build completed successfully.";   else     echo "macOS build failed.";   fi; }
+# Function to build for Windows
+build_windows() {   echo "Building for Windows...";   flutter build windows --release;   if [ $? -eq 0 ]; then     echo "Windows build completed successfully.";   else     echo "Windows build failed.";   fi; }
+# Execute builds
+build_android
+build_ios
+build_web
+build_linux
+build_macos
+build_windows
+echo "All builds completed."
+gcloud config set project aenzbi-app-flutter
+#!/bin/bash
+# Define project directory
+PROJECT_DIR="aenzbi-app-flutter"
+# Create pubspec.yaml
+cat <<EOF > pubspec.yaml
+name: aenzbi_app_flutter
+description: A Flutter application for Aenzbi Business including Car Dealer System, POS functionalities, and more.
+
+publish_to: 'none' # Remove this line if you want to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.11.0
+  firebase_auth: ^5.2.0
+  cloud_firestore: ^5.8.0
+  provider: ^6.1.5
+  http: ^0.15.0
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.1
+  cached_network_image: ^3.2.0
+  image_picker: ^0.8.7
+  dio: ^5.4.0
+  shared_preferences: ^2.1.0
+  carousel_slider: ^4.0.0
+  flutter_slidable: ^1.0.0
+  flutter_staggered_grid_view: ^0.4.0
+  flutter_svg: ^1.1.1
+  fluttertoast: ^8.2.0
+  qr_flutter: ^4.0.0
+  flutter_webview_plugin: ^0.14.0
+  google_fonts: ^2.3.2
+  firebase_messaging: ^14.5.0
+  url_launcher: ^6.0.17
+  flutter_bloc: ^8.1.0
+  location: ^4.4.0
+  geolocator: ^9.0.0
+  flutter_map: ^0.14.0
+  sqflite: ^2.0.0
+  get_it: ^7.2.0
+
+# Platform-specific dependencies
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.aenzbi.app
+        pluginClass: AenzbiAppPlugin
+      ios:
+        pluginClass: AenzbiAppPlugin
+      linux:
+        pluginClass: AenzbiAppPlugin
+      macos:
+        pluginClass: AenzbiAppPlugin
+      windows:
+        pluginClass: AenzbiAppPlugin
+      web:
+        pluginClass: AenzbiAppPlugin
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.3.0
+  build_web_compilers: ^3.2.0
+  lint: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+    - assets/data/ # Static data files if any
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+EOF
+
+echo "pubspec.yaml has been created."
+# Create necessary directories for assets and fonts
+mkdir -p assets/images
+mkdir -p assets/icons
+mkdir -p assets/fonts
+mkdir -p assets/data
+# Create platform-specific directories
+mkdir -p android
+mkdir -p ios
+mkdir -p linux
+mkdir -p macos
+mkdir -p windows
+mkdir -p web
+echo "Directories for assets, fonts, and platforms have been created."
+# Prompt to run flutter pub get
+echo "Run 'flutter pub get' in the $PROJECT_DIR directory to install dependencies."
+flutter build
+gcloud config set project aenzbi-app-flutter
+#!/bin/bash
+# Define project directory
+PROJECT_DIR="aenzbi-app-flutter"
+# Function to build for Android
+build_android() {   echo "Building for Android...";   flutter build apk --release;   if [ $? -eq 0 ]; then     echo "Android build completed successfully.";   else     echo "Android build failed.";   fi; }
+# Function to build for iOS
+build_ios() {   echo "Building for iOS...";   flutter build ios --release;   if [ $? -eq 0 ]; then     echo "iOS build completed successfully.";   else     echo "iOS build failed.";   fi; }
+# Function to build for Web
+build_web() {   echo "Building for Web...";   flutter build web --release;   if [ $? -eq 0 ]; then     echo "Web build completed successfully.";   else     echo "Web build failed.";   fi; }
+# Function to build for Linux
+build_linux() {   echo "Building for Linux...";   flutter build linux --release;   if [ $? -eq 0 ]; then     echo "Linux build completed successfully.";   else     echo "Linux build failed.";   fi; }
+# Function to build for macOS
+build_macos() {   echo "Building for macOS...";   flutter build macos --release;   if [ $? -eq 0 ]; then     echo "macOS build completed successfully.";   else     echo "macOS build failed.";   fi; }
+# Function to build for Windows
+build_windows() {   echo "Building for Windows...";   flutter build windows --release;   if [ $? -eq 0 ]; then     echo "Windows build completed successfully.";   else     echo "Windows build failed.";   fi; }
+# Execute builds
+build_android
+build_ios
+build_web
+build_linux
+build_macos
+build_windows
+echo "All builds completed."
+gcloud config set project aenzbi-app-flutter
+#!/bin/bash
+# Define project name
+PROJECT_NAME="aenzbi-app-flutter"
+# Create modules directory
+mkdir -p lib/modules
+# Create main.dart file
+cat <<EOF > lib/main.dart
+import 'package:flutter/material.dart';
+import 'modules/car_dealer_system/car_dealer_screen.dart';
+import 'modules/pos/pos_screen.dart';
+import 'modules/accounting/accounting_screen.dart';
+import 'modules/restaurant_pos/restaurant_pos_screen.dart';
+import 'modules/hotel_pms/hotel_pms_screen.dart';
+import 'modules/music_film/music_film_screen.dart';
+
+void main() {
+  runApp(AenzbiApp());
+}
+
+class AenzbiApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Aenzbi App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatefulWidget {
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int _selectedIndex = 0;
+
+  final List<Widget> _pages = [
+    CarDealerScreen(),
+    POSScreen(),
+    AccountingScreen(),
+    RestaurantPOSScreen(),
+    HotelPMSScreen(),
+    MusicFilmScreen(),
+  ];
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Aenzbi Business Application'),
+      ),
+      body: _pages[_selectedIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.car_rental),
+            label: 'Car Dealer',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.store),
+            label: 'POS',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_balance),
+            label: 'Accounting',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.restaurant),
+            label: 'Restaurant POS',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.hotel),
+            label: 'Hotel PMS',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.movie),
+            label: 'Music & Film',
+          ),
+        ],
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        selectedItemColor: Colors.blue,
+        unselectedItemColor: Colors.grey,
+      ),
+    );
+  }
+}
+EOF
+
+# Create module directories and placeholder files
+declare -a modules=("car_dealer_system" "pos" "accounting" "restaurant_pos" "hotel_pms" "music_film")
+for module in "${modules[@]}"; do     mkdir -p "lib/modules/$module";     echo "// ${module^} Screen" > "lib/modules/$module/${module}_screen.dart"; done
+echo "Project structure for $PROJECT_NAME created successfully."
+flutter run
+gcloud config set project aenzbi-app-flutter
+#!/bin/bash
+# Define project name
+PROJECT_NAME="aenzbi-app-flutter"
+# Run Flutter clean
+echo "Cleaning the project..."
+flutter clean
+# Format the Dart code
+echo "Formatting Dart code..."
+flutter format .
+# Analyze the project for potential issues
+echo "Analyzing the project..."
+flutter analyze
+# Check for unused imports
+echo "Checking for unused imports..."
+dart pub global activate dart_code_metrics
+dart pub global run dart_code_metrics:check --exclude-ignored
+# Organize imports (requires the Dart SDK)
+echo "Organizing imports..."
+dart fix --apply
+echo "Code formatting and organization complete."
+# Optionally, you can run the app to check if everything is working fine
+# echo "Running the application..."
+# flutter run
+echo "Done."
+flutter run
+cd
+cd /
+cd  
+cd ..
+cd itsupport
+cd ..
+ls -la
+cd itsupport
+ls -la
+cd ..
+#!/bin/bash
+# Define project name
+PROJECT_NAME="aenzbi-app-flutter"
+# Run Flutter clean
+echo "Cleaning the project..."
+flutter clean
+# Format the Dart code
+echo "Formatting Dart code..."
+flutter format .
+# Analyze the project for potential issues
+echo "Analyzing the project..."
+flutter analyze
+# Check for unused imports
+echo "Checking for unused imports..."
+dart pub global activate dart_code_metrics
+dart pub global run dart_code_metrics:check --exclude-ignored
+# Organize imports (requires the Dart SDK)
+echo "Organizing imports..."
+dart fix --apply
+echo "Code formatting and organization complete."
+# Optionally, you can run the app to check if everything is working fine
+# echo "Running the application..."
+# flutter run
+echo "Done."
+ls -la
+cd itsupport

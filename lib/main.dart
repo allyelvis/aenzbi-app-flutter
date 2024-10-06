@@ -1,55 +1,85 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'screens/pos_screen.dart';
-import 'screens/inventory_screen.dart';
+import 'modules/car_dealer_system/car_dealer_screen.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(MyApp());
+void main() {
+  runApp(AenzbiApp());
 }
 
-class MyApp extends StatelessWidget {
+class AenzbiApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aenzbi Car Dealer System',
+      title: 'Aenzbi App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomeScreen(),
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int _selectedIndex = 0;
+
+  final List<Widget> _pages = [
+    CarDealerScreen(),
+    POSScreen(),
+    AccountingScreen(),
+    RestaurantPOSScreen(),
+    HotelPMSScreen(),
+    MusicFilmScreen(),
+  ];
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Aenzbi Car Dealer'),
+        title: Text('Aenzbi Business Application'),
       ),
-      body: Column(
-        children: [
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => POSScreen()),
-              );
-            },
-            child: Text('Go to POS'),
+      body: _pages[_selectedIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.car_rental),
+            label: 'Car Dealer',
           ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => InventoryScreen()),
-              );
-            },
-            child: Text('Manage Inventory'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.store),
+            label: 'POS',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_balance),
+            label: 'Accounting',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.restaurant),
+            label: 'Restaurant POS',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.hotel),
+            label: 'Hotel PMS',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.movie),
+            label: 'Music & Film',
           ),
         ],
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        selectedItemColor: Colors.blue,
+        unselectedItemColor: Colors.grey,
       ),
     );
   }
