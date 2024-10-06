@@ -1,602 +1,3 @@
-        return Card(
-          elevation: 5,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(
-                height: 120,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage('URL_TO_YOUR_PRODUCT_IMAGE'), // Replace with your image URL
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  products[i].title,
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Text(
-                  '\$${products[i].price}',
-                  style: TextStyle(color: Colors.grey),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  // Add to cart functionality
-                },
-                child: Text('Add to Cart'),
-              ),
-            ],
-          ),
-        );
-      },
-    );
-  }
-}
-EOL
-
-# Create Cart Provider
-cat <<EOL > lib/providers/cart_provider.dart
-import 'package:flutter/material.dart';
-
-class CartProvider with ChangeNotifier {
-  // Cart logic and management
-  List<CartItem> _cartItems = [];
-
-  List<CartItem> get cartItems => _cartItems;
-
-  void addItem(CartItem item) {
-    // Logic to add item
-    notifyListeners();
-  }
-
-  double totalAmount() {
-    // Logic to calculate total amount
-    return _cartItems.fold(0, (sum, item) => sum + (item.price * item.quantity));
-  }
-}
-
-class CartItem {
-  final String title;
-  final double price;
-  final int quantity;
-
-  CartItem({required this.title, required this.price, required this.quantity});
-}
-EOL
-
-# Create Products Provider
-cat <<EOL > lib/providers/products_provider.dart
-import 'package:flutter/material.dart';
-
-class Product {
-  final String title;
-  final double price;
-
-  Product({required this.title, required this.price});
-}
-
-class ProductsProvider with ChangeNotifier {
-  List<Product> _products = [
-    Product(title: 'Product 1', price: 29.99),
-    Product(title: 'Product 2', price: 59.99),
-    // Add more products as needed
-  ];
-
-  List<Product> get products => _products;
-
-  void addProduct(Product product) {
-    _products.add(product);
-    notifyListeners();
-  }
-
-  void removeProduct(Product product) {
-    _products.remove(product);
-    notifyListeners();
-  }
-}
-EOL
-
-# Create Auth Provider
-cat <<EOL > lib/providers/auth_provider.dart
-import 'package:flutter/material.dart';
-
-class AuthProvider with ChangeNotifier {
-  String? _token;
-
-  // Implement authentication methods
-  bool get isAuth => _token != null;
-
-  Future<void> login(String email, String password) async {
-    // Add login logic
-    notifyListeners();
-  }
-
-  Future<void> register(String email, String password) async {
-    // Add registration logic
-    notifyListeners();
-  }
-}
-EOL
-
-# Create Order Provider
-cat <<EOL > lib/providers/order_provider.dart
-import 'package:flutter/material.dart';
-
-class Order {
-  final String id;
-  final double amount;
-  final DateTime dateTime;
-
-  Order({required this.id, required this.amount, required this.dateTime});
-}
-
-class OrderProvider with ChangeNotifier {
-  List<Order> _orders = [];
-
-  List<Order> get orders => _orders;
-
-  void addOrder(Order order) {
-    _orders.add(order);
-    notifyListeners();
-  }
-}
-EOL
-
-# Create Accounting Provider
-cat <<EOL > lib/providers/accounting_provider.dart
-import 'package:flutter/material.dart';
-
-class Transaction {
-  final String id;
-  final double amount;
-  final String description;
-  final DateTime date;
-
-  Transaction({required this.id, required this.amount, required this.description, required this.date});
-}
-
-class AccountingProvider with ChangeNotifier {
-  List<Transaction> _transactions = [];
-
-  List<Transaction> get transactions => _transactions;
-
-  void addTransaction(Transaction transaction) {
-    _transactions.add(transaction);
-    notifyListeners();
-  }
-
-  double get totalIncome {
-    return _transactions.where((tx) => tx.amount > 0).fold(0.0, (sum, item) => sum + item.amount);
-  }
-
-  double get totalExpenses {
-    return _transactions.where((tx) => tx.amount < 0).fold(0.0, (sum, item) => sum + item.amount);
-  }
-}
-EOL
-
-# Create Database Provider
-cat <<EOL > lib/providers/database_provider.dart
-import 'package:flutter/material.dart';
-
-class DatabaseProvider with ChangeNotifier {
-  // Database connection and operations logic goes here
-
-  void connect() {
-    // Implement database connection
-  }
-
-  void saveData(String data) {
-    // Implement data saving functionality
-  }
-
-  void fetchData() {
-    // Implement data fetching functionality
-  }
-}
-EOL
-
-# Create Login Screen
-cat <<EOL > lib/screens/login_screen.dart
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import '../providers/auth_provider.dart';
-
-class LoginScreen extends StatelessWidget {
-  static const routeName = '/login';
-
-  final _emailController = TextEditingController();
-  final _passwordController = TextEditingController();
-
-  void _submit(BuildContext context) {
-    Provider.of<AuthProvider>(context, listen: false).login(
-      _emailController.text,
-      _passwordController.text,
-    );
-    // Navigate to home screen after login
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Login')),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: <Widget>[
-            TextField(
-              decoration: InputDecoration(labelText: 'Email'),
-              controller: _emailController,
-              keyboardType: TextInputType.emailAddress,
-            ),
-            TextField(
-              decoration: InputDecoration(labelText: 'Password'),
-              controller: _passwordController,
-              obscureText: true,
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () => _submit(context),
-              child: Text('Login'),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pushNamed(RegisterScreen.routeName);
-              },
-              child: Text('No account? Register now!'),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-EOL
-
-# Create Register Screen
-cat <<EOL > lib/screens/register_screen.dart
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import '../providers/auth_provider.dart';
-
-class RegisterScreen extends StatelessWidget {
-  static const routeName = '/register';
-
-  final _emailController = TextEditingController();
-  final _passwordController = TextEditingController();
-
-  void _submit(BuildContext context) {
-    Provider.of<AuthProvider>(context, listen: false).register(
-      _emailController.text,
-      _passwordController.text,
-    );
-    // Navigate to login screen after registration
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Register')),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: <Widget>[
-            TextField(
-              decoration: InputDecoration(labelText: 'Email'),
-              controller: _emailController,
-              keyboardType: TextInputType.emailAddress,
-            ),
-            TextField(
-              decoration: InputDecoration(labelText: 'Password'),
-              controller: _passwordController,
-              obscureText: true,
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () => _submit(context),
-              child: Text('Register'),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-EOL
-
-# Install necessary packages
-flutter pub add provider
-flutter pub add http
-flutter pub add sqflite
-flutter pub add path_provider
-flutter pub add shared_preferences
-flutter pub add flutter_local_notifications
-flutter pub add intl
-# Set up database and accounting modules
-cat <<EOL > lib/database/db_helper.dart
-import 'package:sqflite/sqflite.dart';
-import 'package:path/path.dart';
-
-class DBHelper {
-  static Database? _database;
-
-  Future<Database> get database async {
-    if (_database != null) return _database!;
-    _database = await _initDb();
-    return _database!;
-  }
-
-  Future<Database> _initDb() async {
-    final dbPath = await getDatabasesPath();
-    return await openDatabase(
-      join(dbPath, 'aenzbi.db'),
-      version: 1,
-      onCreate: (db, version) async {
-        // Create tables
-        await db.execute('CREATE TABLE transactions (id TEXT PRIMARY KEY, amount REAL, description TEXT, date TEXT)');
-      },
-    );
-  }
-
-  Future<void> insertTransaction(String id, double amount, String description, String date) async {
-    final db = await database;
-    await db.insert('transactions', {'id': id, 'amount': amount, 'description': description, 'date': date}, conflictAlgorithm: ConflictAlgorithm.replace);
-  }
-
-  Future<List<Map<String, dynamic>>> getTransactions() async {
-    final db = await database;
-    return await db.query('transactions');
-  }
-}
-EOL
-
-# Create Utils for constants and helpers
-cat <<EOL > lib/utils/constants.dart
-const String BASE_API_URL = 'https://api.yourservice.com'; // Replace with your actual API URL
-EOL
-
-# Create README file
-cat <<EOL > README.md
-# Aenzbi App
-
-This is a Flutter application for managing inventory, accounting, and orders with real-time capabilities.
-
-## Features
-
-- User authentication
-- Product management
-- Order management
-- Accounting system
-- Database interconnectivity
-- Responsive design
-
-## Setup
-
-1. Clone the repository
-2. Run `flutter pub get` to install dependencies
-3. Use `flutter run` to start the app
-EOL
-
-# Finalizing
-echo "Flutter app '$PROJECT_NAME' has been created with accounting and database interconnectivity features!"
-ls -la
-cd lib
-ls -la
-cd ..
-git add .
-git commit -m "update"
-git push origin main
-gcloud config set project business-437022
-cd aenzbi_app
-ls -la
-cd lib
-ls -la
-cd ..
-git status
-git add .
-git commit -m"all"
-git push origin main
-git fetch
-git push origin main
-gcloud config set project business-437022
-cd aenzbi
-cd aenzbi_app
-) async {
-}
-EOL
-# Create accounting service for transaction management
-cat <<EOL > lib/services/accounting_service.dart
-import '../database/db_helper.dart';
-import '../providers/accounting_provider.dart';
-
-class AccountingService {
-  final DBHelper dbHelper = DBHelper();
-
-  Future<void> addTransaction(String id, double amount, String description, DateTime date) async {
-    await dbHelper.insertTransaction(id, amount, description, date.toIso8601String());
-  }
-
-  Future<List<Transaction>> getTransactions() async {
-    final data = await dbHelper.fetchTransactions();
-    return data.map((item) => Transaction(
-      id: item['id'],
-      amount: item['amount'],
-      description: item['description'],
-      date: DateTime.parse(item['date']),
-    )).toList();
-  }
-
-  Future<void> removeTransaction(String id) async {
-    await dbHelper.deleteTransaction(id);
-  }
-}
-EOL
-
-# Create additional components and utilities as necessary
-# (You can add files and directories for specific features as required)
-# Print completion message
-echo "Flutter project '$PROJECT_NAME' has been set up successfully!"
-git add .
-git commit -m "update"
-git push origin main
-#!/bin/bash
-# Function to update Flutter and Dart packages
-update_packages() {     echo "Updating Flutter and Dart packages..."
-    flutter upgrade
-    flutter pub upgrade     echo "Packages updated successfully!"; }
-# Function to clean the Flutter project
-clean_project() {     echo "Cleaning the Flutter project...";     flutter clean;     echo "Project cleaned successfully!"; }
-# Function to build the Flutter application
-build_application() {     echo "Building Flutter application..."
-    flutter build apk --debug;     flutter build web --debug
-    flutter build apk --release;     flutter build web --release     echo "Flutter application built successfully!"; }
-# Main function to orchestrate the update process
-main() {     update_packages;     clean_project;     build_application; }
-# Execute the main function
-main
-git pull origin main
-git push origin main
-gcloud config set project business-437022
-#!/bin/bash
-# Variables
-PROJECT_NAME="aenzbi_app"
-GITHUB_REPO="https://github.com/AllyElvis/aenzbi_app.git"
-# Step 1: Check if Flutter is installed
-if ! command -v flutter &> /dev/null; then     echo "Flutter is not installed. Please install Flutter first.";     exit 1; fi
-# Step 2: Create Flutter project
-echo "Creating Flutter project: $PROJECT_NAME"
-flutter create "$PROJECT_NAME"
-# Step 3: Navigate to the project directory
-cd "$PROJECT_NAME" || exit
-# Step 4: Initialize Git repository
-echo "Initializing Git repository"
-git init
-# Step 5: Add remote GitHub repository
-echo "Adding remote repository: $GITHUB_REPO"
-git remote add origin "$GITHUB_REPO"
-# Step 6: Add all files and commit
-echo "Committing initial files"
-git add .
-git commit -m "Initial commit for $PROJECT_NAME"
-# Step 7: Push to GitHub
-echo "Pushing to GitHub..."
-git push -u origin master
-# Completion message
-echo "Project $PROJECT_NAME has been created and pushed to $GITHUB_REPO successfully."
-ls -la
-git add .
-git commit -m "update project"
-cd ..
-ls -la
-#!/bin/bash
-# Define variables
-PROJECT_NAME="aenzbi-app-flutter"
-GITHUB_REPO_URL="https://github.com/AllyElvis/aenzbi_app.git"
-FLUTTER_DIR="$HOME/flutter"
-# Create a new Flutter project
-flutter create $PROJECT_NAME
-cd $PROJECT_NAME || exit
-#!/bin/bash
-# Define variables
-PROJECT_NAME="aenzbi_app"
-GITHUB_REPO_URL="https://github.com/AllyElvis/aenzbi_app.git"
-FLUTTER_DIR="$HOME/flutter"
-# Create a new Flutter project
-flutter create $PROJECT_NAME
-cd $PROJECT_NAME || exit
-# Modify pubspec.yaml to add dependencies
-cat <<EOL >> pubspec.yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  http: ^0.13.4
-  provider: ^6.0.0
-  sqflite: ^2.0.0+3
-  firebase_core: ^2.11.0
-  firebase_auth: ^6.11.0
-  cloud_firestore: ^4.10.0
-EOL
-
-# Get the dependencies
-flutter pub get
-# Create project directory structure
-mkdir -p lib/models lib/providers lib/services lib/screens lib/widgets
-# Create data model for Product
-cat <<EOL > lib/models/product.dart
-class Product {
-  final String id;
-  final String name;
-  final double price;
-
-  Product({required this.id, required this.name, required this.price});
-}
-EOL
-
-# Create API service
-cat <<EOL > lib/services/api_service.dart
-import 'package:http/http.dart' as http;
-
-class ApiService {
-  final String baseUrl = "https://api.example.com"; // Your API base URL
-
-  Future<http.Response> fetchProducts() {
-    return http.get(Uri.parse('\$baseUrl/products'));
-  }
-}
-EOL
-
-# Create Product provider
-cat <<EOL > lib/providers/product_provider.dart
-import 'package:flutter/material.dart';
-import '../models/product.dart';
-import '../services/api_service.dart';
-
-class ProductProvider with ChangeNotifier {
-  List<Product> _products = [];
-  final ApiService _apiService = ApiService();
-
-  List<Product> get products => _products;
-
-  Future<void> fetchProducts() async {
-    final response = await _apiService.fetchProducts();
-    // Parse response and populate _products
-    notifyListeners();
-  }
-}
-EOL
-
-# Create Home screen
-cat <<EOL > lib/screens/home_screen.dart
-import 'package:flutter/material.dart';
-import 'pos_screen.dart';
-import 'accounting_screen.dart';
-import 'ecommerce_screen.dart';
-
-class HomeScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Aenzbi App')),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => POSScreen()));
-              },
-              child: Text('Go to POS'),
-            ),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => AccountingScreen()));
@@ -673,3 +74,974 @@ GITHUB_REPO="https://github.com/allyelvis/aenzbi-app-flutter.git"
 # Navigate to the project directory
 cd "$PROJECT_DIR" || { echo "Directory not found: $PROJECT_DIR"; exit 1; }
 git init
+git add .
+git commit -m "init"
+git push origin main
+echo "# aenzbi-app-flutter" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/allyelvis/aenzbi-app-flutter.git
+git push -u origin main
+ls -la
+cd aenzbi_app
+ls -la
+gcloud config set project aenzbi-app-flutter
+#!/bin/bash
+# Define variables
+PROJECT_NAME="aenzbi_business_app"
+PROJECT_DIR="$HOME/$PROJECT_NAME"
+GITHUB_REPO="https://github.com/AllyElvis/$PROJECT_NAME.git"
+# Step 1: Create Flutter Project
+echo "Creating Flutter project..."
+flutter create "$PROJECT_NAME" || { echo "Failed to create Flutter project."; exit 1; }
+# Step 2: Navigate to Project Directory
+cd "$PROJECT_DIR" || { echo "Directory not found: $PROJECT_DIR"; exit 1; }
+# Step 3: Add Dependencies
+echo "Adding dependencies to pubspec.yaml..."
+cat >> pubspec.yaml <<EOL
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0
+  http: ^0.13.3
+  flutter_bloc: ^8.0.0
+  get: ^4.6.1
+  dio: ^5.0.0
+  firebase_core: ^2.0.0
+  cloud_firestore: ^4.0.0
+  image_picker: ^0.8.4
+  google_fonts: ^3.0.1
+EOL
+
+# Step 4: Create Directory Structure
+echo "Creating directory structure..."
+mkdir -p lib/{models,services,screens,widgets,utils}
+# Step 5: Create Main Entry Point
+cat > lib/main.dart <<EOL
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart'; // Import your screens
+
+void main() {
+  runApp(AenzbiBusinessApp());
+}
+
+class AenzbiBusinessApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Aenzbi Business App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        fontFamily: 'Roboto',
+      ),
+      home: HomeScreen(), // Set the initial screen
+    );
+  }
+}
+EOL
+
+# Step 6: Create Home Screen
+cat > lib/screens/home_screen.dart <<EOL
+import 'package:flutter/material.dart';
+import 'pos_screen.dart';
+import 'ecommerce_screen.dart';
+import 'accounting_screen.dart';
+import 'ai_tools_screen.dart';
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Aenzbi Business App'),
+      ),
+      body: GridView.count(
+        crossAxisCount: 2,
+        children: [
+          _buildCard(context, 'Point of Sale', PosScreen()),
+          _buildCard(context, 'eCommerce', EcommerceScreen()),
+          _buildCard(context, 'Accounting', AccountingScreen()),
+          _buildCard(context, 'AI Tools', AiToolsScreen()),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCard(BuildContext context, String title, Widget screen) {
+    return Card(
+      child: InkWell(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => screen),
+          );
+        },
+        child: Center(
+          child: Text(title, style: TextStyle(fontSize: 20)),
+        ),
+      ),
+    );
+  }
+}
+EOL
+
+# Step 7: Create Placeholder Screens
+for screen in pos_screen ecommerce_screen accounting_screen ai_tools_screen; do
+  cat > "lib/screens/${screen}.dart" <<EOLimport 'package:flutter/material.dart';
+
+class ${screen^} extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('${screen.replace("_", " ").toUpperCase()}'),
+      ),
+      body: Center(
+        child: Text('Welcome to the ${screen.replace("_", " ")} module!'),
+      ),
+    );
+  }
+}
+EOL
+ done
+for screen in pos_screen ecommerce_screen accounting_screen ai_tools_screen; do
+  cat > "lib/screens/${screen}.dart" <<EOLimport 'package:flutter/material.dart';
+
+class ${screen^} extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('${screen.replace("_", " ").toUpperCase()}'),
+      ),
+      body: Center(
+        child: Text('Welcome to the ${screen.replace("_", " ")} module!'),
+      ),
+    );
+  }
+}
+EOL
+ done
+for screen in pos_screen ecommerce_screen accounting_screen ai_tools_screen; do
+  cat > "lib/screens/${screen}.dart" <<EOLimport 'package:flutter/material.dart';
+
+class ${screen^} extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('${screen.replace("_", " ").toUpperCase()}'),
+      ),
+      body: Center(
+        child: Text('Welcome to the ${screen.replace("_", " ")} module!'),
+      ),
+    );
+  }
+}
+EOL
+ done
+for screen in pos_screen ecommerce_screen accounting_screen ai_tools_screen; do
+  cat > "lib/screens/${screen}.dart" <<EOLimport 'package:flutter/material.dart';
+
+class ${screen^} extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('${screen.replace("_", " ").toUpperCase()}'),
+      ),
+      body: Center(
+        child: Text('Welcome to the ${screen.replace("_", " ")} module!'),
+      ),
+    );
+  }
+}
+EOL
+ done
+for screen in pos_screen ecommerce_screen accounting_screen ai_tools_screen; do
+  cat > "lib/screens/${screen}.dart" <<EOLimport 'package:flutter/material.dart';
+
+class ${screen^} extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('${screen.replace("_", " ").toUpperCase()}'),
+      ),
+      body: Center(
+        child: Text('Welcome to the ${screen.replace("_", " ")} module!'),
+      ),
+    );
+  }
+}
+EOL
+ done
+# Step 8: Initialize Git and Push to GitHub
+echo "Initializing Git repository..."
+git init
+git add .
+git commit -m "Initial commit for Aenzbi Business App"
+# Add remote repository
+if ! git remote -v | grep -q "origin"; then     git remote add origin "$GITHUB_REPO";     echo "Added remote repository: $GITHUB_REPO"; else     echo "Remote 'origin' already exists."; fi
+# Step 9: Push to GitHub
+git push -u origin main || { echo "Failed to push to GitHub. Check your remote URL and branch name."; exit 1; }
+gcloud config set project aenzbi-app-flutter
+#!/bin/bash
+# Variables
+PROJECT_NAME="aenzbi-app-flutter"
+DEPENDENCIES=(     "provider"     "http"     "shared_preferences"     "intl"     "flutter_bloc"     "cupertino_icons"     "barcode_scan"     "flutter_stripe"     "firebase_auth"     "cloud_firestore"     "flutter_local_notifications"     "image_picker"     "file_picker"     "charts_flutter" )
+# Step 1: Create Flutter Project
+flutter create $PROJECT_NAME
+# Step 2: Navigate into Project Directory
+cd $PROJECT_NAME
+# Step 3: Update pubspec.yaml with dependencies
+echo "Updating pubspec.yaml with dependencies..."
+for DEPENDENCY in "${DEPENDENCIES[@]}"; do     echo "- $DEPENDENCY" >> pubspec.yaml; done
+# Step 4: Create Directory Structure
+echo "Creating directory structure..."
+mkdir -p lib/models lib/screens lib/services lib/blocs lib/widgets lib/utils
+# Step 5: Create Basic Model Files
+cat <<EOL > lib/models/product.dart
+class Product {
+  final String id;
+  final String name;
+  final double price;
+  final String description;
+  final int quantity;
+
+  Product({
+    required this.id,
+    required this.name,
+    required this.price,
+    required this.description,
+    required this.quantity,
+  });
+}
+EOL
+
+cat <<EOL > lib/models/invoice.dart
+class Invoice {
+  final String id;
+  final String customerName;
+  final List<Product> products;
+  final double totalAmount;
+
+  Invoice({
+    required this.id,
+    required this.customerName,
+    required this.products,
+    required this.totalAmount,
+  });
+}
+EOL
+
+cat <<EOL > lib/models/user.dart
+class User {
+  final String uid;
+  final String email;
+
+  User({required this.uid, required this.email});
+}
+EOL
+
+# Step 6: Create Basic Service Files
+cat <<EOL > lib/services/pos_service.dart
+import 'package:http/http.dart' as http;
+
+class PosService {
+  Future<List<Product>> fetchProducts() async {
+    final response = await http.get(Uri.parse('https://your-api-url/products'));
+    if (response.statusCode == 200) {
+      // Parse and return products
+    } else {
+      throw Exception('Failed to load products');
+    }
+  }
+
+  Future<void> createInvoice(Invoice invoice) async {
+    final response = await http.post(
+      Uri.parse('https://your-api-url/invoices'),
+      headers: {'Content-Type': 'application/json'},
+      body: invoice.toJson(), // Convert invoice to JSON
+    );
+    if (response.statusCode != 201) {
+      throw Exception('Failed to create invoice');
+    }
+  }
+}
+EOL
+
+cat <<EOL > lib/services/auth_service.dart
+import 'package:firebase_auth/firebase_auth.dart';
+
+class AuthService {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
+  Future<User?> signIn(String email, String password) async {
+    try {
+      UserCredential result = await _auth.signInWithEmailAndPassword(email: email, password: password);
+      User? user = result.user;
+      return user != null ? User(uid: user.uid, email: user.email!) : null;
+    } catch (e) {
+      throw Exception('Failed to sign in: \$e');
+    }
+  }
+
+  Future<void> signOut() async {
+    await _auth.signOut();
+  }
+}
+EOL
+
+# Step 7: Create Main Application File
+cat <<EOL > lib/main.dart
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Aenzbi POS',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: HomeScreen(),
+    );
+  }
+}
+EOL
+
+# Step 8: Add Basic Home Screen
+cat <<EOL > lib/screens/home_screen.dart
+import 'package:flutter/material.dart';
+import 'product_list_screen.dart';
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Aenzbi POS'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('View Products'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ProductListScreen()),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+EOL
+
+# Step 9: Create Product List Screen
+cat <<EOL > lib/screens/product_list_screen.dart
+import 'package:flutter/material.dart';
+import '../services/pos_service.dart';
+import '../models/product.dart';
+
+class ProductListScreen extends StatelessWidget {
+  final PosService posService = PosService();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Product List'),
+      ),
+      body: FutureBuilder<List<Product>>(
+        future: posService.fetchProducts(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return Center(child: Text('Error: ${snapshot.error}'));
+          }
+
+          final products = snapshot.data!;
+          return ListView.builder(
+            itemCount: products.length,
+            itemBuilder: (context, index) {
+              return ListTile(
+                title: Text(products[index].name),
+                subtitle: Text('Price: \$${products[index].price}'),
+                onTap: () {
+                  // Navigate to invoice screen
+                },
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
+}
+EOL
+
+cat <<EOL > lib/screens/product_list_screen.dart
+import 'package:flutter/material.dart';
+import '../services/pos_service.dart';
+import '../models/product.dart';
+
+class ProductListScreen extends StatelessWidget {
+  final PosService posService = PosService();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Product List'),
+      ),
+      body: FutureBuilder<List<Product>>(
+        future: posService.fetchProducts(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return Center(child: Text('Error: ${snapshot.error}'));
+          }
+
+          final products = snapshot.data!;
+          return ListView.builder(
+            itemCount: products.length,
+            itemBuilder: (context, index) {
+              return ListTile(
+                title: Text(products[index].name),
+                subtitle: Text('Price: \$${products[index].price}'),
+                onTap: () {
+                  // Navigate to invoice screen
+                },
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
+}
+EOL
+
+# Step 10: Install Dependencies
+echo "Installing dependencies..."
+flutter pub get
+echo "Aenzbi Flutter POS project setup completed successfully!"
+#!/bin/bash
+# Variables
+PROJECT_NAME="aenzbi-app-flutter"
+DEPENDENCIES=(     "provider"     "http"     "shared_preferences"     "intl"     "flutter_bloc"     "cupertino_icons"     "barcode_scan"     "flutter_stripe"     "firebase_auth"     "cloud_firestore"     "flutter_local_notifications"     "image_picker"     "file_picker"     "charts_flutter" )
+# Step 1: Create Flutter Project
+flutter create $PROJECT_NAME
+# Step 2: Navigate into Project Directory
+cd $PROJECT_NAME
+# Step 3: Update pubspec.yaml with dependencies
+echo "Updating pubspec.yaml with dependencies..."
+for DEPENDENCY in "${DEPENDENCIES[@]}"; do     echo "- $DEPENDENCY" >> pubspec.yaml; done
+# Step 4: Create Directory Structure
+echo "Creating directory structure..."
+mkdir -p lib/models lib/screens lib/services lib/blocs lib/widgets lib/utils
+# Step 5: Create Basic Model Files
+cat <<EOL > lib/models/product.dart
+class Product {
+  final String id;
+  final String name;
+  final double price;
+  final String description;
+  final int quantity;
+
+  Product({
+    required this.id,
+    required this.name,
+    required this.price,
+    required this.description,
+    required this.quantity,
+  });
+}
+EOL
+
+cat <<EOL > lib/models/invoice.dart
+class Invoice {
+  final String id;
+  final String customerName;
+  final List<Product> products;
+  final double totalAmount;
+
+  Invoice({
+    required this.id,
+    required this.customerName,
+    required this.products,
+    required this.totalAmount,
+  });
+}
+EOL
+
+cat <<EOL > lib/models/user.dart
+class User {
+  final String uid;
+  final String email;
+
+  User({required this.uid, required this.email});
+}
+EOL
+
+# Step 6: Create Basic Service Files
+cat <<EOL > lib/services/pos_service.dart
+import 'package:http/http.dart' as http;
+
+class PosService {
+  Future<List<Product>> fetchProducts() async {
+    final response = await http.get(Uri.parse('https://your-api-url/products'));
+    if (response.statusCode == 200) {
+      // Parse and return products
+    } else {
+      throw Exception('Failed to load products');
+    }
+  }
+
+  Future<void> createInvoice(Invoice invoice) async {
+    final response = await http.post(
+      Uri.parse('https://your-api-url/invoices'),
+      headers: {'Content-Type': 'application/json'},
+      body: invoice.toJson(), // Convert invoice to JSON
+    );
+    if (response.statusCode != 201) {
+      throw Exception('Failed to create invoice');
+    }
+  }
+}
+EOL
+
+cat <<EOL > lib/services/auth_service.dart
+import 'package:firebase_auth/firebase_auth.dart';
+
+class AuthService {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
+  Future<User?> signIn(String email, String password) async {
+    try {
+      UserCredential result = await _auth.signInWithEmailAndPassword(email: email, password: password);
+      User? user = result.user;
+      return user != null ? User(uid: user.uid, email: user.email!) : null;
+    } catch (e) {
+      throw Exception('Failed to sign in: \$e');
+    }
+  }
+
+  Future<void> signOut() async {
+    await _auth.signOut();
+  }
+}
+EOL
+
+# Step 7: Create Main Application File
+cat <<EOL > lib/main.dart
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Aenzbi POS',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: HomeScreen(),
+    );
+  }
+}
+EOL
+
+# Step 8: Add Basic Home Screen
+cat <<EOL > lib/screens/home_screen.dart
+import 'package:flutter/material.dart';
+import 'product_list_screen.dart';
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Aenzbi POS'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('View Products'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ProductListScreen()),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+EOL
+
+# Step 9: Create Product List Screen
+cat <<EOL > lib/screens/product_list_screen.dart
+import 'package:flutter/material.dart';
+import '../services/pos_service.dart';
+import '../models/product.dart';
+
+class ProductListScreen extends StatelessWidget {
+  final PosService posService = PosService();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Product List'),
+      ),
+      body: FutureBuilder<List<Product>>(
+        future: posService.fetchProducts(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return Center(child: Text('Error: ${snapshot.error}'));
+          }
+
+          final products = snapshot.data!;
+          return ListView.builder(
+            itemCount: products.length,
+            itemBuilder: (context, index) {
+              return ListTile(
+                title: Text(products[index].name),
+                subtitle: Text('Price: \$${products[index].price}'),
+                onTap: () {
+                  // Navigate to invoice screen
+                },
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
+}
+EOL
+
+cat <<EOL > lib/screens/product_list_screen.dart
+import 'package:flutter/material.dart';
+import '../services/pos_service.dart';
+import '../models/product.dart';
+
+class ProductListScreen extends StatelessWidget {
+  final PosService posService = PosService();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Product List'),
+      ),
+      body: FutureBuilder<List<Product>>(
+        future: posService.fetchProducts(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return Center(child: Text('Error: ${snapshot.error}'));
+          }
+
+          final products = snapshot.data!;
+          return ListView.builder(
+            itemCount: products.length,
+            itemBuilder: (context, index) {
+              return ListTile(
+                title: Text(products[index].name),
+                subtitle: Text('Price: \$${products[index].price}'),
+                onTap: () {
+                  // Navigate to invoice screen
+                },
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
+}
+EOL
+
+# Step 10: Install Dependencies
+echo "Installing dependencies..."
+flutter pub get
+gcloud config set project aenzbi-app-flutter
+#!/bin/bash
+# Variables
+PROJECT_NAME="aenzbi-app-flutter"
+DB_DEPENDENCIES=(     "sqflite"     "path_provider" )
+# Step 1: Navigate into Project Directory
+cd $PROJECT_NAME || { echo "Project directory not found!"; exit 1; }
+gcloud config set project aenzbi-app-flutter
+ls -la
+gcloud config set project aenzbi-app-flutter
+#!/bin/bash
+# Variables
+PROJECT_NAME="aenzbi-app-flutter"
+DEPENDENCIES=(     "provider"     "http"     "shared_preferences"     "intl"     "flutter_bloc"     "cupertino_icons"     "barcode_scan"     "flutter_stripe"     "firebase_auth"     "cloud_firestore"     "flutter_local_notifications"     "image_picker"     "file_picker"     "charts_flutter" )
+# Step 1: Create Flutter Project
+flutter create $PROJECT_NAME
+# Step 2: Navigate into Project Directory
+cd $PROJECT_NAME
+# Step 3: Update pubspec.yaml with dependencies
+echo "Updating pubspec.yaml with dependencies..."
+for DEPENDENCY in "${DEPENDENCIES[@]}"; do     echo "- $DEPENDENCY" >> pubspec.yaml; done
+# Step 4: Create Directory Structure
+echo "Creating directory structure..."
+mkdir -p lib/models lib/screens lib/services lib/blocs lib/widgets lib/utils
+# Step 5: Create Basic Model Files
+cat <<EOL > lib/models/product.dart
+class Product {
+  final String id;
+  final String name;
+  final double price;
+  final String description;
+  final int quantity;
+
+  Product({
+    required this.id,
+    required this.name,
+    required this.price,
+    required this.description,
+    required this.quantity,
+  });
+}
+EOL
+
+cat <<EOL > lib/models/invoice.dart
+class Invoice {
+  final String id;
+  final String customerName;
+  final List<Product> products;
+  final double totalAmount;
+
+  Invoice({
+    required this.id,
+    required this.customerName,
+    required this.products,
+    required this.totalAmount,
+  });
+}
+EOL
+
+cat <<EOL > lib/models/user.dart
+class User {
+  final String uid;
+  final String email;
+
+  User({required this.uid, required this.email});
+}
+EOL
+
+# Step 6: Create Basic Service Files
+cat <<EOL > lib/services/pos_service.dart
+import 'package:http/http.dart' as http;
+
+class PosService {
+  Future<List<Product>> fetchProducts() async {
+    final response = await http.get(Uri.parse('https://your-api-url/products'));
+    if (response.statusCode == 200) {
+      // Parse and return products
+    } else {
+      throw Exception('Failed to load products');
+    }
+  }
+
+  Future<void> createInvoice(Invoice invoice) async {
+    final response = await http.post(
+      Uri.parse('https://your-api-url/invoices'),
+      headers: {'Content-Type': 'application/json'},
+      body: invoice.toJson(), // Convert invoice to JSON
+    );
+    if (response.statusCode != 201) {
+      throw Exception('Failed to create invoice');
+    }
+  }
+}
+EOL
+
+cat <<EOL > lib/services/auth_service.dart
+import 'package:firebase_auth/firebase_auth.dart';
+
+class AuthService {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
+  Future<User?> signIn(String email, String password) async {
+    try {
+      UserCredential result = await _auth.signInWithEmailAndPassword(email: email, password: password);
+      User? user = result.user;
+      return user != null ? User(uid: user.uid, email: user.email!) : null;
+    } catch (e) {
+      throw Exception('Failed to sign in: \$e');
+    }
+  }
+
+  Future<void> signOut() async {
+    await _auth.signOut();
+  }
+}
+EOL
+
+# Step 7: Create Main Application File
+cat <<EOL > lib/main.dart
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Aenzbi POS',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: HomeScreen(),
+    );
+  }
+}
+EOL
+
+# Step 8: Add Basic Home Screen
+cat <<EOL > lib/screens/home_screen.dart
+import 'package:flutter/material.dart';
+import 'product_list_screen.dart';
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Aenzbi POS'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('View Products'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ProductListScreen()),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+EOL
+
+# Step 9: Create Product List Screen
+cat <<EOL > lib/screens/product_list_screen.dart
+import 'package:flutter/material.dart';
+import '../services/pos_service.dart';
+import '../models/product.dart';
+
+class ProductListScreen extends StatelessWidget {
+  final PosService posService = PosService();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Product List'),
+      ),
+      body: FutureBuilder<List<Product>>(
+        future: posService.fetchProducts(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return Center(child: Text('Error: ${snapshot.error}'));
+          }
+
+          final products = snapshot.data!;
+          return ListView.builder(
+            itemCount: products.length,
+            itemBuilder: (context, index) {
+              return ListTile(
+                title: Text(products[index].name),
+                subtitle: Text('Price: \$${products[index].price}'),
+                onTap: () {
+                  // Navigate to invoice screen
+                },
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
+}
+EOL
+
+cat <<EOL > lib/screens/product_list_screen.dart
+import 'package:flutter/material.dart';
+import '../services/pos_service.dart';
+import '../models/product.dart';
+
+class ProductListScreen extends StatelessWidget {
+  final PosService posService = PosService();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Product List'),
+      ),
+      body: FutureBuilder<List<Product>>(
+        future: posService.fetchProducts(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return Center(child: Text('Error: ${snapshot.error}'));
+          }
+
+          final products = snapshot.data!;
+          return ListView.builder(
+            itemCount: products.length,
+            itemBuilder: (context, index) {
+              return ListTile(
+                title: Text(products[index].name),
+                subtitle: Text('Price: \$${products[index].price}'),
+                onTap: () {
+                  // Navigate to invoice screen
+                },
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
+}
+EOL
+
+# Step 10: Install Dependencies
+echo "Installing dependencies..."
+flutter pub get
+echo "Aenzbi Flutter POS project setup completed successfully!"
