@@ -1,0 +1,7 @@
+{
+    "http.proxySupport": "off",
+    "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+    "redhat.telemetry.enabled": false,
+    "window.commandCenter": false,
+    "terminal.integrated.defaultProfile.linux": "Google Cloud Shell"
+}

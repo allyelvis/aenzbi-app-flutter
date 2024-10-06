@@ -1,0 +1,13 @@
+2024-10-06 16:35:26.187 [info] 
+
+
+
+
+2024-10-06 16:35:26.187 [info] Extension host agent started.
+2024-10-06 16:35:26.265 [info] Started initializing default profile extensions in extensions installation folder. file:///home/itsupport/.codeoss/extensions
+2024-10-06 16:35:26.342 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/itsupport/.codeoss/extensions
+2024-10-06 16:35:39.677 [info] [127.0.0.1][faec70b0][ManagementConnection] New connection established.
+2024-10-06 16:35:40.030 [info] [127.0.0.1][efaff8c8][ExtensionHostConnection] New connection established.
+2024-10-06 16:35:42.235 [info] [127.0.0.1][efaff8c8][ExtensionHostConnection] <6359> Launched Extension Host Process.
+2024-10-06 16:36:18.957 [info] [127.0.0.1][faec70b0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-10-06 16:36:19.018 [info] [127.0.0.1][efaff8c8][ExtensionHostConnection] <6359> Extension Host Process exited with code: 0, signal: null.
