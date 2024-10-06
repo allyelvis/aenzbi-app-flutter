@@ -1221,3 +1221,79 @@ flutter build apk
 flutter build ios
 flutter build linux
 echo "Setup and build complete! Your Flutter app with SQLite database support is ready."
+git add .
+git commit -m "update"
+git push origin main
+#!/bin/bash
+# Project name
+PROJECT_NAME="aenzbi-app-flutter"
+# Initialize Firebase project and install dependencies
+setup_firebase_project() {     echo "Setting up Firebase Project: $PROJECT_NAME"
+    if ! command -v firebase &> /dev/null;     then         echo "Firebase CLI is not installed. Installing...";         npm install -g firebase-tools;     else         echo "Firebase CLI is already installed.";     fi
+    echo "Initializing Firebase project...";     firebase init
+    firebase init functions hosting firestore database
+    cd functions
+    echo "Installing dependencies for Firebase functions...";     npm install --save firebase-admin firebase-functions     echo "Firebase setup complete!"; }
+# Generate basic Firebase Functions
+generate_firebase_functions() {     echo "Generating sample Firebase functions..."
+    cat <<EOL > index.jsconst functions = require('firebase-functions');
+const admin = require('firebase-admin');
+admin.initializeApp();
+
+exports.helloWorld = functions.https.onRequest((request, response) => {
+  response.send("Hello from Firebase!");
+});
+
+exports.addMessage = functions.https.onCall((data, context) => {
+  const text = data.text;
+  return { text: \`Received message: \${text}\` };
+});
+EOL
+     echo "Firebase Functions have been generated."; }
+# Setup GitHub Actions workflow for CI/CD
+setup_github_actions() {     echo "Setting up GitHub Actions for CI/CD..."
+    mkdir -p ../.github/workflows
+    cat <<EOL > ../.github/workflows/firebase-deploy.ymlname: Firebase Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install Firebase CLI
+      run: npm install -g firebase-tools
+
+    - name: Install Dependencies
+      run: cd functions && npm ci
+
+    - name: Deploy to Firebase Hosting and Functions
+      env:
+        FIREBASE_TOKEN: \${{ secrets.FIREBASE_TOKEN }}
+      run: firebase deploy --only hosting,functions
+EOL
+     echo "GitHub Actions workflow setup complete."; }
+# Initialize a git repository and push to GitHub
+setup_git_repo() {     echo "Initializing Git repository and pushing to GitHub..."
+    git init;     git add .;     git commit -m "Initial commit - Setup Firebase and GitHub Actions"
+    GITHUB_REPO_URL="https://github.com/your-username/$PROJECT_NAME.git"    
+    git remote add origin $GITHUB_REPO_URL;     git push -u origin main     echo "GitHub repository setup complete."; }
+# Run the setup functions
+setup_firebase_project
+generate_firebase_functions
+setup_github_actions
