@@ -1060,3 +1060,8 @@ echo "Code formatting and organization complete."
 echo "Done."
 ls -la
 cd itsupport
+git add .
+git commit -m "update"
+git push origin main
+git pull origin main
+git fetch
