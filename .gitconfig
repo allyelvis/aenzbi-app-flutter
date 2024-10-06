@@ -1,3 +1,5 @@
 [user]
 	email = allyelvis6569@gmail.com
 	name = allyelvis
+[safe]
+	directory = /google/flutter
