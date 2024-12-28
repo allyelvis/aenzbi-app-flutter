@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 import 'modules/car_dealer_system/car_dealer_screen.dart';
-import 'modules/pos/pos_screen.dart';
-import 'modules/accounting/accounting_screen.dart';
-import 'modules/restaurant_pos/restaurant_pos_screen.dart';
-import 'modules/hotel_pms/hotel_pms_screen.dart';
-import 'modules/music_film/music_film_screen.dart';
 
 void main() {
   runApp(AenzbiApp());
